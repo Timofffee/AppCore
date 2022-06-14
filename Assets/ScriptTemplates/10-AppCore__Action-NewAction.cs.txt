@@ -1,0 +1,13 @@
+﻿using Krem.AppCore;
+using Krem.AppCore.Attributes;
+
+[NodeGraphGroupName("NAME_THIS_GROUP")] 
+public class #SCRIPTNAME# : CoreAction 
+{
+    protected override bool Action()
+    {
+        //Insert Action Code Here
+        
+        return true;
+    }
+}

@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525936067d29cff41b4510d1d53c5f4d, type: 3}
+  m_Name: Lowpoly Rocker SegmentsDataSet
+  m_EditorClassIdentifier: 
+  storable: 0
+  immutable: 1
+  dataProtected: 1
+  data:
+  - _name: Rocket Head 1
+    _guid: f9637557-a343-484b-bce9-27c150608703
+    _segmentType: 0
+    _segmentPrefab: {fileID: 3692245796820054807, guid: 879b4b666784439478b7d97d3f66181f,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Head 2
+    _guid: 8b65ad2d-1d5d-4b0a-9d38-f8352deefa27
+    _segmentType: 0
+    _segmentPrefab: {fileID: 3552475052827475938, guid: 9d9c9391658a0d646a611868a586d49d,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Head 3
+    _guid: 8985a1ee-75d0-491e-a76b-0b97856ed371
+    _segmentType: 0
+    _segmentPrefab: {fileID: 278210151940874492, guid: 348f2e1b8556fbc45a187676c75e7db0,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Thin 1
+    _guid: 6bc03b0b-57d0-48be-8bf8-b0b46f944e73
+    _segmentType: 1
+    _segmentPrefab: {fileID: 1460184391795275685, guid: ca09fcb9f79e6b74d8ee7ae5ec03c876,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Thin 2
+    _guid: 511e36c8-1b06-40c0-b84d-a706ea106c5e
+    _segmentType: 1
+    _segmentPrefab: {fileID: 7758553483955173413, guid: 0e2aef73c16038849963146fe7388c9b,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Thin 3
+    _guid: d6f8972a-0813-4cff-b9b0-22dc07e05008
+    _segmentType: 1
+    _segmentPrefab: {fileID: 829552294453307118, guid: a4b2b7a7833b75543ad86cfa453e892c,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Thin To Wide 1
+    _guid: 877fbc18-9b74-40ee-9b0e-f4f5f8540569
+    _segmentType: 2
+    _segmentPrefab: {fileID: 6173029953770365319, guid: 42e0a67efbfa1604197f14363ffffa6c,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Thin To Wide 2
+    _guid: 4434f8ed-3e0c-4c6a-9a41-18bfa1118c9a
+    _segmentType: 2
+    _segmentPrefab: {fileID: 9168743944802333683, guid: 75a956611da06894fab3542250cafbd3,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Thin To Wide 3
+    _guid: d9cc799e-d813-46cc-bcdd-4c615254f847
+    _segmentType: 2
+    _segmentPrefab: {fileID: 8057794909907740523, guid: 9b880505477b83041acd5958d46aa54f,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Wide 1
+    _guid: 7edcaf9b-1451-4460-ba64-4680d442c57a
+    _segmentType: 3
+    _segmentPrefab: {fileID: 7802372395327908331, guid: 704e2b31c27437845a680865cbcff901,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Wide 2
+    _guid: f3018eb8-55f3-4973-8e13-2cdee48c5b1c
+    _segmentType: 3
+    _segmentPrefab: {fileID: 2697226806146662607, guid: f501640d2e5ecba459a25502c5b67e43,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Wide 3
+    _guid: c4ad80f8-fd56-4acd-9a9b-55d3c7ae3736
+    _segmentType: 3
+    _segmentPrefab: {fileID: 2529380687233557606, guid: 396b063b64d99c042b202efb235d67f3,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Wide 4
+    _guid: 334f0b82-c047-4ddf-8772-3f6672af272a
+    _segmentType: 3
+    _segmentPrefab: {fileID: 4145863549132544915, guid: 21a955e84746d41488418e425d880b74,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Wide 5
+    _guid: 3949f98f-553e-4003-a990-7c0a1e8234b8
+    _segmentType: 3
+    _segmentPrefab: {fileID: 2984703956445117987, guid: 155a39760b80b9b4baf466501c48ee8e,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Wide 6
+    _guid: 74f6fc43-21be-4507-b979-61ac8d7ba0ad
+    _segmentType: 3
+    _segmentPrefab: {fileID: 8787804580673070102, guid: c1962b5d0c44d0f44b45660e5641af3d,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Tail 1
+    _guid: a8f8da48-3df5-4861-821c-f61ea27894d8
+    _segmentType: 4
+    _segmentPrefab: {fileID: 5254347273993481600, guid: 92b504489f55aeb4bb345acd66425071,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Tail 2
+    _guid: a2b9da3c-fb99-47a0-8eee-8cc01cfaee00
+    _segmentType: 4
+    _segmentPrefab: {fileID: 8972280476206053807, guid: d45ba49d28f5f3d4fbf8bed1c5e85a96,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Tail 3
+    _guid: dbd09c52-93e8-4e34-a8cb-7d49e87027b3
+    _segmentType: 4
+    _segmentPrefab: {fileID: 829552294453307118, guid: a4b2b7a7833b75543ad86cfa453e892c,
+      type: 3}
+    _height: 0.36

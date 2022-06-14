@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1111038700637219093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1111038700637219092}
+  - component: {fileID: 1111038700637219082}
+  - component: {fileID: 1111038700637219083}
+  - component: {fileID: 1111038700637219080}
+  - component: {fileID: 1111038700637219081}
+  - component: {fileID: 1111038700637219094}
+  m_Layer: 5
+  m_Name: Storable DrawPad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1111038700637219092
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111038700637219093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 428}
+  m_SizeDelta: {x: 520, y: 724}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1111038700637219082
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111038700637219093}
+  m_CullTransparentMesh: 0
+--- !u!114 &1111038700637219083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111038700637219093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 7e0c19c7e08eb194d98b63a70fbc8480, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4033792bde250fa4e800e6f560639c25, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1111038700637219080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111038700637219093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions:
+  - NodeTypeName: Krem.DrawPad.Actions.ClearDrawPad
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"aadf27b3-cbbc-4f9b-9cc8-c65fc2aa7776","_portID":"9fcbd02e-7820-4db3-a4d0-c5609dbba26a"},"OnExecuted":{"_parentID":"aadf27b3-cbbc-4f9b-9cc8-c65fc2aa7776","_portID":"e26db4fd-a17e-4ccd-bf95-66e8f270b033","_connections":[]},"_nodeID":"aadf27b3-cbbc-4f9b-9cc8-c65fc2aa7776","_nodePosition":{"x":326.00006103515627,"y":-145.96749877929688}}'
+  - NodeTypeName: Krem.DrawPad.Actions.UpdateDrawPad
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"ace5e977-6b55-454e-bc72-5ff26b4a57fc","_portID":"9114f943-766b-42ce-b1ce-156b77183012"},"OnExecuted":{"_parentID":"ace5e977-6b55-454e-bc72-5ff26b4a57fc","_portID":"1f69c76a-4ab4-4856-acd7-f6a4ba0dc31f","_connections":[]},"_nodeID":"ace5e977-6b55-454e-bc72-5ff26b4a57fc","_nodePosition":{"x":326.0,"y":76.0},"OnSegmentDrawn":{"_parentID":"ace5e977-6b55-454e-bc72-5ff26b4a57fc","_portID":"014bfb3d-c622-4157-bccd-f1b6ff75b77b","_connections":[]}}'
+  - NodeTypeName: Krem.DrawPad.Actions.CopyDrawPadDataToScriptableList
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"c8743a4a-59f7-4169-966b-9d3882055768","_portID":"ad8ca3ac-926b-4358-9bf7-c0ba51720923"},"OnExecuted":{"_parentID":"c8743a4a-59f7-4169-966b-9d3882055768","_portID":"5fdc6548-aac9-401a-88b1-52cd4db1093b","_connections":[{"_parentID":"236e5e8a-c287-4831-94c0-a9cd82768f64","_portID":"ba155140-cafe-467e-8055-079c8ff2da87"}]},"_nodeID":"c8743a4a-59f7-4169-966b-9d3882055768","_nodePosition":{"x":326.0,"y":199.0},"segmentModelListProvider":{"_parentID":"c8743a4a-59f7-4169-966b-9d3882055768","_portID":"a92d7abb-d46c-4a94-8245-9b0e67173811","Component":{"instanceID":0}}}'
+  - NodeTypeName: Krem.DrawPad.Actions.ClearDrawPad
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"94eabf4f-b0a8-49ed-90fb-ee6eae558ab4","_portID":"8851b046-b28f-41b2-a7ca-cd3f272dfc8f"},"OnExecuted":{"_parentID":"94eabf4f-b0a8-49ed-90fb-ee6eae558ab4","_portID":"2c38c812-c5b2-4ee3-b468-6d71d38bbc55","_connections":[{"_parentID":"c277be0d-d80c-4563-985f-ad60b5741a82","_portID":"15c6a7d5-8f25-4083-96a6-edd4684e5dd0"}]},"_nodeID":"94eabf4f-b0a8-49ed-90fb-ee6eae558ab4","_nodePosition":{"x":326.0000305175781,"y":-258.5000305175781}}'
+  - NodeTypeName: Krem.DrawPad.Actions.RestoreDrawPadFromScriptable
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"c277be0d-d80c-4563-985f-ad60b5741a82","_portID":"15c6a7d5-8f25-4083-96a6-edd4684e5dd0"},"OnExecuted":{"_parentID":"c277be0d-d80c-4563-985f-ad60b5741a82","_portID":"298d41db-36e7-4458-9c86-ca1d7a85d485","_connections":[]},"_nodeID":"c277be0d-d80c-4563-985f-ad60b5741a82","_nodePosition":{"x":593.0001831054688,"y":-359.00006103515627},"segmentModelListProvider":{"_parentID":"c277be0d-d80c-4563-985f-ad60b5741a82","_portID":"84fc7c71-4a7e-4214-b342-ef1db5c14641","Component":{"instanceID":0}}}'
+  - NodeTypeName: Krem.DrawPad.Actions.UI.SetBackgroundColorToDrawColor
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"96445035-0a2e-4f3b-b9c8-56e61af29b82","_portID":"edae77e0-8810-4254-8590-7eebfa72ac65"},"OnExecuted":{"_parentID":"96445035-0a2e-4f3b-b9c8-56e61af29b82","_portID":"69e840f2-e35d-4ba2-aec1-1231c1376eb9","_connections":[]},"_nodeID":"96445035-0a2e-4f3b-b9c8-56e61af29b82","_nodePosition":{"x":326.0000305175781,"y":-50.1500129699707},"Reset":{"_parentID":"96445035-0a2e-4f3b-b9c8-56e61af29b82","_portID":"b675f299-e895-41a6-b825-3284b29eddb8"},"OnTimeElapsed":{"_parentID":"96445035-0a2e-4f3b-b9c8-56e61af29b82","_portID":"1d289923-2328-4a65-8926-218d4b9adf82","_connections":[]},"TransitionTime":0.20000000298023225}'
+  - NodeTypeName: Krem.DrawPad.Actions.UI.SetBackgroundColorToStaticColor
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"e11650e7-3522-4161-9146-5b81dea88411","_portID":"69bed3b9-3719-4e86-8666-bd653798926a"},"OnExecuted":{"_parentID":"e11650e7-3522-4161-9146-5b81dea88411","_portID":"afee7b85-c23c-4242-8201-4b48476f0703","_connections":[]},"_nodeID":"e11650e7-3522-4161-9146-5b81dea88411","_nodePosition":{"x":333.0,"y":313.0},"Reset":{"_parentID":"e11650e7-3522-4161-9146-5b81dea88411","_portID":"3aabade1-2c8c-4179-8d0a-1ef4f7cf16ee"},"OnTimeElapsed":{"_parentID":"e11650e7-3522-4161-9146-5b81dea88411","_portID":"6e5c3346-152b-4fc9-8933-a7b179eae0b2","_connections":[]},"TransitionTime":0.20000000298023225}'
+  - NodeTypeName: Krem.DrawPad.Actions.ClearShadowSegment
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"236e5e8a-c287-4831-94c0-a9cd82768f64","_portID":"ba155140-cafe-467e-8055-079c8ff2da87"},"OnExecuted":{"_parentID":"236e5e8a-c287-4831-94c0-a9cd82768f64","_portID":"32215ca5-5812-4c49-a4db-1df5f9f9a4e8","_connections":[]},"_nodeID":"236e5e8a-c287-4831-94c0-a9cd82768f64","_nodePosition":{"x":697.0,"y":199.0}}'
+--- !u!114 &1111038700637219081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111038700637219093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0f7ff0b0301934cad10adf0f4f9a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 8013f973-e39e-47ba-a14b-559189cec99b
+  _nodePosition: {x: -17.00004, y: 51}
+  This:
+    _parentID: 8013f973-e39e-47ba-a14b-559189cec99b
+    _portID: 10588574-585d-446d-86d8-48d25d558aa3
+    _connections: []
+  _poolSize: 10
+  _poolItems: []
+  _settings: {fileID: 11400000, guid: 50c1f1f533ee18840801581b83fd4bf3, type: 2}
+  _backGroundImage: {fileID: 1111038700637219083}
+  active: 1
+  onStartDraw:
+    m_PersistentCalls:
+      m_Calls: []
+  onDrawing:
+    m_PersistentCalls:
+      m_Calls: []
+  onEndDrawing:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartDraw:
+    _parentID: 8013f973-e39e-47ba-a14b-559189cec99b
+    _portID: c7df5e2e-1fb0-4bb7-bf5b-4105aa3be47a
+    _connections:
+    - _parentID: 96445035-0a2e-4f3b-b9c8-56e61af29b82
+      _portID: edae77e0-8810-4254-8590-7eebfa72ac65
+    - _parentID: e11650e7-3522-4161-9146-5b81dea88411
+      _portID: 3aabade1-2c8c-4179-8d0a-1ef4f7cf16ee
+    - _parentID: aadf27b3-cbbc-4f9b-9cc8-c65fc2aa7776
+      _portID: 9fcbd02e-7820-4db3-a4d0-c5609dbba26a
+  OnDrawing:
+    _parentID: 8013f973-e39e-47ba-a14b-559189cec99b
+    _portID: 399fdf93-ab8a-4ca2-8de3-cf050a15a9d1
+    _connections:
+    - _parentID: ace5e977-6b55-454e-bc72-5ff26b4a57fc
+      _portID: 9114f943-766b-42ce-b1ce-156b77183012
+  OnEndDrawing:
+    _parentID: 8013f973-e39e-47ba-a14b-559189cec99b
+    _portID: 61197c47-38bc-4d9b-bded-57019cd79e8c
+    _connections:
+    - _parentID: c8743a4a-59f7-4169-966b-9d3882055768
+      _portID: ad8ca3ac-926b-4358-9bf7-c0ba51720923
+    - _parentID: 96445035-0a2e-4f3b-b9c8-56e61af29b82
+      _portID: b675f299-e895-41a6-b825-3284b29eddb8
+    - _parentID: e11650e7-3522-4161-9146-5b81dea88411
+      _portID: 69bed3b9-3719-4e86-8666-bd653798926a
+--- !u!114 &1111038700637219094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111038700637219093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdd3c68e972834439222f86dec2b6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: f7101863-fb78-4e89-b52a-a085356c8658
+  _nodePosition: {x: -154.00005, y: -284}
+  This:
+    _parentID: f7101863-fb78-4e89-b52a-a085356c8658
+    _portID: 39a4d238-dec4-4cc7-aaa7-acdd1d5570b5
+    _connections:
+    - _parentID: c8743a4a-59f7-4169-966b-9d3882055768
+      _portID: a92d7abb-d46c-4a94-8245-9b0e67173811
+    - _parentID: c277be0d-d80c-4563-985f-ad60b5741a82
+      _portID: 84fc7c71-4a7e-4214-b342-ef1db5c14641
+  _scriptableCollection: {fileID: 0}
+  CallSave:
+    _parentID: f7101863-fb78-4e89-b52a-a085356c8658
+    _portID: 6c9647af-d850-46cd-bc31-47be96c7ddc4
+  CallLoad:
+    _parentID: f7101863-fb78-4e89-b52a-a085356c8658
+    _portID: f3964b56-3aba-4d1d-b14b-a9e9f592b990
+  CallDelete:
+    _parentID: f7101863-fb78-4e89-b52a-a085356c8658
+    _portID: d8e2e3fc-bf32-4221-939a-279c451adc31
+  OnSaved:
+    _parentID: f7101863-fb78-4e89-b52a-a085356c8658
+    _portID: e0ff3ed1-807b-4a08-819f-6af0a26a014e
+    _connections: []
+  OnLoaded:
+    _parentID: f7101863-fb78-4e89-b52a-a085356c8658
+    _portID: 9b73b196-bda5-4582-aa4b-ba78014c60c2
+    _connections:
+    - _parentID: 94eabf4f-b0a8-49ed-90fb-ee6eae558ab4
+      _portID: 8851b046-b28f-41b2-a7ca-cd3f272dfc8f
+  OnDelete:
+    _parentID: f7101863-fb78-4e89-b52a-a085356c8658
+    _portID: 1f6fc574-c8e2-4d1d-9730-0161d35ef129
+    _connections:
+    - _parentID: aadf27b3-cbbc-4f9b-9cc8-c65fc2aa7776
+      _portID: 9fcbd02e-7820-4db3-a4d0-c5609dbba26a

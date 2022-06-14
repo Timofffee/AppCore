@@ -1,0 +1,8 @@
+VisualElement #title {
+        background-color: #3A6A3A;
+}
+
+VisualElement #title-label {
+        color: #ddd;
+        font-size: 16px;
+}

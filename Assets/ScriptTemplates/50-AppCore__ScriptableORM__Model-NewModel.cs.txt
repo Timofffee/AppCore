@@ -1,0 +1,11 @@
+﻿using Krem.JetPack.ScriptableORM;
+using UnityEngine;
+
+[System.Serializable]
+public class #SCRIPTNAME# : Model 
+{
+    [Header("Data")]
+    [SerializeField] protected string _someStringData;
+    
+    public string SomeStringData { get => _someStringData; set => SetField(ref _someStringData, value); }
+}

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525936067d29cff41b4510d1d53c5f4d, type: 3}
+  m_Name: Simple Arrow SegmentsDataSet
+  m_EditorClassIdentifier: 
+  storable: 0
+  immutable: 1
+  dataProtected: 1
+  data:
+  - _name: 'Rocket Head '
+    _guid: 786af1fa-97c9-4d2a-aae0-0cefe84562dc
+    _segmentType: 0
+    _segmentPrefab: {fileID: 3692245796820054807, guid: c1eed280199b1064cadc22e21674165f,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Thin
+    _guid: 1b6c1c08-f76f-4d28-b9a1-2000ad144008
+    _segmentType: 1
+    _segmentPrefab: {fileID: 1460184391795275685, guid: ef83656cf875cc84a8f0d09675ae1fe1,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Thin To Wide
+    _guid: 8bb377d1-f4bb-476c-8dee-b4fc3d3735bf
+    _segmentType: 2
+    _segmentPrefab: {fileID: 1460184391795275685, guid: ef83656cf875cc84a8f0d09675ae1fe1,
+      type: 3}
+    _height: 0.36
+  - _name: Rocket Wide
+    _guid: cd733d6e-c66d-4d07-8dce-573d559c838c
+    _segmentType: 3
+    _segmentPrefab: {fileID: 1460184391795275685, guid: ef83656cf875cc84a8f0d09675ae1fe1,
+      type: 3}
+    _height: 0.36
+  - _name: 'Rocket Tail '
+    _guid: 6cf4a4e6-f146-4984-ab5b-34463c55891f
+    _segmentType: 4
+    _segmentPrefab: {fileID: 1460184391795275685, guid: ef83656cf875cc84a8f0d09675ae1fe1,
+      type: 3}
+    _height: 0.36

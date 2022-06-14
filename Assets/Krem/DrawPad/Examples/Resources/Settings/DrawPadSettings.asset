@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153d7ad6442c54946a70e50c5300d942, type: 3}
+  m_Name: DrawPadSettings
+  m_EditorClassIdentifier: 
+  storable: 0
+  immutable: 0
+  dataProtected: 0
+  data:
+    _name: Basic Settings
+    _guid: cf47a652-b517-427e-a48b-1bca407905b8
+    _maxAvailableSegments: 10
+    _segmentHeight: 74
+    _segmentCapSize: 10
+    _segmentDrawAngleOffset: -90
+    _segmentPrefab: {fileID: 4662125586487928111, guid: 0842201e43ce8794fba35f2e9dd66260,
+      type: 3}
+    _backgroundColor: {r: 1, g: 1, b: 1, a: 0.1764706}
+    _drawBackgroundColor: {r: 1, g: 1, b: 1, a: 0.6666667}

@@ -1,0 +1,10 @@
+﻿using Krem.AppCore;
+using Krem.AppCore.Attributes;
+using UnityEngine;
+
+[NodeGraphGroupName("NAME_THIS_GROUP")]
+[DisallowMultipleComponent]
+public class #SCRIPTNAME# : CoreComponent
+{    
+    
+}

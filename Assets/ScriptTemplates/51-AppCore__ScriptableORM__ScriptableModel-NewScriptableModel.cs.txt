@@ -1,0 +1,7 @@
+﻿using Krem.JetPack.ScriptableORM;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "#SCRIPTNAME#", menuName = "#SCRIPTNAME#", order = 0)]
+public class #SCRIPTNAME# : ScriptableModel<ModelType> 
+{
+}

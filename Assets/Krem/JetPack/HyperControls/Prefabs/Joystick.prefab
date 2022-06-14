@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &718858888160160299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 718858888160160298}
+  - component: {fileID: 718858888160160276}
+  - component: {fileID: 718858888160160277}
+  m_Layer: 5
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: 5ccb129ab90f7964d90864f0104c97ca, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &718858888160160298
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888160160299}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 718858888531896338}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -575}
+  m_SizeDelta: {x: 250, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &718858888160160276
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888160160299}
+  m_CullTransparentMesh: 0
+--- !u!114 &718858888160160277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888160160299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5b56d9fa0e8bd6e409ed188db38a692c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &718858888222300448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 718858888222300451}
+  - component: {fileID: 718858888222300461}
+  - component: {fileID: 718858888222300450}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: 5ccb129ab90f7964d90864f0104c97ca, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &718858888222300451
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888222300448}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 718858888531896338}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -575}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &718858888222300461
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888222300448}
+  m_CullTransparentMesh: 0
+--- !u!114 &718858888222300450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888222300448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 010a6e5305fa7004f89c5d317b7b47d4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &718858888531896339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 718858888531896338}
+  - component: {fileID: 718858888531896351}
+  - component: {fileID: 718858888531896348}
+  - component: {fileID: 6275892511487294011}
+  - component: {fileID: 7413938560752346656}
+  - component: {fileID: 5601375303193963480}
+  m_Layer: 5
+  m_Name: Joystick
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &718858888531896338
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888531896339}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 718858888160160298}
+  - {fileID: 718858888222300451}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &718858888531896351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888531896339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &718858888531896348
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888531896339}
+  m_CullTransparentMesh: 0
+--- !u!114 &6275892511487294011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888531896339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions:
+  - NodeTypeName: Krem.JetPack.HyperControls.Actions.Joystick.Drag
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"64d6e6ab-88c9-45c4-8fe0-dd3c0a7d4e76","_portID":"45a38d61-fe69-45b9-bd15-57c96c3d40d4"},"OnExecuted":{"_parentID":"64d6e6ab-88c9-45c4-8fe0-dd3c0a7d4e76","_portID":"5bd8e1bf-0c61-460f-862e-7ab557f01800","_connections":[]},"_nodeID":"64d6e6ab-88c9-45c4-8fe0-dd3c0a7d4e76","_nodePosition":{"x":601.0,"y":239.0}}'
+  - NodeTypeName: Krem.JetPack.HyperControls.Actions.Joystick.HideBody
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"865fa704-e7c5-4172-93f4-9e2ac8170b6e","_portID":"8f789d70-6fa4-452d-8e82-f80482dee34e"},"OnExecuted":{"_parentID":"865fa704-e7c5-4172-93f4-9e2ac8170b6e","_portID":"8d449fa6-e5f2-491c-85f5-38247b47baef","_connections":[]},"_nodeID":"865fa704-e7c5-4172-93f4-9e2ac8170b6e","_nodePosition":{"x":866.0,"y":406.0}}'
+  - NodeTypeName: Krem.JetPack.HyperControls.Actions.Joystick.HideHandle
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"a7876243-a9e3-487c-ade1-15ad7e824c79","_portID":"83a93cb2-a8f9-4dd2-8c27-704a29c49814"},"OnExecuted":{"_parentID":"a7876243-a9e3-487c-ade1-15ad7e824c79","_portID":"b2ba01f0-d6ee-4530-ab47-77fde4243855","_connections":[]},"_nodeID":"a7876243-a9e3-487c-ade1-15ad7e824c79","_nodePosition":{"x":866.0,"y":506.0}}'
+  - NodeTypeName: Krem.JetPack.HyperControls.Actions.Joystick.PointerDown
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"6b234db4-5cb7-4bdc-97b8-24e25df87e55","_portID":"69c5a6e8-d448-4ff7-8617-9707a9039ff6"},"OnExecuted":{"_parentID":"6b234db4-5cb7-4bdc-97b8-24e25df87e55","_portID":"c1a596b3-214d-4f50-a3a1-165de8f7dbb4","_connections":[{"_parentID":"b5c20318-addd-476f-89f6-443afa59a16d","_portID":"fe778b72-0271-4944-9d1f-956e27c0c642"},{"_parentID":"278b0b1e-6344-4bd8-831f-7e16c3042189","_portID":"bca5d6ec-73a9-4d42-8935-c2867f4b6c67"}]},"_nodeID":"6b234db4-5cb7-4bdc-97b8-24e25df87e55","_nodePosition":{"x":601.0,"y":150.0}}'
+  - NodeTypeName: Krem.JetPack.HyperControls.Actions.Joystick.PointerUp
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"0ef27555-74cd-4b58-a480-f75a659934fa","_portID":"0104d9ff-f460-4cc2-97ee-137b8b4ab50b"},"OnExecuted":{"_parentID":"0ef27555-74cd-4b58-a480-f75a659934fa","_portID":"95ea8166-b647-477b-9a9a-3d961f1e257a","_connections":[{"_parentID":"865fa704-e7c5-4172-93f4-9e2ac8170b6e","_portID":"8f789d70-6fa4-452d-8e82-f80482dee34e"},{"_parentID":"a7876243-a9e3-487c-ade1-15ad7e824c79","_portID":"83a93cb2-a8f9-4dd2-8c27-704a29c49814"}]},"_nodeID":"0ef27555-74cd-4b58-a480-f75a659934fa","_nodePosition":{"x":601.0,"y":329.0}}'
+  - NodeTypeName: Krem.JetPack.HyperControls.Actions.Joystick.ShowBody
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"b5c20318-addd-476f-89f6-443afa59a16d","_portID":"fe778b72-0271-4944-9d1f-956e27c0c642"},"OnExecuted":{"_parentID":"b5c20318-addd-476f-89f6-443afa59a16d","_portID":"596549a1-9b66-4bb2-9a60-03ab467461a1","_connections":[]},"_nodeID":"b5c20318-addd-476f-89f6-443afa59a16d","_nodePosition":{"x":878.0,"y":39.0}}'
+  - NodeTypeName: Krem.JetPack.HyperControls.Actions.Joystick.ShowHandle
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"278b0b1e-6344-4bd8-831f-7e16c3042189","_portID":"bca5d6ec-73a9-4d42-8935-c2867f4b6c67"},"OnExecuted":{"_parentID":"278b0b1e-6344-4bd8-831f-7e16c3042189","_portID":"4ad063a9-0208-4615-82f6-3511c243f215","_connections":[]},"_nodeID":"278b0b1e-6344-4bd8-831f-7e16c3042189","_nodePosition":{"x":878.0,"y":150.0}}'
+--- !u!114 &7413938560752346656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888531896339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a58a362a85b0f439d8b9f66ac50755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 6a6b3bd5-5692-4cd1-97c7-e528a0e6fe23
+  _nodePosition: {x: 328, y: 214}
+  This:
+    _parentID: 6a6b3bd5-5692-4cd1-97c7-e528a0e6fe23
+    _portID: 0044f67d-c259-40a1-b783-4da390175327
+    _connections: []
+  _scriptableAxis2D: {fileID: 0}
+  _body: {fileID: 718858888160160298}
+  _handle: {fileID: 718858888222300451}
+  joystickPosition: 1
+  PointerDown:
+    _parentID: 6a6b3bd5-5692-4cd1-97c7-e528a0e6fe23
+    _portID: 4872a70a-6cc7-4ab0-a8f3-6b3b80c23b0e
+    _connections:
+    - _parentID: 6b234db4-5cb7-4bdc-97b8-24e25df87e55
+      _portID: 69c5a6e8-d448-4ff7-8617-9707a9039ff6
+  PointerDrag:
+    _parentID: 6a6b3bd5-5692-4cd1-97c7-e528a0e6fe23
+    _portID: 45d854dd-4de0-44aa-a9a5-8c950713a0f7
+    _connections:
+    - _parentID: 64d6e6ab-88c9-45c4-8fe0-dd3c0a7d4e76
+      _portID: 45a38d61-fe69-45b9-bd15-57c96c3d40d4
+  PointerUp:
+    _parentID: 6a6b3bd5-5692-4cd1-97c7-e528a0e6fe23
+    _portID: 9ebf7408-3d93-4286-8c47-b1d0a8a66693
+    _connections:
+    - _parentID: 0ef27555-74cd-4b58-a480-f75a659934fa
+      _portID: 0104d9ff-f460-4cc2-97ee-137b8b4ab50b
+--- !u!114 &5601375303193963480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718858888531896339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc824db7dfb73f043ae903f59b769d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 70137bf1-6669-409a-8bb1-7386127524dc
+  _nodePosition: {x: 294, y: 455}
+  This:
+    _parentID: 70137bf1-6669-409a-8bb1-7386127524dc
+    _portID: 2a0a066d-0466-4031-8283-2630b3de7edd
+    _connections: []
+  OnStart:
+    _parentID: 70137bf1-6669-409a-8bb1-7386127524dc
+    _portID: 122b1e4b-e848-4e37-92d8-f211dfe2f0a0
+    _connections:
+    - _parentID: 865fa704-e7c5-4172-93f4-9e2ac8170b6e
+      _portID: 8f789d70-6fa4-452d-8e82-f80482dee34e
+    - _parentID: a7876243-a9e3-487c-ade1-15ad7e824c79
+      _portID: 83a93cb2-a8f9-4dd2-8c27-704a29c49814
