@@ -26,7 +26,7 @@ namespace Krem.AppCore.EntityGraph.Views
         public Action OnEdgeCreated;
         public Action OnEdgeDeleted;
 
-        private ICoreGraph _coreGraph;
+        private CoreEntity _coreGraph;
 
         // For Content placement on Creating Nodes
         private Vector2 _clickPosition;
@@ -55,7 +55,7 @@ namespace Krem.AppCore.EntityGraph.Views
 
         private void OnUndoRedo()
         {
-            Debug.Log("UndoRedo EntityGraphView");
+            //Debug.Log("UndoRedo EntityGraphView");
         }
 
         private void ConfigureSearchWindow()
@@ -125,7 +125,7 @@ namespace Krem.AppCore.EntityGraph.Views
             }
         }
 
-        public void PopulateView(ICoreGraph coreGraph)
+        public void PopulateView(CoreEntity coreGraph)
         {
             _coreGraph = coreGraph;
 
@@ -286,24 +286,12 @@ namespace Krem.AppCore.EntityGraph.Views
 
         private void CreateEdge(Edge edge, NodeView outNodeView, NodeView inputNodeView)
         {
-            ICoreConnections outputData =
-                outNodeView.CoreNodeInstance.GetPortByName(edge.output.portName) as ICoreConnections;
+            CoreOutputPort outputData =
+                outNodeView.CoreNodeInstance.GetPortByName(edge.output.portName) as CoreOutputPort;
             CorePort inputData = 
-                inputNodeView.CoreNodeInstance.GetPortByName(edge.input.portName) as CorePort; 
+                inputNodeView.CoreNodeInstance.GetPortByName(edge.input.portName) as CorePort;
 
-            if (outputData == null)
-            {
-                Debug.LogError("Cant find OutputPort");
-                return;
-            }
-            
-            if (inputData == null)
-            {
-                Debug.LogError("Cant find InputPort");
-                return;
-            }
-            
-            outputData.Connections.Add((CorePort)inputData);
+            _coreGraph.CreateEdge(outputData, inputData);
         }
 
         private void RemoveEdge(Edge edge)
@@ -311,11 +299,11 @@ namespace Krem.AppCore.EntityGraph.Views
             NodeView outputView = edge.output.node as NodeView;
             NodeView inputView = edge.input.node as NodeView;
 
-            ICoreConnections outputPort =
-                outputView?.CoreNodeInstance.GetPortByID(edge.output.viewDataKey) as ICoreConnections;
+            CoreOutputPort outputPort =
+                outputView?.CoreNodeInstance.GetPortByID(edge.output.viewDataKey) as CoreOutputPort;
             CorePort inputPort = inputView?.CoreNodeInstance.GetPortByID(edge.input.viewDataKey) as CorePort;
 
-            outputPort.Connections.Remove(outputPort.Connections.First(port => port.PortID == inputPort.PortID));
+            _coreGraph.RemoveEdge(outputPort, inputPort);
         }
     }
 }

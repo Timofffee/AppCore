@@ -10,7 +10,7 @@ namespace Krem.AppCore.EntityGraph
     {
         private EntityGraphView _entityGraphView;
         private InspectorView _inspectorView;
-        private ICoreGraph _selectedEntity;
+        private CoreEntity _selectedEntity;
         
         [MenuItem("Krem/AppCore/Show EntityGraph #E")]
         public static void ShowEntityGraph()
@@ -24,7 +24,7 @@ namespace Krem.AppCore.EntityGraph
         {
             rootVisualElement.Clear();
             
-            ICoreGraph coreEntity = (Selection.activeObject as GameObject)?.GetComponent<ICoreGraph>();
+            CoreEntity coreEntity = (Selection.activeObject as GameObject)?.GetComponent<CoreEntity>();
             if (coreEntity == null)
             {
                 return;
@@ -39,7 +39,12 @@ namespace Krem.AppCore.EntityGraph
 
         private void OnUndoRedo()
         {
-            Debug.Log("UndoRedo EntityGraph Window");
+            CreateGUI();
+        }
+
+        private void OnSelectionChange()
+        {
+            CreateGUI();
         }
 
         private void CreateGraphGUI()
@@ -66,15 +71,10 @@ namespace Krem.AppCore.EntityGraph
             _inspectorView.OnNodeValueChanged = OnNodeChanged;
         }
 
-        private void PopulateEntityGraph(ICoreGraph entity)
+        private void PopulateEntityGraph(CoreEntity entity)
         {
             _selectedEntity = entity;
             _entityGraphView.PopulateView(_selectedEntity);
-        }
-
-        private void OnSelectionChange()
-        {
-            CreateGUI();
         }
 
         private void OnNodeSelectionChanged(NodeView nodeView)
@@ -84,29 +84,29 @@ namespace Krem.AppCore.EntityGraph
         
         private void OnNodeCreated()
         {
-            _selectedEntity.SetDirty();
+            //_selectedEntity.SetDirty();
         }
 
         private void OnNodeDeleted()
         {
             _inspectorView.ClearInspector();
             
-            _selectedEntity.SetDirty();
+            //_selectedEntity.SetDirty();
         }
 
         private void OnNodeChanged(NodeView nodeView)
         {
-            _selectedEntity.SetDirty();
+            //_selectedEntity.SetDirty();
         }
 
         private void OnEdgeCreated()
         {
-            _selectedEntity.SetDirty();
+            //_selectedEntity.SetDirty();
         }
 
         private void OnEdgeDeleted()
         {
-            _selectedEntity.SetDirty();
+            //_selectedEntity.SetDirty();
         }
     }
 }
