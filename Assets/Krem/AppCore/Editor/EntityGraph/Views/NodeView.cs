@@ -4,6 +4,7 @@ using System.Reflection;
 using Krem.AppCore.Extensions;
 using Krem.AppCore.Interfaces;
 using Krem.AppCore.Ports;
+using Krem.AppCore.Services;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -22,9 +23,12 @@ namespace Krem.AppCore.EntityGraph.Views
         public Action<NodeView> OnNodeSelected;
         public Action<NodeView> OnNodeChanged;
         
-        public NodeView(ICoreNode coreNodeInstance)
+        private CoreEntity _coreGraph;
+        
+        public NodeView(ICoreNode coreNodeInstance, CoreEntity coreGraph)
         {
             CoreNodeInstance = coreNodeInstance;
+            _coreGraph = coreGraph;
 
             title = coreNodeInstance.GetType().Name;
             viewDataKey = coreNodeInstance.NodeID;
@@ -48,7 +52,7 @@ namespace Krem.AppCore.EntityGraph.Views
             base.SetPosition(newPos);
 
             Vector2 position = new Vector2(newPos.xMin, newPos.yMin);
-            CoreNodeInstance.NodePosition = position;
+            _coreGraph.SetNodePosition(CoreNodeInstance, position);
             
             OnNodeChanged?.Invoke(this);
         }

@@ -7,6 +7,7 @@ using Krem.AppCore.Attributes;
 using Krem.AppCore.Interfaces;
 using Krem.AppCore.Extensions;
 using Krem.AppCore.Ports;
+using Krem.AppCore.Services;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

@@ -217,10 +217,10 @@ namespace Krem.AppCore.EntityGraph.Views
             NodeView nodeView = null;
 
             if (coreNode is CoreComponent component)
-                nodeView = new ComponentNodeView(component);
+                nodeView = new ComponentNodeView(component, _coreGraph);
 
             if (coreNode is CoreAction action)
-                nodeView = new ActionNodeView(action);
+                nodeView = new ActionNodeView(action, _coreGraph);
 
             if (nodeView == null)
             {

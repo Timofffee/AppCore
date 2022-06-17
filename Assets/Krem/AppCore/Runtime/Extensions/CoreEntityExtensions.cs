@@ -177,6 +177,35 @@ namespace Krem.AppCore.Extensions
             Debug.LogError("Something went wrong when Remove Edge");
         }
         
+        public static void SetNodePosition(this CoreEntity coreEntity, ICoreNode node, Vector2 position)
+        {
+            if (node == null)
+            {
+                Debug.LogError("Set Node Position Failed: node is null");
+                return;
+            }
+
+            if (node.GetType().IsSubclassOf(typeof(CoreComponent)))
+            {
+                Undo.RecordObject((CoreComponent)node, coreEntity.name + " Change Node Position");
+                node.NodePosition = position;
+                EditorUtility.SetDirty((CoreComponent)node);
+                
+                return;
+            }
+
+            if (node.GetType().IsSubclassOf(typeof(CoreAction)))
+            {
+                UndoRecord(coreEntity, "Change Node Position");
+                node.NodePosition = position;
+                EditorUtility.SetDirty(coreEntity);
+                
+                return;
+            }
+
+            Debug.LogError("Something went wrong when Remove Edge");
+        }
+        
         public static void UndoRecord(this CoreEntity coreEntity, string caption)
         {
             if (Application.isPlaying)
@@ -213,6 +242,55 @@ namespace Krem.AppCore.Extensions
             if (instanceType == PrefabAssetType.NotAPrefab)
             {
             }
+        }
+
+        public static bool CheckGraphIsError(this CoreEntity coreEntity)
+        {
+            bool isError = false;
+            
+            // Check Ports parent
+            coreEntity.Nodes.ForEach(node =>
+            {
+                node.GetPortsSubclassOf<CorePort>().ForEach(outputPort =>
+                {
+                    if (outputPort.ParentID != node.NodeID)
+                    {
+                        isError = true;
+                    }
+                    
+                });
+            });
+
+
+            // Check Actions List
+            coreEntity.Actions.ForEach(node =>
+            {
+                if (node == null)
+                {
+                    isError = true;
+                }
+            });
+
+            // Check Connections
+            coreEntity.Nodes.ForEach(node =>
+            {
+                node.GetPortsSubclassOf<CoreOutputPort>().ForEach(outputPort =>
+                {
+                    List<CorePort> newConnections = new List<CorePort>();
+
+                    ((CoreOutputPort) outputPort).Connections.ForEach(inputPort =>
+                    {
+                        ICoreNode parentNode = coreEntity.FindNodeByID(inputPort.ParentID);
+                        ICorePort port = parentNode?.GetPortByID(inputPort.PortID);
+                        if (parentNode == null || port == null)
+                        {
+                            isError = true;
+                        }
+                    });
+                });
+            });
+
+            return isError;
         }
         
         public static void FixGraph(this CoreEntity coreEntity)

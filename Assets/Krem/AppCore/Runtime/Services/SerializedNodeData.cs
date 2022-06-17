@@ -2,7 +2,7 @@ using System;
 using Krem.AppCore.Interfaces;
 using UnityEngine;
 
-namespace Krem.AppCore
+namespace Krem.AppCore.Services
 {
     [Serializable]
     public class SerializedNodeData

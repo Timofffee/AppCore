@@ -702,6 +702,9 @@ MonoBehaviour:
   - NodeTypeName: Krem.SomeFX.Actions.RefreshCoinValue
     AssemblyName: Assembly-CSharp
     SerializedData: '{"Execute":{"_parentID":"cfdb8037-ef2a-4c59-9267-4ec9f3d36ca0","_portID":"f11e2bb4-5ce9-40f5-9fae-0b92b0449ba9"},"OnExecuted":{"_parentID":"cfdb8037-ef2a-4c59-9267-4ec9f3d36ca0","_portID":"b4248efe-a40a-4ab9-bcb9-09ab1978d28d","_connections":[]},"_nodeID":"cfdb8037-ef2a-4c59-9267-4ec9f3d36ca0","_nodePosition":{"x":825.0,"y":395.0},"value":0,"text":{"instanceID":0},"actionTime":1.0}'
+  - NodeTypeName: App.TestUpdatedGraph.Actions.TTAction
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"80065a6d-cc5c-443d-8586-741f3c4f25b8","_portID":"deaad521-9b10-4afc-9ea4-49862f86d13c"},"OnExecuted":{"_parentID":"80065a6d-cc5c-443d-8586-741f3c4f25b8","_portID":"ab370d16-d5f3-4b1e-96d7-4a57b7b0c87f","_connections":[]},"_nodeID":"80065a6d-cc5c-443d-8586-741f3c4f25b8","_nodePosition":{"x":524.0,"y":279.0}}'
 --- !u!4 &1697890509
 Transform:
   m_ObjectHideFlags: 0
