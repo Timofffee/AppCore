@@ -1,5 +1,6 @@
-using Krem.AppCore.Interfaces;
+using System;
 using Krem.AppCore.EntityGraph.Views;
+using Krem.AppCore.Extensions;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -10,13 +11,21 @@ namespace Krem.AppCore.EntityGraph
     {
         private EntityGraphView _entityGraphView;
         private InspectorView _inspectorView;
+        private VisualElement _graphIsBrokenCaptionView;
+        
         private CoreEntity _selectedEntity;
         
         [MenuItem("Krem/AppCore/Show EntityGraph #E")]
         public static void ShowEntityGraph()
         {
             EntityGraph wnd = GetWindow<EntityGraph>();
-            
+
+            if (wnd == null)
+            {
+                wnd.Close();
+                wnd = GetWindow<EntityGraph>();
+            }
+
             wnd.titleContent = new GUIContent("EntityGraph");
         }
 
@@ -29,12 +38,31 @@ namespace Krem.AppCore.EntityGraph
             {
                 return;
             }
-
+            
+            _selectedEntity = coreEntity;
+            
             CreateGraphGUI();
-            BindEvents();
-            PopulateEntityGraph(coreEntity);
+            
+            if (coreEntity.CheckGraphIsError() || coreEntity.GraphIsBrokenState)
+            {
+                coreEntity.GraphIsBrokenState = true;
+                Debug.LogError("Entity: " + this + " Graph is Broken");
+                return;
+            }
+            
+            try
+            {
+                BindEvents();
+                PopulateEntityGraph();
 
-            Undo.undoRedoPerformed += OnUndoRedo;
+                Undo.undoRedoPerformed += OnUndoRedo;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError(e);
+                coreEntity.GraphIsBrokenState = true;
+                throw;
+            }
         }
 
         private void OnUndoRedo()
@@ -58,6 +86,16 @@ namespace Krem.AppCore.EntityGraph
             
             _entityGraphView = root.Q<EntityGraphView>();
             _inspectorView = root.Q<InspectorView>();
+            
+            _graphIsBrokenCaptionView = root.Q("BrokenGraphCaption");
+            if (_selectedEntity.GraphIsBrokenState)
+            {
+                _graphIsBrokenCaptionView.visible = true;
+            }
+            else
+            {
+                _graphIsBrokenCaptionView.visible = false;
+            }
         }
 
         private void BindEvents()
@@ -71,9 +109,8 @@ namespace Krem.AppCore.EntityGraph
             _inspectorView.OnNodeValueChanged = OnNodeChanged;
         }
 
-        private void PopulateEntityGraph(CoreEntity entity)
+        private void PopulateEntityGraph()
         {
-            _selectedEntity = entity;
             _entityGraphView.PopulateView(_selectedEntity);
         }
 

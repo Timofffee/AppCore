@@ -4,7 +4,7 @@ using Krem.AppCore.Attributes;
 namespace App.TestUpdatedGraph.Actions
 {
     [NodeGraphGroupName("Test")] 
-    public class TTAction : CoreAction 
+    public class KkTAction : CoreAction 
     {
         protected override bool Action()
         {

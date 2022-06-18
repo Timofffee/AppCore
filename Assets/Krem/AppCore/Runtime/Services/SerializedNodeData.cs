@@ -20,10 +20,19 @@ namespace Krem.AppCore.Services
 
         public ICoreNode Deserialize()
         {
-            ICoreNode result = Activator.CreateInstance(AssemblyName, NodeTypeName).Unwrap() as ICoreNode;
-            JsonUtility.FromJsonOverwrite(SerializedData, result);
+            try
+            {
+                ICoreNode result = Activator.CreateInstance(AssemblyName, NodeTypeName).Unwrap() as ICoreNode;
+                JsonUtility.FromJsonOverwrite(SerializedData, result);
+                
+                return result;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Node: " + NodeTypeName + " In Assembly: " + AssemblyName + " Is Lost");
+            }
 
-            return result;
+            return null;
         }
     }
 }

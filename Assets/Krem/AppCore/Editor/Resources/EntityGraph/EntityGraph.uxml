@@ -1,21 +1,17 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
     <Krem.AppCore.EntityGraph.Views.SplitView fixed-pane-initial-dimension="300" name="MainGraph">
         <ui:VisualElement name="Left" style="width: 300px; background-color: rgb(46, 46, 46); flex-grow: 1; min-width: 300px;">
-            <ui:Label text="Inspector" display-tooltip-when-elided="true" style="background-color: rgba(38, 38, 38, 255);" />
+            <ui:Label text="Inspector" display-tooltip-when-elided="true" style="background-color: rgb(38, 38, 38);" />
             <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1">
                 <Krem.AppCore.EntityGraph.Views.InspectorView style="align-items: stretch; flex-grow: 0; max-height: none; min-width: auto; width: auto;" />
             </ui:ScrollView>
         </ui:VisualElement>
         <ui:VisualElement name="Right" style="flex-shrink: 1; min-width: auto; flex-direction: row;">
             <Krem.AppCore.EntityGraph.Views.EntityGraphView focusable="true" style="flex-grow: 1; align-items: stretch; justify-content: flex-start; flex-direction: column;">
-                <ui:Label text="Entity Graph" display-tooltip-when-elided="true" style="flex-grow: 0; flex-direction: column; right: 0; background-color: rgba(38, 38, 38, 255);" />
-                <uie:Toolbar>
-                    <uie:ToolbarSearchField focusable="true" />
-                    <ui:Toggle label="Toggle" />
-                    <uie:ToolbarButton text="Button" display-tooltip-when-elided="true" />
-                </uie:Toolbar>
+                <ui:Label text="Entity Graph" display-tooltip-when-elided="true" style="flex-grow: 0; flex-direction: column; right: 0; background-color: rgb(38, 38, 38);" />
+                <uie:Toolbar />
             </Krem.AppCore.EntityGraph.Views.EntityGraphView>
-            <ui:Foldout text="Foldout" style="align-items: flex-start; position: relative;" />
         </ui:VisualElement>
     </Krem.AppCore.EntityGraph.Views.SplitView>
+    <ui:VisualElement name="BrokenGraphCaption" tabindex="0" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; -unity-background-image-tint-color: rgb(0, 0, 0); flex-grow: 1; width: 100%; height: 100%; background-color: rgb(0, 0, 0); display: flex;" />
 </ui:UXML>

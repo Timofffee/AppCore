@@ -9,12 +9,6 @@ using Krem.AppCore.Extensions;
 using Krem.AppCore.Ports;
 using Krem.AppCore.Services;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
-#if UNITY_EDITOR
-using UnityEditor;
-using UnityEditor.SceneManagement;
-#endif
 
 namespace Krem.AppCore
 {
@@ -23,6 +17,7 @@ namespace Krem.AppCore
     {
         private List<CoreAction> _actions = new List<CoreAction>();
         [SerializeField] private List<SerializedNodeData> _serializedActions = new List<SerializedNodeData>();
+        [SerializeField, InspectorReadOnly] private bool _graphIsBroken = false;
 
         public List<ICoreNode> Nodes
         {
@@ -47,8 +42,20 @@ namespace Krem.AppCore
             set => _actions = value;
         }
 
+        public bool GraphIsBrokenState
+        {
+            get => _graphIsBroken;
+            set => _graphIsBroken = value;
+        }
+
         private void Awake()
         {
+            if (this.CheckGraphIsError() || GraphIsBrokenState)
+            {
+                GraphIsBrokenState = true;
+                throw new Exception("Entity: " + this + " Graph is Broken");
+            }
+
             CheckComponentsForNullReferences();
             BindOutputData();
             BindInputSignals();
@@ -59,11 +66,21 @@ namespace Krem.AppCore
 
         public void OnBeforeSerialize()
         {
+            if (GraphIsBrokenState)
+            {
+                return;
+            }
+            
             Serialize();
         }
 
         public void OnAfterDeserialize()
         {
+            if (GraphIsBrokenState)
+            {
+                return;
+            }
+            
             Deserialize();
         }
 

@@ -251,6 +251,12 @@ namespace Krem.AppCore.Extensions
             // Check Ports parent
             coreEntity.Nodes.ForEach(node =>
             {
+                if (node == null)
+                {
+                    isError = true;
+                    return;
+                }
+                
                 node.GetPortsSubclassOf<CorePort>().ForEach(outputPort =>
                 {
                     if (outputPort.ParentID != node.NodeID)
@@ -274,6 +280,12 @@ namespace Krem.AppCore.Extensions
             // Check Connections
             coreEntity.Nodes.ForEach(node =>
             {
+                if (node == null)
+                {
+                    isError = true;
+                    return;
+                }
+                
                 node.GetPortsSubclassOf<CoreOutputPort>().ForEach(outputPort =>
                 {
                     List<CorePort> newConnections = new List<CorePort>();
@@ -300,6 +312,11 @@ namespace Krem.AppCore.Extensions
             // Fix Ports parent
             coreEntity.Nodes.ForEach(node =>
             {
+                if (node == null)
+                {
+                    return;
+                }
+                
                 node.GetPortsSubclassOf<CorePort>().ForEach(outputPort =>
                 {
                     if (outputPort.ParentID != node.NodeID)
@@ -369,6 +386,8 @@ namespace Krem.AppCore.Extensions
                     }
                 });
             });
+
+            coreEntity.GraphIsBrokenState = false;
         }
         
         #endif
