@@ -694,7 +694,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _serializedActions: []
+  _serializedActions:
+  - NodeTypeName: App.TestUpdatedGraph.Actions.KTAction
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"a1c885ba-81c5-4571-b7c0-163a94174ee5","_portID":"ac1ee8f5-33f2-4458-a460-62aba5998a24"},"OnExecuted":{"_parentID":"a1c885ba-81c5-4571-b7c0-163a94174ee5","_portID":"ec137d30-ba1e-44e3-aab1-3662558743ed","_connections":[]},"_nodeID":"a1c885ba-81c5-4571-b7c0-163a94174ee5","_nodePosition":{"x":540.0,"y":326.0}}'
   _graphIsBroken: 0
 --- !u!4 &1733029370
 Transform:

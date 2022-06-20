@@ -13,5 +13,7 @@
             </Krem.AppCore.EntityGraph.Views.EntityGraphView>
         </ui:VisualElement>
     </Krem.AppCore.EntityGraph.Views.SplitView>
-    <ui:VisualElement name="BrokenGraphCaption" tabindex="0" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; -unity-background-image-tint-color: rgb(0, 0, 0); flex-grow: 1; width: 100%; height: 100%; background-color: rgb(0, 0, 0); display: flex;" />
+    <ui:VisualElement name="BrokenGraphCaption" tabindex="0" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; -unity-background-image-tint-color: rgb(0, 0, 0); flex-grow: 1; width: 100%; height: 100%; background-color: rgb(0, 0, 0); display: none;">
+        <ui:Label text="Graph is Broken" display-tooltip-when-elided="true" style="top: 43%; align-items: center; color: rgb(253, 63, 69); font-size: 95px; -unity-text-align: upper-center;" />
+    </ui:VisualElement>
 </ui:UXML>

@@ -75,6 +75,11 @@ namespace Krem.AppCore.EntityGraph
             CreateGUI();
         }
 
+        private void OnProjectChange()
+        {
+            CreateGUI();
+        }
+
         private void CreateGraphGUI()
         {
             VisualElement root = rootVisualElement;
