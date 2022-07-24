@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Krem.JetPack.HyperControls.Actions.Movables
 {
-    [NodeGraphGroupName("Jet Pack/HyperControls/Movables")] 
+    [NodeGraphGroupName("Jet Pack/Hyper Controls/Movables")] 
     public class RigidbodySetVelocityXZ : CoreAction
     {
         [InjectComponent] private RigidbodyMovable _rigidbodyMovable;

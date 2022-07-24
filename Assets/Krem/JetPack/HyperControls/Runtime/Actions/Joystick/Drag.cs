@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Krem.JetPack.HyperControls.Actions.Joystick
 {
-    [NodeGraphGroupName("Jet Pack/HyperControls/Joystick")]
+    [NodeGraphGroupName("Jet Pack/Hyper Controls/Joystick")]
     public class Drag : CoreAction
     {
         [InjectComponent] private Components.Joystick.Joystick _joystick;

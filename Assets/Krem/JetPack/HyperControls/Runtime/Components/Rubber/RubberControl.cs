@@ -1,33 +1,34 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using Krem.AppCore.Attributes;
 using Krem.AppCore.Ports;
 using Krem.JetPack.HyperControls.Scriptables;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Krem.JetPack.HyperControls.Components.Joystick
+namespace Krem.JetPack.HyperControls.Components.Rubber
 {
-    public enum JoystickPosition
+    public enum RubberPosition
     {
         Fixed,
-        FloatingFixed,
-        Floating
+        FloatingFixed
     }
     
-    [NodeGraphGroupName("Jet Pack/Hyper Controls/Joystick")]
+    [NodeGraphGroupName("Jet Pack/Hyper Controls/Rubber")]
     [DisallowMultipleComponent]
-    public class Joystick : Axis2D, IPointerDownHandler, IDragHandler, IPointerUpHandler
-    {
+    public class RubberControl : Axis2D, IPointerDownHandler, IDragHandler, IPointerUpHandler
+    {    
         [Header("Dependencies")]
         [SerializeField, NotNull] protected ScriptableAxis2D _scriptableAxis2D;
         
         [Header("Components")]
         [SerializeField, NotNull] protected RectTransform _body;
         [SerializeField, NotNull] protected RectTransform _handle;
+        [SerializeField, NotNull] protected RectTransform _center;
+        [SerializeField, NotNull] protected RectTransform _trail;
 
         [Header("Settings")]
-        public JoystickPosition joystickPosition = JoystickPosition.FloatingFixed;
-
+        public RubberPosition rubberPosition = RubberPosition.FloatingFixed;
+        
         [Header("Output Ports")]
         public OutputSignal PointerDown;
         public OutputSignal PointerDrag;
@@ -42,11 +43,15 @@ namespace Krem.JetPack.HyperControls.Components.Joystick
         public override Vector2 Axis { get => _scriptableAxis2D.Axis; set => _scriptableAxis2D.Axis = value; }
         public RectTransform Body => _body;
         public RectTransform Handle => _handle;
+        public RectTransform Center => _center;
+        public RectTransform Trail => _trail;
         public Camera CanvasCamera => _canvasCamera;
         public Canvas RootCanvas => _rootCanvas;
         public RectTransform RectTransform => _rectTransform;
         public PointerEventData PointerEventData => _pointerEventData;
         public float Radius => _radius;
+
+        public Rect InitialTrailRect;
 
         private void Awake()
         {
@@ -54,8 +59,9 @@ namespace Krem.JetPack.HyperControls.Components.Joystick
             _canvasCamera = RootCanvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : RootCanvas.worldCamera;
             _rectTransform = GetComponent<RectTransform>();
             _radius = _body.rect.width / 2;
+            InitialTrailRect = Trail.rect;
         }
-
+        
         public void OnPointerDown(PointerEventData eventData)
         {
             _pointerEventData = eventData;

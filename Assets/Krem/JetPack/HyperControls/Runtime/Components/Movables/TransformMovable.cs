@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Krem.JetPack.HyperControls.Components.Movables
 {
-    [NodeGraphGroupName("Jet Pack/HyperControls/Movables")]
+    [NodeGraphGroupName("Jet Pack/Hyper Controls/Movables")]
     [DisallowMultipleComponent]
     public class TransformMovable : CoreComponent
     {

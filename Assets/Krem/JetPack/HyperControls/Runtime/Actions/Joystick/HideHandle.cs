@@ -3,7 +3,7 @@ using Krem.AppCore.Attributes;
 
 namespace Krem.JetPack.HyperControls.Actions.Joystick
 {
-    [NodeGraphGroupName("Jet Pack/HyperControls/Joystick")]
+    [NodeGraphGroupName("Jet Pack/Hyper Controls/Joystick")]
     public class HideHandle : CoreAction
     {
         [InjectComponent] private Components.Joystick.Joystick _joystick;

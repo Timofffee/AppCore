@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Krem.JetPack.HyperControls.Components
 {
-    [NodeGraphGroupName("Jet Pack/HyperControls")]
+    [NodeGraphGroupName("Jet Pack/Hyper Controls")]
     public class ScriptableAxis2DDecorator : Axis2D
     {    
         [Header("Dependencies")]
