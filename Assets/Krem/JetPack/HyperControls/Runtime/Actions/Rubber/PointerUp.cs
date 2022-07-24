@@ -1,7 +1,6 @@
 ﻿using Krem.AppCore;
 using Krem.AppCore.Attributes;
 using Krem.JetPack.HyperControls.Components.Rubber;
-using UnityEngine;
 
 namespace Krem.JetPack.HyperControls.Actions.Rubber
 {
@@ -12,10 +11,8 @@ namespace Krem.JetPack.HyperControls.Actions.Rubber
 
         protected override bool Action()
         {
-            _rubberControl.Handle.anchoredPosition = _rubberControl.Body.anchoredPosition;
+            //_rubberControl.Handle.anchoredPosition = _rubberControl.Body.anchoredPosition;
             
-            _rubberControl.Axis = Vector2.zero;
-
             return true;
         }
     }

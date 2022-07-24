@@ -50,8 +50,7 @@ namespace Krem.JetPack.HyperControls.Components.Rubber
         public RectTransform RectTransform => _rectTransform;
         public PointerEventData PointerEventData => _pointerEventData;
         public float Radius => _radius;
-
-        public Rect InitialTrailRect;
+        public bool Triggered = false;
 
         private void Awake()
         {
@@ -59,11 +58,17 @@ namespace Krem.JetPack.HyperControls.Components.Rubber
             _canvasCamera = RootCanvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : RootCanvas.worldCamera;
             _rectTransform = GetComponent<RectTransform>();
             _radius = _body.rect.width / 2;
-            InitialTrailRect = Trail.rect;
+            
+            Trail.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 0f);
         }
         
         public void OnPointerDown(PointerEventData eventData)
         {
+            if (Triggered)
+            {
+                return;
+            }
+            
             _pointerEventData = eventData;
             
             PointerDown.Invoke();
@@ -71,6 +76,11 @@ namespace Krem.JetPack.HyperControls.Components.Rubber
 
         public void OnDrag(PointerEventData eventData)
         {
+            if (Triggered)
+            {
+                return;
+            }
+            
             _pointerEventData = eventData;
             
             PointerDrag.Invoke();
@@ -78,6 +88,11 @@ namespace Krem.JetPack.HyperControls.Components.Rubber
 
         public void OnPointerUp(PointerEventData eventData)
         {
+            if (Triggered)
+            {
+                return;
+            }
+            
             _pointerEventData = eventData;
             
             PointerUp.Invoke();
