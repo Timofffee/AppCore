@@ -41,10 +41,10 @@ namespace Krem.JetPack.HyperControls.Actions.Rubber
         
         IEnumerator Animate()
         {
-            while (true)
+            do
             {
                 yield return new WaitForEndOfFrame();
-                
+
                 _elapsedTime += Time.deltaTime;
 
                 _offset = Mathf.Lerp(
@@ -53,11 +53,7 @@ namespace Krem.JetPack.HyperControls.Actions.Rubber
                     _elapsedTime / AnimationTime);
                 _rubberControl.Trail.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _offset);
 
-                if (_elapsedTime > AnimationTime)
-                {
-                    break;
-                }
-            }
+            } while (_elapsedTime <= AnimationTime);
             
             _rubberControl.Triggered = false;
             

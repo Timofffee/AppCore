@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6230128696064964109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1922319632186432722}
+  - component: {fileID: 4422047693502092874}
+  - component: {fileID: 7767038713810791340}
+  m_Layer: 0
+  m_Name: Max SDK System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1922319632186432722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6230128696064964109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4422047693502092874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6230128696064964109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6e5850f160a5534ba6f95253df00654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 0d1eaca2-bf1c-4b34-afa0-006924725f30
+  _nodePosition: {x: 7.6450295, y: 0.0000014305115}
+  This:
+    _parentID: 0d1eaca2-bf1c-4b34-afa0-006924725f30
+    _portID: db6f66d6-f0b1-4504-9a4b-2bb31e94ae3d
+    _connections: []
+  maxSdkKey: 
+  reportInDebugLog: 1
+  interstitialAdUnitId: 
+  interstitial: 1
+  rewardedAdUnitId: 
+  reward: 1
+  rewardedInterstitialAdUnitId: 
+  rewardedInterstitial: 1
+  bannerAdUnitId: 
+  bannerPosition: 7
+  banner: 1
+  mRecAdUnitId: 
+  mRec: 1
+  onInitialized:
+    m_PersistentCalls:
+      m_Calls: []
+  CallInitialize:
+    _parentID: 0d1eaca2-bf1c-4b34-afa0-006924725f30
+    _portID: 2711662e-50e3-45fb-a1fa-5fe786f72799
+  OnInitialize:
+    _parentID: 0d1eaca2-bf1c-4b34-afa0-006924725f30
+    _portID: 3bdb0f80-ba00-4fab-b735-6ddc6871ab4a
+    _connections: []
+--- !u!114 &7767038713810791340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6230128696064964109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions: []
+  _graphIsBroken: 0

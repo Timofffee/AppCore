@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8849109763043615031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8849109763043615034}
+  - component: {fileID: 8849109763043615029}
+  - component: {fileID: 8849109763043615028}
+  - component: {fileID: 8849109763043615035}
+  m_Layer: 0
+  m_Name: Show Interstitial
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: f68711de17af4054ca82cd9fa91917c7, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8849109763043615034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849109763043615031}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8849109763043615029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849109763043615031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions:
+  - NodeTypeName: Krem.AzureAnalytics.Actions.MaxSdkActions.CanShowInterstitialCondition
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"3cef7f85-cc98-42fa-9a72-1aaf09c9b702","_portID":"6e478899-b4d6-4830-a0f4-dffd60153d14"},"OnExecuted":{"_parentID":"3cef7f85-cc98-42fa-9a72-1aaf09c9b702","_portID":"2c8b1c99-7b0c-4a98-8285-b448c2e5d25b","_connections":[]},"_nodeID":"3cef7f85-cc98-42fa-9a72-1aaf09c9b702","_nodePosition":{"x":544.0,"y":161.0},"showEveryLevels":3,"showEverySeconds":180.0,"OnInterstitialCanShown":{"_parentID":"3cef7f85-cc98-42fa-9a72-1aaf09c9b702","_portID":"86aa59dc-f999-4279-86e5-fe8251970b51","_connections":[]},"OnInterstitialCantShown":{"_parentID":"3cef7f85-cc98-42fa-9a72-1aaf09c9b702","_portID":"dcf5a28b-39f2-4c48-9615-591bbb9e9788","_connections":[]}}'
+  - NodeTypeName: Krem.AzureAnalytics.Actions.MaxSdkActions.ShowInterstitial
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"7d2d4132-d10b-4265-94ac-4b827a50400f","_portID":"a655bce2-4bf2-4f34-a774-f85e154b005b"},"OnExecuted":{"_parentID":"7d2d4132-d10b-4265-94ac-4b827a50400f","_portID":"09522e1e-cf5a-4cd6-ba29-8aa2dbf59e42","_connections":[]},"_nodeID":"7d2d4132-d10b-4265-94ac-4b827a50400f","_nodePosition":{"x":882.0,"y":161.0},"OnInterstitialAvailable":{"_parentID":"7d2d4132-d10b-4265-94ac-4b827a50400f","_portID":"140ad7cd-fb30-497e-af62-a583426a7141","_connections":[]},"OnInterstitialNotReady":{"_parentID":"7d2d4132-d10b-4265-94ac-4b827a50400f","_portID":"8d19909f-6ef5-424a-a377-01af7e9befb6","_connections":[]},"OnInterstitialDisplayed":{"_parentID":"7d2d4132-d10b-4265-94ac-4b827a50400f","_portID":"49e78f08-b720-480a-a1ce-fd6d17a22784","_connections":[]},"OnInterstitialFailedToDisplay":{"_parentID":"7d2d4132-d10b-4265-94ac-4b827a50400f","_portID":"224050f8-cd99-4691-b772-88e292ba462f","_connections":[]},"OnInterstitialClicked":{"_parentID":"7d2d4132-d10b-4265-94ac-4b827a50400f","_portID":"3fb61e1a-2484-4018-9b3c-8daefbda6013","_connections":[]},"OnInterstitialHidden":{"_parentID":"7d2d4132-d10b-4265-94ac-4b827a50400f","_portID":"53da6ab2-d74c-4c57-9bd9-3def25d853aa","_connections":[]}}'
+  - NodeTypeName: Krem.AzureAnalytics.Actions.AppMetricaActions.ReportVideoAds
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"750bee16-7b0d-42b5-997f-e6311bc41b30","_portID":"08438c1b-3b53-432e-9f6e-76e99578d1b2"},"OnExecuted":{"_parentID":"750bee16-7b0d-42b5-997f-e6311bc41b30","_portID":"dbaa79c8-55d5-4dc4-bea7-31cffeac964f","_connections":[]},"_nodeID":"750bee16-7b0d-42b5-997f-e6311bc41b30","_nodePosition":{"x":1283.0,"y":-124.87998962402344},"adResult":0,"eventName":9,"reportEventToAppMetrica":true,"Enable":{"_parentID":"750bee16-7b0d-42b5-997f-e6311bc41b30","_portID":"18edc666-85f6-4681-aff5-2713437e9ce4"},"Disable":{"_parentID":"750bee16-7b0d-42b5-997f-e6311bc41b30","_portID":"fe12fe0f-0cf0-4092-8f8e-da3c71da1c8c"}}'
+  - NodeTypeName: Krem.AzureAnalytics.Actions.AppMetricaActions.ReportVideoAds
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"1a2ab70e-534d-4005-84ce-d9a3e1c809a2","_portID":"b72805f1-dc7c-4824-ac84-bf3a47d7aec1"},"OnExecuted":{"_parentID":"1a2ab70e-534d-4005-84ce-d9a3e1c809a2","_portID":"7c4947d9-20cd-4d08-b541-e3f6acc3ad02","_connections":[]},"_nodeID":"1a2ab70e-534d-4005-84ce-d9a3e1c809a2","_nodePosition":{"x":1283.0,"y":12.0},"adResult":1,"eventName":9,"reportEventToAppMetrica":true,"Enable":{"_parentID":"1a2ab70e-534d-4005-84ce-d9a3e1c809a2","_portID":"304862cc-f550-4ea9-b60d-226990004324"},"Disable":{"_parentID":"1a2ab70e-534d-4005-84ce-d9a3e1c809a2","_portID":"eb799bd2-3cb9-4476-8856-8185955fe469"}}'
+  - NodeTypeName: Krem.AzureAnalytics.Actions.AppMetricaActions.ReportVideoAds
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"1151d4c1-8234-499f-b46c-3f105d535df9","_portID":"45699e27-73f1-4043-a9b0-5073eababe52"},"OnExecuted":{"_parentID":"1151d4c1-8234-499f-b46c-3f105d535df9","_portID":"fb31e76e-f9ab-4c4f-92ac-50aa3e4c045e","_connections":[]},"_nodeID":"1151d4c1-8234-499f-b46c-3f105d535df9","_nodePosition":{"x":1283.0,"y":146.0},"adResult":4,"eventName":11,"reportEventToAppMetrica":true,"Enable":{"_parentID":"1151d4c1-8234-499f-b46c-3f105d535df9","_portID":"51ae567f-7aaa-43d2-beb4-17cfd1e1ef7f"},"Disable":{"_parentID":"1151d4c1-8234-499f-b46c-3f105d535df9","_portID":"11967c9f-1314-4977-b6b8-ad6b9491e669"}}'
+  - NodeTypeName: Krem.AzureAnalytics.Actions.AppMetricaActions.ReportVideoAds
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"c72b1ab7-dcd6-4354-8006-de8a144be18a","_portID":"e6f3eee0-dbee-4cc2-8dc9-e3b9e34e12d5"},"OnExecuted":{"_parentID":"c72b1ab7-dcd6-4354-8006-de8a144be18a","_portID":"3647ab4d-57f5-45b4-9c42-b62997d7dd83","_connections":[]},"_nodeID":"c72b1ab7-dcd6-4354-8006-de8a144be18a","_nodePosition":{"x":1283.0,"y":286.0},"adResult":2,"eventName":10,"reportEventToAppMetrica":true,"Enable":{"_parentID":"c72b1ab7-dcd6-4354-8006-de8a144be18a","_portID":"a7dd76a9-3260-418f-9a93-93a2028316a1"},"Disable":{"_parentID":"c72b1ab7-dcd6-4354-8006-de8a144be18a","_portID":"843ce968-09cb-4654-a7cc-69d3161eb739"}}'
+  - NodeTypeName: Krem.AzureAnalytics.Actions.AppMetricaActions.ReportVideoAds
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"0c6a0dcf-09cb-4884-9120-b3325f3c3f1f","_portID":"8364f28e-069e-4f06-8cd6-a2fa97b66e75"},"OnExecuted":{"_parentID":"0c6a0dcf-09cb-4884-9120-b3325f3c3f1f","_portID":"09d7c621-4c26-49ba-a6f2-917415510a0b","_connections":[]},"_nodeID":"0c6a0dcf-09cb-4884-9120-b3325f3c3f1f","_nodePosition":{"x":1524.0,"y":-125.0},"adResult":3,"eventName":10,"reportEventToAppMetrica":true,"Enable":{"_parentID":"0c6a0dcf-09cb-4884-9120-b3325f3c3f1f","_portID":"2c36a6be-fc9e-4fa7-bd64-e194c74820d7"},"Disable":{"_parentID":"0c6a0dcf-09cb-4884-9120-b3325f3c3f1f","_portID":"0427a093-5059-4db8-b998-cf86b07a0279"}}'
+  - NodeTypeName: Krem.AzureAnalytics.Actions.AppMetricaActions.ReportVideoAds
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"1da6c7b0-e7a2-48cf-b718-bac7f87b566a","_portID":"e1a2f147-5078-419c-a7cb-875cf5538bb2"},"OnExecuted":{"_parentID":"1da6c7b0-e7a2-48cf-b718-bac7f87b566a","_portID":"03b16b42-e23a-4bce-b4ba-f0688d45aca8","_connections":[]},"_nodeID":"1da6c7b0-e7a2-48cf-b718-bac7f87b566a","_nodePosition":{"x":1283.0,"y":439.0},"adResult":5,"eventName":11,"reportEventToAppMetrica":true,"Enable":{"_parentID":"1da6c7b0-e7a2-48cf-b718-bac7f87b566a","_portID":"ef6c5825-bc6e-409e-8b9c-cb35586f863e"},"Disable":{"_parentID":"1da6c7b0-e7a2-48cf-b718-bac7f87b566a","_portID":"6eb45c3e-91c0-45fc-a0f7-f6297ea22e3e"}}'
+  _graphIsBroken: 0
+--- !u!114 &8849109763043615028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849109763043615031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8764dec8e8ebf340b4964c1a99656c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: ed2a03d8-a37c-4a07-af3b-f1f9271d9d5f
+  _nodePosition: {x: 191, y: 161}
+  This:
+    _parentID: ed2a03d8-a37c-4a07-af3b-f1f9271d9d5f
+    _portID: 581e1ef4-3754-4797-b2ac-27cb523dc9a2
+    _connections: []
+  adType: 0
+  adPlacement: 10
+  CallShowRequest:
+    _parentID: ed2a03d8-a37c-4a07-af3b-f1f9271d9d5f
+    _portID: 25e5ba45-fb91-4b59-96f5-7f3bfb8ee928
+  OnShowRequest:
+    _parentID: ed2a03d8-a37c-4a07-af3b-f1f9271d9d5f
+    _portID: 340f93c4-4d90-4809-b56e-d11ad5cf44b4
+    _connections: []
+  OnMaxSdkNotInitialized:
+    _parentID: ed2a03d8-a37c-4a07-af3b-f1f9271d9d5f
+    _portID: 89605bd1-496e-455a-9801-68f3d7b99f79
+    _connections: []
+--- !u!114 &8849109763043615035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849109763043615031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e0a21cbe066484a927bcbbc71deac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 0856dcc7-666c-4585-94c9-771a86df7a5f
+  _nodePosition: {x: 224, y: 8.5}
+  This:
+    _parentID: 0856dcc7-666c-4585-94c9-771a86df7a5f
+    _portID: 11b410f4-2887-440f-9e67-4091f81b61c1
+    _connections: []
+  debugLog: 0
+  RequestReport:
+    _parentID: 0856dcc7-666c-4585-94c9-771a86df7a5f
+    _portID: 3576c841-9bea-45e8-b859-d3eb59d7a194
+  OnReportRequested:
+    _parentID: 0856dcc7-666c-4585-94c9-771a86df7a5f
+    _portID: fd0c2397-07c8-4537-8e32-5bb30fa26240
+    _connections: []
+  OnReported:
+    _parentID: 0856dcc7-666c-4585-94c9-771a86df7a5f
+    _portID: dd44276b-80c8-4734-9b90-294adb9b6f23
+    _connections: []
