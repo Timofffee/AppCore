@@ -231,7 +231,9 @@ MonoBehaviour:
   OnReportRequested:
     _parentID: 526775bc-2408-4bc2-8824-0bd8265de9e2
     _portID: cc82dd99-354e-4f6d-ac3f-13eda9582f99
-    _connections: []
+    _connections:
+    - _parentID: 4a7a046d-4f13-42ee-b468-46493011bc30
+      _portID: fbffaf94-d25c-47fb-af6c-02e4f9d5d79a
   OnReported:
     _parentID: 526775bc-2408-4bc2-8824-0bd8265de9e2
     _portID: 399f8997-61ac-4428-9f73-529f625a7a65
@@ -766,6 +768,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11457290, guid: 1edb7f7d5ea68467097decc77664b28d, type: 3}
+      propertyPath: SessionTimeoutSec
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1edb7f7d5ea68467097decc77664b28d, type: 3}
 --- !u!1 &1471072536
@@ -1048,7 +1054,9 @@ MonoBehaviour:
   OnReportRequested:
     _parentID: 526775bc-2408-4bc2-8824-0bd8265de9e2
     _portID: cc82dd99-354e-4f6d-ac3f-13eda9582f99
-    _connections: []
+    _connections:
+    - _parentID: d8cb1aa4-6587-4f1b-a9a7-a8ac42354b9b
+      _portID: 61140013-2239-4407-a60b-1c61018dd4af
   OnReported:
     _parentID: 526775bc-2408-4bc2-8824-0bd8265de9e2
     _portID: 399f8997-61ac-4428-9f73-529f625a7a65
