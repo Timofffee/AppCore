@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXRDemo", "CFXRDemo.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXRRuntime", "CFXRRuntime.csproj", "{3ee9474c-87b5-df1e-38cd-234b0d7a436d}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSdk.Scripts", "MaxSdk.Scripts.csproj", "{8a011ab2-37be-eb25-7ef2-4346e5b54a94}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro2.Demo", "ToonyColorsPro2.Demo.csproj", "{4950c752-00f2-f9f8-1af7-9986f93d91ac}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTween.Modules", "DOTween.Modules.csproj", "{e3d85275-6a40-22b0-ecf2-64b863f01bad}"
@@ -17,21 +19,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Runtime", "ToonyColorsPro.Runtime.csproj", "{3c9d6d6b-5aeb-4501-e431-b83ec7bba5e1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSdk.Scripts", "MaxSdk.Scripts.csproj", "{8a011ab2-37be-eb25-7ef2-4346e5b54a94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSdk.Scripts.IntegrationManager.Editor", "MaxSdk.Scripts.IntegrationManager.Editor.csproj", "{ce18f137-e4b9-8f47-397e-a9f9288de389}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Editor", "ToonyColorsPro.Editor.csproj", "{a2f17435-c42c-02a9-baae-4cacff5d2dee}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{184bb6a5-fe64-e1cc-bda2-d695f65f85a2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSdk.Scripts.Editor", "MaxSdk.Scripts.Editor.csproj", "{3611b5bb-3e89-6273-4293-e0b1d9e93bf2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTweenPro.EditorScripts", "DOTweenPro.EditorScripts.csproj", "{ba79e0e3-18c6-f2c2-48b4-35903de01fee}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{6c9afd36-acac-765f-9c9e-6f30bcc713b9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXREditor", "CFXREditor.csproj", "{4a97b420-b447-3694-3190-9723f3432c33}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSdk.Scripts.IntegrationManager.Editor", "MaxSdk.Scripts.IntegrationManager.Editor.csproj", "{ce18f137-e4b9-8f47-397e-a9f9288de389}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSdk.Scripts.Editor", "MaxSdk.Scripts.Editor.csproj", "{3611b5bb-3e89-6273-4293-e0b1d9e93bf2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +46,8 @@ Global
 		{638160b5-7e2e-6c12-dd9e-df4adffb7ef1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ee9474c-87b5-df1e-38cd-234b0d7a436d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3ee9474c-87b5-df1e-38cd-234b0d7a436d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8a011ab2-37be-eb25-7ef2-4346e5b54a94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8a011ab2-37be-eb25-7ef2-4346e5b54a94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4950c752-00f2-f9f8-1af7-9986f93d91ac}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4950c752-00f2-f9f8-1af7-9986f93d91ac}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e3d85275-6a40-22b0-ecf2-64b863f01bad}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -54,22 +56,20 @@ Global
 		{b6959648-4289-2237-c10e-824dcd96364f}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3c9d6d6b-5aeb-4501-e431-b83ec7bba5e1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3c9d6d6b-5aeb-4501-e431-b83ec7bba5e1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8a011ab2-37be-eb25-7ef2-4346e5b54a94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8a011ab2-37be-eb25-7ef2-4346e5b54a94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ce18f137-e4b9-8f47-397e-a9f9288de389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ce18f137-e4b9-8f47-397e-a9f9288de389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a2f17435-c42c-02a9-baae-4cacff5d2dee}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a2f17435-c42c-02a9-baae-4cacff5d2dee}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{184bb6a5-fe64-e1cc-bda2-d695f65f85a2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{184bb6a5-fe64-e1cc-bda2-d695f65f85a2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3611b5bb-3e89-6273-4293-e0b1d9e93bf2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3611b5bb-3e89-6273-4293-e0b1d9e93bf2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ba79e0e3-18c6-f2c2-48b4-35903de01fee}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ba79e0e3-18c6-f2c2-48b4-35903de01fee}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6c9afd36-acac-765f-9c9e-6f30bcc713b9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6c9afd36-acac-765f-9c9e-6f30bcc713b9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4a97b420-b447-3694-3190-9723f3432c33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4a97b420-b447-3694-3190-9723f3432c33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ce18f137-e4b9-8f47-397e-a9f9288de389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ce18f137-e4b9-8f47-397e-a9f9288de389}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3611b5bb-3e89-6273-4293-e0b1d9e93bf2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3611b5bb-3e89-6273-4293-e0b1d9e93bf2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
