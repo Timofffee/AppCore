@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
 using Krem.AppCore.Ports;
@@ -10,13 +12,29 @@ namespace App.CubeMatch.Components.Item
     [DisallowMultipleComponent]
     public class MergeItem : CoreComponent
     {
-        [SerializeField] private GameObject _hideFX;
+        [SerializeField, NotNull] private GameObject _hideFX;
+        [SerializeField, NotNull] private MeshRenderer _meshRenderer;
+        [SerializeField] private Color _selectedColor;
+        [SerializeField] private float _colorAnimationTime = .2f;
         
         public OutputSignal OnSelectRequest;
+
+        private Material _itemMaterial;
+        private Color _originalColor;
+        private float _elapsedTime = 0f;
+
+        private void Awake()
+        {
+            _itemMaterial = _meshRenderer.material;
+            _originalColor = _itemMaterial.color;
+        }
 
         public void SelectRequest()
         {
             StartCoroutine(InstantiateHideFX());
+            // _meshRenderer.material.SetColor("_Color" , Color.black);
+            // _meshRenderer.material.color = Color.black;
+            StartCoroutine(AnimateColor());
             
             OnSelectRequest.Invoke();
         }
@@ -27,6 +45,17 @@ namespace App.CubeMatch.Components.Item
 
             Instantiate(_hideFX, transform.position, Quaternion.identity , null);
             Destroy(this.gameObject);
+        }
+
+        protected IEnumerator AnimateColor()
+        {
+            while (_elapsedTime < _colorAnimationTime)
+            {
+                yield return new WaitForEndOfFrame();
+                _itemMaterial.color = Color.Lerp(_originalColor, _selectedColor, 1 - Mathf.Abs(2*_elapsedTime/_colorAnimationTime - 1));
+
+                _elapsedTime += Time.deltaTime;
+            }
         }
     }
 }
