@@ -25,26 +25,26 @@ namespace Krem.JetPack.Basis.Components.Providers
             dragHandler.OnEndDragging.AddListener(CallOnEndDragging);
         }
 
-        protected void CallOnStartDragging()
-        {
-            OnStartDragging.Invoke();
-        }
-        
-        protected void CallOnDragging()
-        {
-            OnDragging.Invoke();
-        }
-        
-        protected void CallOnEndDragging()
-        {
-            OnEndDragging.Invoke();
-        }
-
         private void OnDisable()
         {
             dragHandler.OnStartDragging.RemoveListener(CallOnStartDragging);
             dragHandler.OnDragging.RemoveListener(CallOnDragging);
             dragHandler.OnEndDragging.RemoveListener(CallOnEndDragging);
+        }
+
+        protected void CallOnStartDragging()
+        {
+            OnStartDragging.Invoke();
+        }
+
+        protected void CallOnDragging()
+        {
+            OnDragging.Invoke();
+        }
+
+        protected void CallOnEndDragging()
+        {
+            OnEndDragging.Invoke();
         }
     }
 }

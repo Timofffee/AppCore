@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6185307932347377183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6185307932347377180}
+  - component: {fileID: 7119789293954033266}
+  - component: {fileID: 6185307932347377181}
+  - component: {fileID: 3320197824620346899}
+  - component: {fileID: 5370531177168404205}
+  - component: {fileID: 259468086999997037}
+  m_Layer: 0
+  m_Name: DestructibleBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6185307932347377180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185307932347377183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7119789293954033266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185307932347377183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions:
+  - NodeTypeName: Krem.MassDestruction.Actions.Destruct
+    SerializedData: '{"Execute":{"_parentID":"d7a67d8a-243b-4ce8-a538-330bd0691425","_portID":"e2c533b4-a7cb-4b5e-b47c-cbdf8a394fe2"},"OnExecuted":{"_parentID":"d7a67d8a-243b-4ce8-a538-330bd0691425","_portID":"b19aa03d-4691-4cc2-8b75-2ef9d6b6b3e5","Connections":[{"_parentID":"6e7d1668-889f-4908-bcd7-037610de5f5b","_portID":"5c92595b-9637-4285-a4c7-5132abe5bdaf"}]},"_nodeID":"d7a67d8a-243b-4ce8-a538-330bd0691425","_nodePosition":{"x":223.0,"y":0.0}}'
+  - NodeTypeName: Krem.MassDestruction.Actions.AddExplosionForce
+    SerializedData: '{"Execute":{"_parentID":"6e7d1668-889f-4908-bcd7-037610de5f5b","_portID":"5c92595b-9637-4285-a4c7-5132abe5bdaf"},"OnExecuted":{"_parentID":"6e7d1668-889f-4908-bcd7-037610de5f5b","_portID":"6cee828b-f970-44c2-8289-ae003c1e41f2","Connections":[]},"_nodeID":"6e7d1668-889f-4908-bcd7-037610de5f5b","_nodePosition":{"x":481.0,"y":0.0}}'
+  - NodeTypeName: Krem.MassDestruction.Actions.RedistributeMass
+    SerializedData: '{"Execute":{"_parentID":"5476906b-2d02-4457-b965-e7a5131d3125","_portID":"30245209-a7c0-458c-b830-bae97796a383"},"OnExecuted":{"_parentID":"5476906b-2d02-4457-b965-e7a5131d3125","_portID":"c97410ab-cdf7-4d54-a7e5-2478af2a9f52","Connections":[]},"_nodeID":"5476906b-2d02-4457-b965-e7a5131d3125","_nodePosition":{"x":223.0,"y":-105.0}}'
+--- !u!114 &6185307932347377181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185307932347377183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67c62af8eeadf34ca2189324dd0c5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 5b95e1430f676ec4c857e0b4e29fc79a
+  _nodePosition: {x: 0, y: 0}
+  _serializedObjects:
+    keys: []
+    values: []
+  _serializedStrings:
+    keys: []
+    values: []
+  solid: {fileID: 0}
+  fractured: {fileID: 0}
+  _destructed: 0
+  onDestructed:
+    m_PersistentCalls:
+      m_Calls: []
+  Destruct:
+    _parentID: 5b95e1430f676ec4c857e0b4e29fc79a
+    _portID: d272ab3d18ab7ad4599376cb8a673000
+  Destructed:
+    _parentID: 5b95e1430f676ec4c857e0b4e29fc79a
+    _portID: 2e0ec47e1e9b24f4baaa0dcdbbc67305
+    Connections:
+    - _parentID: d7a67d8a-243b-4ce8-a538-330bd0691425
+      _portID: e2c533b4-a7cb-4b5e-b47c-cbdf8a394fe2
+--- !u!114 &3320197824620346899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185307932347377183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6698d2e8bd1629d429eb181b6c9d0cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 343f384c1bfdfef47a834cedf585b84c
+  _nodePosition: {x: 0, y: 93.92}
+  _serializedObjects:
+    keys: []
+    values: []
+  _serializedStrings:
+    keys: []
+    values: []
+  force: 10
+  radius: 5
+  upwardsModifier: 1
+--- !u!114 &5370531177168404205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185307932347377183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9187af1ba03ce42a8d7d7635624791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 981da110-0554-44b5-98ac-2a503c171e38
+  _nodePosition: {x: 20.999992, y: -104.912506}
+  _serializedObjects:
+    keys: []
+    values: []
+  _serializedStrings:
+    keys: []
+    values: []
+  OnStart:
+    _parentID: 981da110-0554-44b5-98ac-2a503c171e38
+    _portID: bc172046-60db-4b0a-99b8-a4d942f24041
+    Connections:
+    - _parentID: 5476906b-2d02-4457-b965-e7a5131d3125
+      _portID: 30245209-a7c0-458c-b830-bae97796a383
+--- !u!114 &259468086999997037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185307932347377183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539a7661ca4e20147a6ae02b77d6a883, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: f54942d1-ee2b-477c-a470-26e7b8e5e7fa
+  _nodePosition: {x: -14, y: -187}
+  _serializedObjects:
+    keys: []
+    values: []
+  _serializedStrings:
+    keys: []
+    values: []
+  mass: 10

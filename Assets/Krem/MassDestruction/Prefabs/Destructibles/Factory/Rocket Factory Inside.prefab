@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2724910126630252001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 661637251765269188}
+    m_Modifications:
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477101036474682272, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248535627985260826, guid: 69b32975eac31cc4c8be4423e33fa399,
+        type: 3}
+      propertyPath: m_Name
+      value: Rocket Factory Inside Solid
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 69b32975eac31cc4c8be4423e33fa399, type: 3}
+--- !u!114 &3901768463529214377 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1438072064649079880, guid: 69b32975eac31cc4c8be4423e33fa399,
+    type: 3}
+  m_PrefabInstance: {fileID: 2724910126630252001}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ee072be54e4c1f4abd8793c152302e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &6240665184082020148
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 661637251765269188}
+    m_Modifications:
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973171987242379881, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6462428979735638227, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+        type: 3}
+      propertyPath: m_Name
+      value: Rocket Factory Inside Fractured
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 333ccaed5235fbb48995639a5dd8ebbd, type: 3}
+--- !u!114 &285146042763266745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6155929462578351501, guid: 333ccaed5235fbb48995639a5dd8ebbd,
+    type: 3}
+  m_PrefabInstance: {fileID: 6240665184082020148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df15e23344845c42a3b5646447b0273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &6699169695466706136
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3320197824620346899, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: force
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377181, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: solid
+      value: 
+      objectReference: {fileID: 3901768463529214377}
+    - target: {fileID: 6185307932347377181, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: fractured
+      value: 
+      objectReference: {fileID: 285146042763266745}
+    - target: {fileID: 6185307932347377183, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_Name
+      value: Rocket Factory Inside
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185307932347377183, guid: 039de175d13fbe14a8562dd5e58413ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 039de175d13fbe14a8562dd5e58413ed, type: 3}
+--- !u!4 &661637251765269188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6185307932347377180, guid: 039de175d13fbe14a8562dd5e58413ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 6699169695466706136}
+  m_PrefabAsset: {fileID: 0}

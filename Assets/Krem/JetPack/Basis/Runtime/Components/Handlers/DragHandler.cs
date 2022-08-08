@@ -23,7 +23,7 @@ namespace Krem.JetPack.Basis.Components.Handlers
         public Vector2 EndPosition => _endPosition;
         public bool IsDragging { get; set; } = false;
 
-        public void OnBeginDrag(PointerEventData eventData)
+        public virtual void OnBeginDrag(PointerEventData eventData)
         {
             IsDragging = true;
             _pointerEventData = eventData;
@@ -32,14 +32,14 @@ namespace Krem.JetPack.Basis.Components.Handlers
             OnStartDragging.Invoke();
         }
 
-        public void OnDrag(PointerEventData eventData)
+        public virtual void OnDrag(PointerEventData eventData)
         {
             _pointerEventData = eventData;
             
             OnDragging.Invoke();
         }
 
-        public void OnEndDrag(PointerEventData eventData)
+        public virtual void OnEndDrag(PointerEventData eventData)
         {
             IsDragging = false;
             _pointerEventData = eventData;
