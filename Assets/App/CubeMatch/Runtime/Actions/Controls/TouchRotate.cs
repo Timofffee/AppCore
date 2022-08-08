@@ -10,7 +10,7 @@ namespace App.CubeMatch.Actions.Controls
     [NodeGraphGroupName("Cube Match/Controls")] 
     public class TouchRotate : CoreAction
     {
-        public float Sensetivity = .4f;
+        [ActionParameter] public float Sensetivity = .4f;
         
         public InputComponent<TouchControllerProvider> TouchControllerProvider;
         public InputComponent<TransformLink> TransformLink;

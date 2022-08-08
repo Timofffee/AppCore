@@ -1485,7 +1485,7 @@ MonoBehaviour:
   _serializedActions:
   - NodeTypeName: App.CubeMatch.Actions.Controls.TouchRotate
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_portID":"70ca089b-f6fb-4741-b697-5eb82499c94a"},"OnExecuted":{"_parentID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_portID":"cc3942cb-b20b-4f72-8ed9-dd55196b7a94","_connections":[]},"_nodeID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_nodePosition":{"x":752.0,"y":291.0},"Sensetivity":0.4000000059604645,"TouchControllerProvider":{"_parentID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_portID":"8e974229-d8fb-4331-a962-19498140570b","Component":{"instanceID":0}},"TransformLink":{"_parentID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_portID":"edcfb616-014b-40ed-80a1-ce5d5406721e","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_portID":"70ca089b-f6fb-4741-b697-5eb82499c94a"},"OnExecuted":{"_parentID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_portID":"cc3942cb-b20b-4f72-8ed9-dd55196b7a94","_connections":[]},"_nodeID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_nodePosition":{"x":749.0,"y":291.0},"Sensetivity":0.20000000298023225,"TouchControllerProvider":{"_parentID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_portID":"8e974229-d8fb-4331-a962-19498140570b","Component":{"instanceID":0}},"TransformLink":{"_parentID":"c38a38f2-d390-4056-a42a-750a7f003b8f","_portID":"edcfb616-014b-40ed-80a1-ce5d5406721e","Component":{"instanceID":0}}}'
   _graphIsBroken: 0
 --- !u!114 &446143452
 MonoBehaviour:
@@ -3906,6 +3906,117 @@ Transform:
   m_Father: {fileID: 794858195}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &995115437
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Light Gray (Instance)
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    RenderType: Opaque
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EnvironmentReflections: 1
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _Metallic: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.005
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+    - _Color: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &995265375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6043,7 +6154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1663926759
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7466,6 +7577,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1031688864}
     m_Modifications:
+    - target: {fileID: 5438432952700283411, guid: 291266979f91b464ebf34fd988622de0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 995115437}
     - target: {fileID: 5438432952700283421, guid: 291266979f91b464ebf34fd988622de0,
         type: 3}
       propertyPath: m_RootOrder
@@ -7531,6 +7647,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e3b9ae575d5b32f4c9852b793424fd43, type: 2}
+    - target: {fileID: 8982488737092347742, guid: 291266979f91b464ebf34fd988622de0,
+        type: 3}
+      propertyPath: autoGenerate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291266979f91b464ebf34fd988622de0, type: 3}
 --- !u!4 &1982354684 stripped
