@@ -32,8 +32,6 @@ namespace App.CubeMatch.Components.Item
         public void SelectRequest()
         {
             StartCoroutine(InstantiateHideFX());
-            // _meshRenderer.material.SetColor("_Color" , Color.black);
-            // _meshRenderer.material.color = Color.black;
             StartCoroutine(AnimateColor());
             
             OnSelectRequest.Invoke();
