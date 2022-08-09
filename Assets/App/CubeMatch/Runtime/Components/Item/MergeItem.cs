@@ -12,6 +12,7 @@ namespace App.CubeMatch.Components.Item
     [DisallowMultipleComponent]
     public class MergeItem : CoreComponent
     {
+        public int ItemId;
         [SerializeField, NotNull] private GameObject _hideFX;
         [SerializeField, NotNull] private MeshRenderer _meshRenderer;
         [SerializeField] private Color _selectedColor;

@@ -26,5 +26,11 @@ namespace Krem.JetPack.EventBus
     public abstract class BaseEventBus<T> : BaseEventBus
     {
         public T value;
+        
+        public virtual void Invoke(T eventValue)
+        {
+            value = eventValue;
+            Invoke();
+        }
     }
 }
