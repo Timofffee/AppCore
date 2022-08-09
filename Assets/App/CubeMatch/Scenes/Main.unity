@@ -2399,7 +2399,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _serializedActions: []
+  _serializedActions:
+  - NodeTypeName: App.CubeMatch.Actions.CollectionPanel.InstantiateMergeItem
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"45b0dcb7-fb7d-40b3-82ef-40300db43edc","_portID":"420a7b30-5352-4cde-9f9d-be5258fee54f"},"OnExecuted":{"_parentID":"45b0dcb7-fb7d-40b3-82ef-40300db43edc","_portID":"8f710046-b8d8-4ec7-adae-de3b1373699b","_connections":[]},"_nodeID":"45b0dcb7-fb7d-40b3-82ef-40300db43edc","_nodePosition":{"x":695.0,"y":237.0},"MergeItemPrefabCollection":{"_parentID":"45b0dcb7-fb7d-40b3-82ef-40300db43edc","_portID":"05600e4e-96f0-4797-8f9c-906dd3688217","Component":{"instanceID":0}},"MergeItemEventBusProvider":{"_parentID":"45b0dcb7-fb7d-40b3-82ef-40300db43edc","_portID":"22300b61-b840-4ed4-920b-f9c080adb60a","Component":{"instanceID":0}},"ItemPlaceholderCollector":{"_parentID":"45b0dcb7-fb7d-40b3-82ef-40300db43edc","_portID":"30e808e2-a156-48cd-9a20-cdb276ee0a18","Component":{"instanceID":0}},"OnOverflow":{"_parentID":"45b0dcb7-fb7d-40b3-82ef-40300db43edc","_portID":"4c8c14ad-68c8-4027-a538-d4725b27badf","_connections":[]}}'
   _graphIsBroken: 0
 --- !u!114 &1809515214
 MonoBehaviour:
@@ -2418,7 +2421,9 @@ MonoBehaviour:
   This:
     _parentID: ee511464-60eb-4780-99d6-e38a0672820d
     _portID: c715287e-6df5-4fea-867d-9945939ec34b
-    _connections: []
+    _connections:
+    - _parentID: 45b0dcb7-fb7d-40b3-82ef-40300db43edc
+      _portID: 05600e4e-96f0-4797-8f9c-906dd3688217
   _mergeItemPrefabs:
   - {fileID: 5149481424857181784, guid: bd0ec582f1b82eb46811e8dd8210e1bd, type: 3}
   - {fileID: 5149481424857181784, guid: 3c17f91f5e680134f9b81bf7c829cbac, type: 3}
@@ -2442,7 +2447,9 @@ MonoBehaviour:
   This:
     _parentID: d4012826-e784-4aa2-80e8-610eb23288fd
     _portID: 098ddcc0-a599-478d-b1cc-248be58e9a51
-    _connections: []
+    _connections:
+    - _parentID: 45b0dcb7-fb7d-40b3-82ef-40300db43edc
+      _portID: 22300b61-b840-4ed4-920b-f9c080adb60a
   _eventBus: {fileID: 11400000, guid: e8f9253ff93d4ac44b1a31b6d06455f4, type: 2}
   CallInvoke:
     _parentID: d4012826-e784-4aa2-80e8-610eb23288fd
@@ -2450,7 +2457,9 @@ MonoBehaviour:
   OnHandle:
     _parentID: d4012826-e784-4aa2-80e8-610eb23288fd
     _portID: 539b1c62-1ea9-42f6-b448-232eac949209
-    _connections: []
+    _connections:
+    - _parentID: 45b0dcb7-fb7d-40b3-82ef-40300db43edc
+      _portID: 420a7b30-5352-4cde-9f9d-be5258fee54f
 --- !u!114 &1809515216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2492,7 +2501,9 @@ MonoBehaviour:
   This:
     _parentID: 6894a0a0-0cd4-4d95-b484-b4de59bfd053
     _portID: 91b301c4-41de-4d99-bd73-32aaf54d3ebe
-    _connections: []
+    _connections:
+    - _parentID: 45b0dcb7-fb7d-40b3-82ef-40300db43edc
+      _portID: 30e808e2-a156-48cd-9a20-cdb276ee0a18
   CallRefresh:
     _parentID: 6894a0a0-0cd4-4d95-b484-b4de59bfd053
     _portID: 888cb8d2-2641-44b9-8d3e-a867535fea7d

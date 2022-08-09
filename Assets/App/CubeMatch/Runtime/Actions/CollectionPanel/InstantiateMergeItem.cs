@@ -19,8 +19,6 @@ namespace App.CubeMatch.Actions.CollectionPanel
 
         protected override bool Action()
         {
-            Debug.Log("InstantiateItem");
-
             ItemPlaceholder placeholder = ItemPlaceholderCollector.Component.GetEmptyPlaceholder();
 
             if (placeholder == null)
