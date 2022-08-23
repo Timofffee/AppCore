@@ -46,8 +46,8 @@ namespace App.CubeMatch.Components.FX
 
             _clickPosition = eventData.position;
 
-            InstantiateFX(eventData.position);
             TouchItem(eventData.position);
+            InstantiateFX(eventData.position);
         }
 
         public void OnBeginDrag(PointerEventData eventData)
