@@ -24,7 +24,7 @@ namespace Krem.AppCore.Services
             {
                 ICoreNode result = Activator.CreateInstance(AssemblyName, NodeTypeName).Unwrap() as ICoreNode;
                 JsonUtility.FromJsonOverwrite(SerializedData, result);
-                
+            
                 return result;
             }
             catch (Exception e)
