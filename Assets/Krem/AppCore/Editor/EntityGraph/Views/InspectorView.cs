@@ -13,7 +13,7 @@ namespace Krem.AppCore.EntityGraph.Views
     {
         public new class UxmlFactory : UxmlFactory<InspectorView, VisualElement.UxmlTraits> { }
 
-        public Action<NodeView> OnNodeValueChanged;
+        public Action<NodeView> OnActionNodeValueChanged;
         
         private Editor _editor;
         private NodeView _selectedNode;
@@ -80,7 +80,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.RegisterValueChangedCallback(value =>
                 {
                     parameterField.SetValue(action, value.newValue);
-                    OnNodeValueChanged?.Invoke(_selectedNode);
+                    OnActionNodeValueChanged?.Invoke(_selectedNode);
                 });
                 Add(fieldView);
             }
@@ -92,7 +92,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.RegisterValueChangedCallback(value =>
                 {
                     parameterField.SetValue(action, value.newValue);
-                    OnNodeValueChanged?.Invoke(_selectedNode);
+                    OnActionNodeValueChanged?.Invoke(_selectedNode);
                 });
                 Add(fieldView);
             }
@@ -104,7 +104,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.RegisterValueChangedCallback(value =>
                 {
                     parameterField.SetValue(action, value.newValue);
-                    OnNodeValueChanged?.Invoke(_selectedNode);
+                    OnActionNodeValueChanged?.Invoke(_selectedNode);
                 });
                 Add(fieldView);
             }
@@ -116,7 +116,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.RegisterValueChangedCallback(value =>
                 {
                     parameterField.SetValue(action, value.newValue);
-                    OnNodeValueChanged?.Invoke(_selectedNode);
+                    OnActionNodeValueChanged?.Invoke(_selectedNode);
                 });
                 Add(fieldView);
             }
@@ -128,7 +128,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.RegisterValueChangedCallback(value =>
                 {
                     parameterField.SetValue(action, value.newValue);
-                    OnNodeValueChanged?.Invoke(_selectedNode);
+                    OnActionNodeValueChanged?.Invoke(_selectedNode);
                 });
                 Add(fieldView);
             }
@@ -140,7 +140,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.RegisterValueChangedCallback(value =>
                 {
                     parameterField.SetValue(action, value.newValue);
-                    OnNodeValueChanged?.Invoke(_selectedNode);
+                    OnActionNodeValueChanged?.Invoke(_selectedNode);
                 });
                 Add(fieldView);
             }
@@ -153,7 +153,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.RegisterValueChangedCallback(value =>
                 {
                     parameterField.SetValue(action, value.newValue);
-                    OnNodeValueChanged?.Invoke(_selectedNode);
+                    OnActionNodeValueChanged?.Invoke(_selectedNode);
                 });
                 Add(fieldView);
             }

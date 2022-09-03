@@ -221,6 +221,8 @@ namespace Krem.AppCore.Extensions
             // Is Inside Prefab
             if (isValidPrefabStage)
             {
+                Debug.Log("Inside Prefab");
+                EditorUtility.SetDirty(coreEntity.gameObject);
             }
 
             // Prefab On Scene
@@ -236,6 +238,8 @@ namespace Krem.AppCore.Extensions
                 || instanceType == PrefabAssetType.Variant
                 || instanceType == PrefabAssetType.Model)
             {
+                Debug.Log("Prefab In Project");
+                PrefabUtility.ApplyPrefabInstance(coreEntity.gameObject, InteractionMode.UserAction);
             }
 
             // Game Object On Scene
@@ -330,7 +334,8 @@ namespace Krem.AppCore.Extensions
             if (isFixed)
             {
                 Debug.Log("Ports Parents Is Fixed");
-                EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+                EditorUtility.SetDirty(coreEntity.gameObject);
+                //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
             }
 
 
@@ -353,7 +358,8 @@ namespace Krem.AppCore.Extensions
             {
                 coreEntity.Actions = fixedActionsList;
                 Debug.Log("Action Graph Is Fixed");
-                EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+                EditorUtility.SetDirty(coreEntity.gameObject);
+                //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
             }
 
             // Fix Connections
@@ -382,7 +388,8 @@ namespace Krem.AppCore.Extensions
                     {
                         ((CoreOutputPort) outputPort).Connections = newConnections;
                         Debug.Log("Connection Graph Is Fixed");
-                        EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+                        EditorUtility.SetDirty(coreEntity.gameObject);
+                        //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
                     }
                 });
             });

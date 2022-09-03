@@ -36,33 +36,19 @@ namespace Krem.AppCore.EntityGraph
             CoreEntity coreEntity = (Selection.activeObject as GameObject)?.GetComponent<CoreEntity>();
             if (coreEntity == null)
             {
+                Debug.LogWarning($"Entity: {this} is not selected");
                 return;
             }
             
             _selectedEntity = coreEntity;
             
-            CreateGraphGUI();
-            
             if (coreEntity.CheckGraphIsError() || coreEntity.GraphIsBrokenState)
             {
                 coreEntity.GraphIsBrokenState = true;
-                Debug.LogError("Entity: " + this + " Graph is Broken");
-                return;
+                Debug.LogError($"Entity: {this} Graph is Broken");
             }
-            
-            try
-            {
-                BindEvents();
-                PopulateEntityGraph();
 
-                Undo.undoRedoPerformed += OnUndoRedo;
-            }
-            catch (Exception e)
-            {
-                Debug.LogError(e);
-                coreEntity.GraphIsBrokenState = true;
-                throw;
-            }
+            CreateGraphGUI(_selectedEntity);
         }
 
         private void OnUndoRedo()
@@ -80,7 +66,7 @@ namespace Krem.AppCore.EntityGraph
             CreateGUI();
         }
 
-        private void CreateGraphGUI()
+        private void CreateGraphGUI(CoreEntity coreEntity)
         {
             VisualElement root = rootVisualElement;
             VisualTreeAsset visualTree = Resources.Load<VisualTreeAsset>("EntityGraph/EntityGraph");
@@ -91,8 +77,8 @@ namespace Krem.AppCore.EntityGraph
             
             _entityGraphView = root.Q<EntityGraphView>();
             _inspectorView = root.Q<InspectorView>();
-            
             _graphIsBrokenCaptionView = root.Q("BrokenGraphCaption");
+            
             if (_selectedEntity.GraphIsBrokenState)
             {
                 _graphIsBrokenCaptionView.visible = true;
@@ -101,6 +87,22 @@ namespace Krem.AppCore.EntityGraph
             {
                 _graphIsBrokenCaptionView.visible = false;
             }
+            
+            try
+            {
+                BindEvents();
+                PopulateEntityGraph();
+
+                Undo.undoRedoPerformed += OnUndoRedo;
+            }
+            catch (Exception e)
+            {
+                coreEntity.GraphIsBrokenState = true;
+                Debug.LogError(e);
+                Debug.LogError($"Entity: {this} Populate EntityGraph failed");
+            }
+            
+            
         }
 
         private void BindEvents()
@@ -111,7 +113,7 @@ namespace Krem.AppCore.EntityGraph
             _entityGraphView.OnNodeChanged = OnNodeChanged;
             _entityGraphView.OnEdgeCreated = OnEdgeCreated;
             _entityGraphView.OnEdgeDeleted = OnEdgeDeleted;
-            _inspectorView.OnNodeValueChanged = OnNodeChanged;
+            _inspectorView.OnActionNodeValueChanged = OnActionValueChanged;
         }
 
         private void PopulateEntityGraph()
@@ -138,7 +140,15 @@ namespace Krem.AppCore.EntityGraph
 
         private void OnNodeChanged(NodeView nodeView)
         {
-            //_selectedEntity.SetDirty();
+
+        }
+
+        private void OnActionValueChanged(NodeView nodeView)
+        {
+            Debug.Log("OnActionParameterChanged");
+            
+            _selectedEntity.UndoRecord("Action Node Parameter Changed");
+            EditorUtility.SetDirty(_selectedEntity);
         }
 
         private void OnEdgeCreated()

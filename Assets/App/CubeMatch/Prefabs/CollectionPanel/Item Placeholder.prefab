@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6504735317056592564}
   - component: {fileID: 6504735317056592554}
   - component: {fileID: 6504735317056592553}
+  - component: {fileID: 8548368325702670174}
   m_Layer: 5
   m_Name: Item Placeholder
   m_TagString: Untagged
@@ -90,7 +91,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _serializedActions: []
+  _serializedActions:
+  - NodeTypeName: Krem.JetPack.Basis.Actions.GameObject.DestroyGameObject
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"9843525f-93b0-48d9-9b1e-9f84c2f981a0","_portID":"27eb3c99-45be-4959-b038-bab547573a8d"},"OnExecuted":{"_parentID":"9843525f-93b0-48d9-9b1e-9f84c2f981a0","_portID":"da9fc407-da1a-4407-8928-96c36972b313","_connections":[]},"_nodeID":"9843525f-93b0-48d9-9b1e-9f84c2f981a0","_nodePosition":{"x":648.0,"y":421.0},"DestroyImmediate":false}'
+  - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"2057ad59-8ea0-412c-ab7e-b8ee3c5044fd","_portID":"b60509cc-e980-4b7a-80a7-4364f22b4fe5"},"OnExecuted":{"_parentID":"2057ad59-8ea0-412c-ab7e-b8ee3c5044fd","_portID":"13178793-a6f8-4c0c-bc25-68acc5b356c0","_connections":[]},"_nodeID":"2057ad59-8ea0-412c-ab7e-b8ee3c5044fd","_nodePosition":{"x":700.0,"y":215.0},"DelayTime":3.0,"RandomRange":3.0,"UseUnscaledTime":false,"Reset":{"_parentID":"2057ad59-8ea0-412c-ab7e-b8ee3c5044fd","_portID":"ce2b54d2-8aa7-4ad5-9a2c-cf8f37bc4f5a"},"OnTimeElapsed":{"_parentID":"2057ad59-8ea0-412c-ab7e-b8ee3c5044fd","_portID":"fc680e06-4470-474c-b4ab-5c212a4499dd","_connections":[]}}'
   _graphIsBroken: 0
 --- !u!114 &6504735317056592553
 MonoBehaviour:
@@ -114,3 +121,22 @@ MonoBehaviour:
     _parentID: 655f0c4a-5991-41bd-9221-81b18d6c0a8e
     _portID: 3880250a-fdbe-47fb-88df-cd99c68d9cae
     _connections: []
+--- !u!114 &8548368325702670174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504735317056592566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbb20b8ce0c6cf4eb8af9d48b5e52f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 0b35cd10-2d88-47f7-9f85-f6156ec59b93
+  _nodePosition: {x: 349, y: 421}
+  This:
+    _parentID: 0b35cd10-2d88-47f7-9f85-f6156ec59b93
+    _portID: 9cc62233-0a6f-438a-8580-42d4265afe50
+    _connections: []
+  _transform: {fileID: 0}

@@ -103,7 +103,12 @@ namespace Krem.AppCore
 
             for (int i = 0; i < _serializedActions.Count(); i++)
             {
-                _actions.Add((CoreAction) _serializedActions[i].Deserialize());
+                CoreAction action = (CoreAction) _serializedActions[i].Deserialize();
+
+                if (action != null)
+                {
+                    _actions.Add((CoreAction) _serializedActions[i].Deserialize());
+                }
             }
         }
 
