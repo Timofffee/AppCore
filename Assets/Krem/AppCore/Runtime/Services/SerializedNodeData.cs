@@ -35,6 +35,7 @@ namespace Krem.AppCore.Services
             }
             catch (Exception e)
             {
+                Debug.LogError(e);
                 Debug.LogError("Node: " + NodeTypeName + " In Assembly: " + AssemblyName + " Is Lost");
             }
 

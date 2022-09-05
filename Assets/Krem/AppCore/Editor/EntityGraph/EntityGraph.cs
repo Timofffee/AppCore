@@ -1,8 +1,8 @@
 using Krem.AppCore.EntityGraph.Views;
-using Krem.AppCore.Extensions;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Krem.AppCore.Extensions;
 
 namespace Krem.AppCore.EntityGraph
 {
