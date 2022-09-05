@@ -57,7 +57,8 @@ namespace Krem.AppCore.Extensions
             {
                 CoreAction coreAction = Activator.CreateInstance(type) as CoreAction;
                 coreAction.RefreshPortsParent();
-                UndoRecord(coreEntity, "Create Action: " + type.Name);
+                
+                UndoRecord(coreEntity, coreAction, "Create Action: " + type.Name);
                 coreEntity.Actions.Add(coreAction);
                 EditorUtility.SetDirty(coreEntity);
 
@@ -93,7 +94,7 @@ namespace Krem.AppCore.Extensions
 
             if (coreNode is CoreAction action)
             {
-                UndoRecord(coreEntity, "Remove Action: " + action.GetType().Name);
+                UndoRecord(coreEntity, coreNode, "Remove Action: " + action.GetType().Name);
                 coreEntity.Actions.Remove(action);
                 EditorUtility.SetDirty(coreEntity);
 
@@ -119,25 +120,9 @@ namespace Krem.AppCore.Extensions
             
             ICoreNode outputNode = coreEntity.FindNodeByID(output.ParentID);
 
-            if (outputNode.GetType().IsSubclassOf(typeof(CoreComponent)))
-            {
-                Undo.RecordObject((CoreComponent)outputNode, coreEntity.name + " Add Edge");
-                output.Connections.Add(input);
-                EditorUtility.SetDirty((CoreComponent)outputNode);
-                
-                return;
-            }
-
-            if (outputNode.GetType().IsSubclassOf(typeof(CoreAction)))
-            {
-                UndoRecord(coreEntity, "Add Edge");
-                output.Connections.Add(input);
-                EditorUtility.SetDirty(coreEntity);
-                
-                return;
-            }
-
-            Debug.LogError("Something went wrong when Add Edge");
+            UndoRecord(coreEntity,outputNode, "Add Edge");
+            output.Connections.Add(input);
+            EditorUtility.SetDirty(coreEntity);
         }
 
         public static void RemoveEdge(this CoreEntity coreEntity, CoreOutputPort output, CorePort input)
@@ -156,25 +141,9 @@ namespace Krem.AppCore.Extensions
             
             ICoreNode outputNode = coreEntity.FindNodeByID(output.ParentID);
 
-            if (outputNode.GetType().IsSubclassOf(typeof(CoreComponent)))
-            {
-                Undo.RecordObject((CoreComponent)outputNode, coreEntity.name + " Remove Edge");
-                output.Connections.Remove(output.Connections.First(port => port.PortID == input.PortID));
-                EditorUtility.SetDirty((CoreComponent)outputNode);
-                
-                return;
-            }
-
-            if (outputNode.GetType().IsSubclassOf(typeof(CoreAction)))
-            {
-                UndoRecord(coreEntity, "Remove Edge");
-                output.Connections.Remove(output.Connections.First(port => port.PortID == input.PortID));
-                EditorUtility.SetDirty(coreEntity);
-                
-                return;
-            }
-
-            Debug.LogError("Something went wrong when Remove Edge");
+            UndoRecord(coreEntity, outputNode, "Remove Edge");
+            output.Connections.Remove(output.Connections.First(port => port.PortID == input.PortID));
+            EditorUtility.SetDirty(coreEntity);
         }
         
         public static void SetNodePosition(this CoreEntity coreEntity, ICoreNode node, Vector2 position)
@@ -184,29 +153,13 @@ namespace Krem.AppCore.Extensions
                 Debug.LogError("Set Node Position Failed: node is null");
                 return;
             }
-
-            if (node.GetType().IsSubclassOf(typeof(CoreComponent)))
-            {
-                Undo.RecordObject((CoreComponent)node, coreEntity.name + " Change Node Position");
-                node.NodePosition = position;
-                EditorUtility.SetDirty((CoreComponent)node);
-                
-                return;
-            }
-
-            if (node.GetType().IsSubclassOf(typeof(CoreAction)))
-            {
-                UndoRecord(coreEntity, "Change Node Position");
-                node.NodePosition = position;
-                EditorUtility.SetDirty(coreEntity);
-                
-                return;
-            }
-
-            Debug.LogError("Something went wrong when Remove Edge");
+            
+            UndoRecord(coreEntity, node, "Change Node Position");
+            node.NodePosition = position;
+            EditorUtility.SetDirty(coreEntity);
         }
         
-        public static void UndoRecord(this CoreEntity coreEntity, string caption)
+        public static void UndoRecord(this CoreEntity coreEntity, ICoreNode node, string caption)
         {
             if (Application.isPlaying)
                 return;
@@ -215,13 +168,24 @@ namespace Krem.AppCore.Extensions
             bool isValidPrefabStage = prefabStage != null && prefabStage.stageHandle.IsValid();
             var instanceType = PrefabUtility.GetPrefabAssetType(coreEntity.gameObject);
             bool prefabConnected = PrefabUtility.GetPrefabInstanceStatus(coreEntity.gameObject) == PrefabInstanceStatus.Connected;
-            
-            Undo.RecordObject(coreEntity, coreEntity.name + " " + caption);
-            
+
+            if (node.GetType().IsSubclassOf(typeof(CoreComponent)))
+            {
+                Undo.RecordObject((CoreComponent)node, coreEntity.name + " " + caption);
+            } else if (node.GetType().IsSubclassOf(typeof(CoreAction)))
+            {
+                Undo.RecordObject(coreEntity, coreEntity.name + " " + caption);
+            }
+            else
+            {
+                Debug.LogError("Unsupported Node Type");
+                
+                return;
+            }
+
             // Is Inside Prefab
             if (isValidPrefabStage)
             {
-                Debug.Log("Inside Prefab");
                 EditorUtility.SetDirty(coreEntity.gameObject);
             }
 
@@ -238,8 +202,7 @@ namespace Krem.AppCore.Extensions
                 || instanceType == PrefabAssetType.Variant
                 || instanceType == PrefabAssetType.Model)
             {
-                Debug.Log("Prefab In Project");
-                PrefabUtility.ApplyPrefabInstance(coreEntity.gameObject, InteractionMode.UserAction);
+                //PrefabUtility.ApplyPrefabInstance(coreEntity.gameObject, InteractionMode.UserAction);
             }
 
             // Game Object On Scene

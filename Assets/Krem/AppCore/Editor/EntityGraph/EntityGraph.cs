@@ -1,4 +1,3 @@
-using System;
 using Krem.AppCore.EntityGraph.Views;
 using Krem.AppCore.Extensions;
 using UnityEditor;
@@ -77,32 +76,18 @@ namespace Krem.AppCore.EntityGraph
             
             _entityGraphView = root.Q<EntityGraphView>();
             _inspectorView = root.Q<InspectorView>();
+            _inspectorView.SelectedEntity = _selectedEntity;
             _graphIsBrokenCaptionView = root.Q("BrokenGraphCaption");
             
+            _graphIsBrokenCaptionView.visible = false;
             if (_selectedEntity.GraphIsBrokenState)
             {
                 _graphIsBrokenCaptionView.visible = true;
+                return;
             }
-            else
-            {
-                _graphIsBrokenCaptionView.visible = false;
-            }
-            
-            try
-            {
-                BindEvents();
-                PopulateEntityGraph();
 
-                Undo.undoRedoPerformed += OnUndoRedo;
-            }
-            catch (Exception e)
-            {
-                coreEntity.GraphIsBrokenState = true;
-                Debug.LogError(e);
-                Debug.LogError($"Entity: {this} Populate EntityGraph failed");
-            }
-            
-            
+            BindEvents();
+            PopulateEntityGraph();
         }
 
         private void BindEvents()
@@ -114,6 +99,7 @@ namespace Krem.AppCore.EntityGraph
             _entityGraphView.OnEdgeCreated = OnEdgeCreated;
             _entityGraphView.OnEdgeDeleted = OnEdgeDeleted;
             _inspectorView.OnActionNodeValueChanged = OnActionValueChanged;
+            Undo.undoRedoPerformed += OnUndoRedo;
         }
 
         private void PopulateEntityGraph()
@@ -146,19 +132,14 @@ namespace Krem.AppCore.EntityGraph
         private void OnActionValueChanged(NodeView nodeView)
         {
             Debug.Log("OnActionParameterChanged");
-            
-            _selectedEntity.UndoRecord("Action Node Parameter Changed");
-            EditorUtility.SetDirty(_selectedEntity);
         }
 
         private void OnEdgeCreated()
         {
-            //_selectedEntity.SetDirty();
         }
 
         private void OnEdgeDeleted()
         {
-            //_selectedEntity.SetDirty();
         }
     }
 }

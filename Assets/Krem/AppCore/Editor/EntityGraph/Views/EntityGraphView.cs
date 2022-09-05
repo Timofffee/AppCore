@@ -49,13 +49,6 @@ namespace Krem.AppCore.EntityGraph.Views
             styleSheets.Add(styleSheet);
 
             ConfigureSearchWindow();
-
-            Undo.undoRedoPerformed += OnUndoRedo;
-        }
-
-        private void OnUndoRedo()
-        {
-            //Debug.Log("UndoRedo EntityGraphView");
         }
 
         private void ConfigureSearchWindow()

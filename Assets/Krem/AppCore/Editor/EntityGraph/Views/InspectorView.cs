@@ -14,6 +14,7 @@ namespace Krem.AppCore.EntityGraph.Views
         public new class UxmlFactory : UxmlFactory<InspectorView, VisualElement.UxmlTraits> { }
 
         public Action<NodeView> OnActionNodeValueChanged;
+        public CoreEntity SelectedEntity;
         
         private Editor _editor;
         private NodeView _selectedNode;
@@ -79,8 +80,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.value = (float) parameterField.GetValue(action);
                 fieldView.RegisterValueChangedCallback(value =>
                 {
-                    parameterField.SetValue(action, value.newValue);
-                    OnActionNodeValueChanged?.Invoke(_selectedNode);
+                    ChangeActionParameterValue(parameterField, action, value.newValue);
                 });
                 Add(fieldView);
             }
@@ -91,8 +91,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.value = (int) parameterField.GetValue(action);
                 fieldView.RegisterValueChangedCallback(value =>
                 {
-                    parameterField.SetValue(action, value.newValue);
-                    OnActionNodeValueChanged?.Invoke(_selectedNode);
+                    ChangeActionParameterValue(parameterField, action, value.newValue);
                 });
                 Add(fieldView);
             }
@@ -103,8 +102,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.value = (string) parameterField.GetValue(action);
                 fieldView.RegisterValueChangedCallback(value =>
                 {
-                    parameterField.SetValue(action, value.newValue);
-                    OnActionNodeValueChanged?.Invoke(_selectedNode);
+                    ChangeActionParameterValue(parameterField, action, value.newValue);
                 });
                 Add(fieldView);
             }
@@ -115,8 +113,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.value = (bool) parameterField.GetValue(action);
                 fieldView.RegisterValueChangedCallback(value =>
                 {
-                    parameterField.SetValue(action, value.newValue);
-                    OnActionNodeValueChanged?.Invoke(_selectedNode);
+                    ChangeActionParameterValue(parameterField, action, value.newValue);
                 });
                 Add(fieldView);
             }
@@ -127,8 +124,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.value = (Vector2) parameterField.GetValue(action);
                 fieldView.RegisterValueChangedCallback(value =>
                 {
-                    parameterField.SetValue(action, value.newValue);
-                    OnActionNodeValueChanged?.Invoke(_selectedNode);
+                    ChangeActionParameterValue(parameterField, action, value.newValue);
                 });
                 Add(fieldView);
             }
@@ -139,8 +135,7 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.value = (Vector3) parameterField.GetValue(action);
                 fieldView.RegisterValueChangedCallback(value =>
                 {
-                    parameterField.SetValue(action, value.newValue);
-                    OnActionNodeValueChanged?.Invoke(_selectedNode);
+                    ChangeActionParameterValue(parameterField, action, value.newValue);
                 });
                 Add(fieldView);
             }
@@ -152,11 +147,18 @@ namespace Krem.AppCore.EntityGraph.Views
                 fieldView.value = (Enum) parameterField.GetValue(action);
                 fieldView.RegisterValueChangedCallback(value =>
                 {
-                    parameterField.SetValue(action, value.newValue);
-                    OnActionNodeValueChanged?.Invoke(_selectedNode);
+                    ChangeActionParameterValue(parameterField, action, value.newValue);
                 });
                 Add(fieldView);
             }
+        }
+
+        private void ChangeActionParameterValue(FieldInfo parameterField, CoreAction action, object value)
+        {
+            SelectedEntity.UndoRecord(action, "Action Parameter Changed");
+            parameterField.SetValue(action, value);
+            OnActionNodeValueChanged?.Invoke(_selectedNode);
+            EditorUtility.SetDirty(SelectedEntity);
         }
     }
 }
