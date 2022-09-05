@@ -50,11 +50,13 @@ namespace Krem.AppCore
 
         private void Awake()
         {
+            #if UNITY_EDITOR
             if (this.CheckGraphIsError() || GraphIsBrokenState)
             {
                 GraphIsBrokenState = true;
                 throw new Exception("Entity: " + this + " Graph is Broken");
             }
+            #endif
 
             CheckComponentsForNullReferences();
             BindOutputData();

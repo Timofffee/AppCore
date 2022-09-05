@@ -5,10 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/App/DrawRocket/Scenes/Init Scene.unity
-    guid: 5945bf6db8a5e384393eb98626b2bb50
-  - enabled: 0
-    path: Assets/App/DrawRocket/Scenes/Main Scene.unity
-    guid: ac02dc0383da7184ca3b5c8fccb63d8b
+  - enabled: 1
+    path: Assets/App/CubeMatch/Scenes/Main.unity
+    guid: 57a56857b6ab7c94ea2ae43eb316a76d
   m_configObjects: {}

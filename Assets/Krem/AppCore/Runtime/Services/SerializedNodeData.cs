@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using Krem.AppCore.Interfaces;
 using UnityEngine;
 
@@ -22,9 +23,14 @@ namespace Krem.AppCore.Services
         {
             try
             {
-                ICoreNode result = Activator.CreateInstance(AssemblyName, NodeTypeName).Unwrap() as ICoreNode;
+                // For Net Framework
+                //ICoreNode result = Activator.CreateInstance(AssemblyName, NodeTypeName).Unwrap() as ICoreNode;
+                
+                Assembly assembly = Assembly.Load(AssemblyName);
+                Type type = assembly.GetType(NodeTypeName);
+                ICoreNode result = Activator.CreateInstance(type) as ICoreNode;
                 JsonUtility.FromJsonOverwrite(SerializedData, result);
-            
+                
                 return result;
             }
             catch (Exception e)

@@ -114,24 +114,19 @@ namespace Krem.AppCore.EntityGraph
         
         private void OnNodeCreated()
         {
-            //_selectedEntity.SetDirty();
         }
 
         private void OnNodeDeleted()
         {
             _inspectorView.ClearInspector();
-            
-            //_selectedEntity.SetDirty();
         }
 
         private void OnNodeChanged(NodeView nodeView)
         {
-
         }
 
         private void OnActionValueChanged(NodeView nodeView)
         {
-            Debug.Log("OnActionParameterChanged");
         }
 
         private void OnEdgeCreated()

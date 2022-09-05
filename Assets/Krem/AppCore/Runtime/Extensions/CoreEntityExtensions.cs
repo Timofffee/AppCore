@@ -5,7 +5,6 @@ using JetBrains.Annotations;
 using Krem.AppCore.Interfaces;
 using Krem.AppCore.Ports;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.SceneManagement;
