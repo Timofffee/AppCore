@@ -1,0 +1,16 @@
+{
+    "name": "Krem.JetPack.StateMachine",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4aac2e9178ef99c4a837b1b20e1fdf21"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

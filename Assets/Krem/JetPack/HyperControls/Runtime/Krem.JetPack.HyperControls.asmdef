@@ -1,0 +1,17 @@
+{
+    "name": "Krem.JetPack.HyperControls",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4aac2e9178ef99c4a837b1b20e1fdf21",
+        "GUID:79ad6b1f3d081a94eb4203903a8f7b79"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
