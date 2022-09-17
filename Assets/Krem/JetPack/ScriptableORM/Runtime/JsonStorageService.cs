@@ -31,7 +31,7 @@ namespace Krem.JetPack.ScriptableORM
         {
             model = new TModel();
 
-            if (!File.Exists(GetStoragePath(name)))
+            if (File.Exists(GetStoragePath(name)) == false)
             {
                 Debug.LogWarning("No Stored data to Load: " + name);
                 
@@ -50,7 +50,7 @@ namespace Krem.JetPack.ScriptableORM
             Collection<TModel> collection = new Collection<TModel>();
             list = new List<TModel>();
 
-            if (!File.Exists(GetStoragePath(name)))
+            if (File.Exists(GetStoragePath(name)) == false)
             {
                 Debug.LogWarning("No Stored data to Load: " + name);
                 

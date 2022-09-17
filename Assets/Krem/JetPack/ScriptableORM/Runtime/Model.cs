@@ -2,7 +2,6 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
-using Krem.AppCore.Attributes;
 using Krem.JetPack.ScriptableORM.Interfaces;
 using UnityEngine;
 
@@ -12,7 +11,7 @@ namespace Krem.JetPack.ScriptableORM
     public class Model : IHaveGuid, INotifyPropertyChanged
     {
         [SerializeField] protected string _name;
-        [SerializeField][InspectorReadOnly] protected string _guid;
+        [SerializeField] protected string _guid;
         public event PropertyChangedEventHandler PropertyChanged;
         
         public string Name { get => _name; set => SetField(ref _name, value); }

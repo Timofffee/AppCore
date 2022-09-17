@@ -23,7 +23,7 @@ namespace Krem.JetPack.ScriptableORM.Components
         {
             repositories.ForEach(repository =>
             {
-                ((IScriptableRepository) repository).Save();
+                (repository as IScriptableRepository)?.Save();
             });
             
             
@@ -34,7 +34,7 @@ namespace Krem.JetPack.ScriptableORM.Components
         {
             repositories.ForEach(repository =>
             {
-                ((IScriptableRepository) repository).Load();
+                (repository as IScriptableRepository)?.Load();
             });
 
             OnLoaded.Invoke();
