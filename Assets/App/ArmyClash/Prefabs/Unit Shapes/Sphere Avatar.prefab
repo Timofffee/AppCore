@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6919492926118947459}
+  - component: {fileID: 9083466116094554722}
+  - component: {fileID: 3166247656495065555}
   m_Layer: 0
   m_Name: Sphere Avatar
   m_TagString: Untagged
@@ -32,6 +34,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9083466116094554722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2613290814877414992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions: []
+  _graphIsBroken: 0
+--- !u!114 &3166247656495065555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2613290814877414992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b1b2dfbc9f72642b815005c4bf583b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: bc306529-ac32-4f76-ba17-b3635156a592
+  _nodePosition: {x: 478, y: 241}
+  This:
+    _parentID: bc306529-ac32-4f76-ba17-b3635156a592
+    _portID: 0e578b8c-cdf1-47c9-b3ac-9dc1c81d5210
+    _connections: []
+  _meshRenderer: {fileID: 8162197052428167341}
 --- !u!1 &8162197052428167339
 GameObject:
   m_ObjectHideFlags: 0

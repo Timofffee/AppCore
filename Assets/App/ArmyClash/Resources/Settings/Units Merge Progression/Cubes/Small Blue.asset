@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44d1ca350abb4f2478ccbd070fd307b8, type: 3}
-  m_Name: Cube 3
+  m_Name: Small Blue
   m_EditorClassIdentifier: 
   storable: 0
   immutable: 1
   dataProtected: 1
   data:
-    _name: Cube 3
-    _guid: 08e67b55-ac0c-4aba-a3d2-70aa99550dae
-    _itemPrefab: {fileID: 1559995246748670888, guid: 54558a8abf83112409d8d6646da6dd88,
+    _name: Small Blue Cube
+    _guid: 472b4577-19e7-4552-a514-c4f8c25cd52b
+    _itemPrefab: {fileID: 8436610532674997571, guid: 7e25fb89442bff44c97021d2977f1a2c,
       type: 3}
-    _itemShadowClone: {fileID: 2027414065585778855, guid: 1738ed1dad3c0fe1f9395791dd263352,
-      type: 3}
+    _itemShadowClone: {fileID: 0}
     placeOffset: {x: 0, y: 0, z: 0}
     useShadowCloneToDrag: 0
     dragOffset: {x: 0, y: 1, z: 0}

@@ -16,13 +16,13 @@ namespace Krem.DragMergeMatch.Actions.Instantiating
         
         protected override bool Action()
         {
-            if (!_placeholdersList.HasEmptyPlaceholder() || _itemsRepositoryProvider.itemsRepository.Data.Count == 0)
+            if (!_placeholdersList.HasEmptyPlaceholder() || _itemsRepositoryProvider.ItemsRepository.Data.Count == 0)
             {
                 return false;
             }
 
             PlaceholderComponent placeholderComponent = _placeholdersList.GetEmptyPlaceholders().First();
-            DragMergeItemModel dragMergeItemModel = _itemsRepositoryProvider.itemsRepository.Data.First().Model;
+            DragMergeItemModel dragMergeItemModel = _itemsRepositoryProvider.ItemsRepository.Data.First().Model;
             
             GameObject itemInstance = InstantiatingItemService.InstantiateItemFromModelOnPlaceholder(dragMergeItemModel, placeholderComponent);
 

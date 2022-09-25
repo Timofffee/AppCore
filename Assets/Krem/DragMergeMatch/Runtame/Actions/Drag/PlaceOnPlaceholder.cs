@@ -68,7 +68,7 @@ namespace Krem.DragMergeMatch.Actions.Drag
 
         private void PlaceObjectOnPlaceholder(PlaceholderComponent newPlaceholder, PlaceableComponent placeableComponent)
         {
-            placeableComponent.placeholderComponent.Detach();
+            placeableComponent.PlaceholderComponent.Detach();
             newPlaceholder.Attach(_placeableComponent);
             placeableComponent.Transform.position = newPlaceholder.Transform.position;
             placeableComponent.Transform.localPosition = _dragMergeItemModelData.dragMergeItemModel.placeOffset;
@@ -77,7 +77,7 @@ namespace Krem.DragMergeMatch.Actions.Drag
         private void RevertOnPlaceholder()
         {
             _placeableComponent.Transform.position = 
-                _placeableComponent.placeholderComponent.Transform.position;
+                _placeableComponent.PlaceholderComponent.Transform.position;
             _placeableComponent.Transform.localPosition = _dragMergeItemModelData.dragMergeItemModel.placeOffset;
         }
         

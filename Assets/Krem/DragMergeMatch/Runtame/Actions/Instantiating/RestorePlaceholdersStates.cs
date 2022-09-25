@@ -22,7 +22,7 @@ namespace Krem.DragMergeMatch.Actions.Instantiating
             {
                 PlaceholderComponent placeholder = _placeholdersList.GetPlaceholderByGuid(state.PlaceholderGuid);
                 DragMergeItemModel itemModel =
-                    _itemsRepositoryProvider.itemsRepository.FindByGuid(state.ItemGuid).Model;
+                    _itemsRepositoryProvider.ItemsRepository.FindByGuid(state.ItemGuid).Model;
                 
                 GameObject itemInstance = InstantiatingItemService.InstantiateItemFromModelOnPlaceholder(itemModel, placeholder);
             });

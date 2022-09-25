@@ -27,7 +27,7 @@ namespace Krem.DragMergeMatch.Actions.Merge
             }
             
             DragMergeScriptableModel nextItem =
-                _itemsRepositoryProvider.itemsRepository.FindNextByGuid(_mergeableComponent.DragMergeItemModelData
+                _itemsRepositoryProvider.ItemsRepository.FindNextByGuid(_mergeableComponent.DragMergeItemModelData
                     .dragMergeItemModel.Guid);
 
             if (nextItem == null)
@@ -38,7 +38,7 @@ namespace Krem.DragMergeMatch.Actions.Merge
             }
             
             MergeableComponent withMergeComponent = _mergeableComponent.MergeWith;
-            withMergeComponent.gameObject.GetComponent<PlaceableComponent>()?.placeholderComponent.Detach();
+            withMergeComponent.gameObject.GetComponent<PlaceableComponent>()?.PlaceholderComponent.Detach();
             
             GameObject.Destroy(withMergeComponent.gameObject);
             _mergeableComponent.MergeWith = null;

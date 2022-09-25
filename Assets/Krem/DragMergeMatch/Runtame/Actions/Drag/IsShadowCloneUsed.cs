@@ -1,21 +1,26 @@
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
+using Krem.AppCore.Ports;
 using Krem.DragMergeMatch.Components;
 
 namespace Krem.DragMergeMatch.Actions.Drag
 {
     [NodeGraphGroupName("Drag Merge Match/Drag")] 
-    public class ResetPosition : CoreAction 
+    public class IsShadowCloneUsed : CoreAction 
     {
-        [InjectComponent] private PlaceableComponent _placeableComponent;
         [InjectComponent] private DragMergeItemModelData _dragMergeItemModelData;
+
+        public OutputSignal isNotUsed;
         
         protected override bool Action()
         {
-            _placeableComponent.Transform.position = 
-                _placeableComponent.PlaceholderComponent.Transform.position;
-            _placeableComponent.Transform.localPosition = _dragMergeItemModelData.dragMergeItemModel.placeOffset;
-        
+            if (_dragMergeItemModelData.dragMergeItemModel.useShadowCloneToDrag == false)
+            {
+                isNotUsed.Invoke();
+                
+                return false;
+            }
+            
             return true;
         }
     }

@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1203136559396985031}
+  - component: {fileID: 678273962092064321}
+  - component: {fileID: 6656586352464829324}
   m_Layer: 0
   m_Name: Cube Avatar
   m_TagString: Untagged
@@ -32,6 +34,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678273962092064321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203136559396985080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions: []
+  _graphIsBroken: 0
+--- !u!114 &6656586352464829324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203136559396985080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b1b2dfbc9f72642b815005c4bf583b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 6c3815cc-8fe7-4661-82d4-98ddb31c68f1
+  _nodePosition: {x: 446, y: 237}
+  This:
+    _parentID: 6c3815cc-8fe7-4661-82d4-98ddb31c68f1
+    _portID: b2b645ec-97f0-4934-94b8-415cda3ff5c5
+    _connections: []
+  _meshRenderer: {fileID: 1203136561039932444}
 --- !u!1 &1203136561039932446
 GameObject:
   m_ObjectHideFlags: 0

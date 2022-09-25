@@ -57,7 +57,7 @@ namespace Krem.DragMergeMatch.Actions.Drag
                 return false;
             }
             
-            _placeableComponent.placeholderComponent.Detach();
+            _placeableComponent.PlaceholderComponent.Detach();
             placeholderComponent.Attach(_placeableComponent);
             
             return true;

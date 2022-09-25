@@ -1,4 +1,4 @@
-using System;
+using System.Diagnostics.CodeAnalysis;
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
 using Krem.DragMergeMatch.Scriptables;
@@ -11,14 +11,8 @@ namespace Krem.DragMergeMatch.Components
     public class ItemsRepositoryProvider : CoreComponent
     {    
         [Header("Dependencies")]
-        public ItemsRepository itemsRepository;
+        [SerializeField, NotNull] protected ItemsRepository _itemsRepository;
 
-        private void Awake()
-        {
-            if (itemsRepository == null)
-            {
-                throw new ArgumentNullException(nameof(itemsRepository));
-            }
-        }
+        public ItemsRepository ItemsRepository => _itemsRepository;
     }
 }

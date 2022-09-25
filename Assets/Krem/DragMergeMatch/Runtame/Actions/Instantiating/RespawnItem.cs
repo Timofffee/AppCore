@@ -24,7 +24,7 @@ namespace Krem.DragMergeMatch.Actions.Instantiating
             // GameObject itemInstance = GameObject.Instantiate(currentItemModel.ItemPrefab);
             // itemInstance.transform.parent = _transform.parent.transform;
             
-            GameObject itemInstance = InstantiatingItemService.InstantiateItemFromModelOnPlaceholder(currentItemModel, currentPlaceableComponent.placeholderComponent);
+            GameObject itemInstance = InstantiatingItemService.InstantiateItemFromModelOnPlaceholder(currentItemModel, currentPlaceableComponent.PlaceholderComponent);
             GameObject.Destroy(_transform.gameObject);
 
             return true;

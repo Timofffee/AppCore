@@ -79,7 +79,7 @@ namespace Krem.DragMergeMatch.Components
         {
             _attachedPlaceable = placeableInstance;
             _attachedPlaceable.Transform.parent = this.Transform;
-            placeableInstance.placeholderComponent = this;
+            placeableInstance.PlaceholderComponent = this;
             
 
             OnItemPlaced.Invoke();
@@ -89,7 +89,7 @@ namespace Krem.DragMergeMatch.Components
         public void Detach()
         {
             _attachedPlaceable.Transform.parent = this.Transform.parent;
-            _attachedPlaceable.placeholderComponent = null;
+            _attachedPlaceable.PlaceholderComponent = null;
             _attachedPlaceable = null;
             
             OnPlaceholderUpdate.Invoke();

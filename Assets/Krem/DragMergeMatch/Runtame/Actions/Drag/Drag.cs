@@ -18,11 +18,10 @@ namespace Krem.DragMergeMatch.Actions.Drag
             if (!_draggable.Active)
                 return false;
 
-            var inputRead = _draggable.PointerDragPosition;
+            Vector2 inputRead = _draggable.PointerDragPosition;
+            Vector3 mousePosition = new Vector3(inputRead.x, inputRead.y, 0);
             
-            var mousePos = new Vector3(inputRead.x, inputRead.y, 0);
-            
-            Ray currentRay = _draggable.MainCamera.ScreenPointToRay(mousePos);
+            Ray currentRay = _draggable.MainCamera.ScreenPointToRay(mousePosition);
             Vector3 currentPosition = _draggable.Transform.position;
             
             // Get move Plane's Normal
@@ -47,9 +46,6 @@ namespace Krem.DragMergeMatch.Actions.Drag
 
             // plane vs. line intersection in algebric form. It find t as distance from the camera of the new point in the ray's direction.
             float distance = Vector3.Dot(currentPosition - currentRay.origin, _planeNormal) / Vector3.Dot(currentRay.direction, _planeNormal);
-
-            if (_dragMergeItemModelData.dragMergeItemModel.useShadowCloneToDrag && _draggable.ShadowClone == null)
-                return false;
 
             if (_dragMergeItemModelData.dragMergeItemModel.useShadowCloneToDrag)
                 _draggable.ShadowClone.transform.position = currentRay.origin + currentRay.direction * distance + _dragMergeItemModelData.dragMergeItemModel.dragOffset;
