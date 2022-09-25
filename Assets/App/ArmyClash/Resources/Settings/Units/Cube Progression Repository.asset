@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e05edeff00f3a2499757f2592dd4b12, type: 3}
-  m_Name: ItemsRepository 1
+  m_Name: Cube Progression Repository
   m_EditorClassIdentifier: 
   Data:
-  - {fileID: 11400000, guid: 8a74273f4ff61284fab117b79efc1740, type: 2}
-  - {fileID: 11400000, guid: c2e87fa1920e5d3408a40fd8794a60bb, type: 2}
-  - {fileID: 11400000, guid: 0a41013cdd2322248a59d2b0b802374a, type: 2}
+  - {fileID: 11400000, guid: 369be392bf173f848b279b70e343ef61, type: 2}
+  - {fileID: 11400000, guid: c4715172e13be89428d0a048f6a0149d, type: 2}
+  - {fileID: 11400000, guid: 39c4830cdabab0943a52c1da41c06f01, type: 2}

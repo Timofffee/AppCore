@@ -1,7 +1,6 @@
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Krem.DragMergeMatch.Components
 {
@@ -16,8 +15,6 @@ namespace Krem.DragMergeMatch.Components
 
         private Transform _transform;
         public Transform Transform => _transform;
-
-        public UnityEvent onPlaced;
 
         private void Awake()
         {

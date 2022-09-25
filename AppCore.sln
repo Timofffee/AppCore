@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXRDemo", "CFXRDemo.csproj", "{638160b5-7e2e-6c12-dd9e-df4adffb7ef1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.DragMergeMatch", "Krem.DragMergeMatch.csproj", "{58be8f70-32f6-a6af-5b44-c2b37f7e18de}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.HyperControls", "Krem.JetPack.HyperControls.csproj", "{acd95606-9aee-7acb-237e-48aecead3ef0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.Basis", "Krem.JetPack.Basis.csproj", "{a7a652d9-f748-4530-93ba-6de0fc8493ad}"
@@ -38,8 +40,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.ObjectsPool", "Krem.JetPack.ObjectsPool.csproj", "{2d4e89de-66a7-f97f-d0c1-b1c2def74689}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.MetaGame", "Krem.JetPack.MetaGame.csproj", "{e195b7a1-111c-8800-71e9-e56ec97c8051}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.DragMergeMatch", "Krem.DragMergeMatch.csproj", "{58be8f70-32f6-a6af-5b44-c2b37f7e18de}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSdk.Scripts.IntegrationManager.Editor", "MaxSdk.Scripts.IntegrationManager.Editor.csproj", "{ce18f137-e4b9-8f47-397e-a9f9288de389}"
 EndProject
@@ -82,6 +82,8 @@ Global
 		{ef9462ce-5956-1b0f-6a4d-3426d7973903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{638160b5-7e2e-6c12-dd9e-df4adffb7ef1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{638160b5-7e2e-6c12-dd9e-df4adffb7ef1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58be8f70-32f6-a6af-5b44-c2b37f7e18de}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58be8f70-32f6-a6af-5b44-c2b37f7e18de}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{acd95606-9aee-7acb-237e-48aecead3ef0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{acd95606-9aee-7acb-237e-48aecead3ef0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a7a652d9-f748-4530-93ba-6de0fc8493ad}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -102,8 +104,6 @@ Global
 		{2d4e89de-66a7-f97f-d0c1-b1c2def74689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e195b7a1-111c-8800-71e9-e56ec97c8051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{e195b7a1-111c-8800-71e9-e56ec97c8051}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58be8f70-32f6-a6af-5b44-c2b37f7e18de}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58be8f70-32f6-a6af-5b44-c2b37f7e18de}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ce18f137-e4b9-8f47-397e-a9f9288de389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ce18f137-e4b9-8f47-397e-a9f9288de389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a2f17435-c42c-02a9-baae-4cacff5d2dee}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

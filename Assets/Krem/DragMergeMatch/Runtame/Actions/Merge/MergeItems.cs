@@ -25,6 +25,8 @@ namespace Krem.DragMergeMatch.Actions.Merge
                 
                 return false;
             }
+            
+            Debug.Log("F Pass");
 
             DragMergeScriptableModel nextItem =
                 _itemsRepositoryProvider.itemsRepository.FindNextByGuid(_mergeableComponent.DragMergeItemModelData

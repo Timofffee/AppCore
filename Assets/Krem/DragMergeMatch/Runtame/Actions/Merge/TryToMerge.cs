@@ -21,17 +21,17 @@ namespace Krem.DragMergeMatch.Actions.Merge
 
         protected override bool Action()
         {
-            var result = new List<RaycastResult>();
-            EventSystem.current.RaycastAll(_draggableComponent.PointerEventData, result);
+            var raycastResults = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(_draggableComponent.PointerEventData, raycastResults);
             
             GameObject raycastedGameObject =
-                result.Find(rr => rr.gameObject.GetComponent<MergeableComponent>() != null 
+                raycastResults.Find(rr => rr.gameObject.GetComponent<MergeableComponent>() != null 
                                   && rr.gameObject.GetComponent<MergeableComponent>().GetInstanceID() != _mergeableComponent.GetInstanceID()
                                   ).gameObject;
 
             if (
                 raycastedGameObject == null
-                || raycastedGameObject.TryGetComponent<MergeableComponent>(out MergeableComponent mergeableComponent) == false
+                || raycastedGameObject.TryGetComponent<MergeableComponent>(out MergeableComponent mergeWithMergeableComponent) == false
             )
             {
                 OnRevert.Invoke();
@@ -39,21 +39,21 @@ namespace Krem.DragMergeMatch.Actions.Merge
                 return false;
             }
 
-            if (_mergeableComponent.Active == false || mergeableComponent.Active == false)
+            if (_mergeableComponent.Active == false || mergeWithMergeableComponent.Active == false)
             {
                 OnRevert.Invoke();
                 
                 return false;
             }
 
-            if (_mergeableComponent.DragMergeItemModelData.dragMergeItemModel.Guid != mergeableComponent.DragMergeItemModelData.dragMergeItemModel.Guid)
+            if (_mergeableComponent.DragMergeItemModelData.dragMergeItemModel.Guid != mergeWithMergeableComponent.DragMergeItemModelData.dragMergeItemModel.Guid)
             {
                 OnRevert.Invoke();
                 
                 return false;
             }
             
-            mergeableComponent.MergeRequest(_mergeableComponent);
+            mergeWithMergeableComponent.MergeRequest(_mergeableComponent);
 
             return true;
         }

@@ -194,13 +194,16 @@ MonoBehaviour:
     SerializedData: '{"Execute":{"_parentID":"6e5e644f-7466-4d7a-ae2e-26657a2fbfe0","_portID":"bd0dfb1e-f332-4428-b117-ff9e91d02dfb"},"OnExecuted":{"_parentID":"6e5e644f-7466-4d7a-ae2e-26657a2fbfe0","_portID":"f6487726-124f-4790-ac11-44fbf62f9549","_connections":[]},"_nodeID":"6e5e644f-7466-4d7a-ae2e-26657a2fbfe0","_nodePosition":{"x":809.0,"y":279.0}}'
   - NodeTypeName: Krem.DragMergeMatch.Actions.Merge.TryToMerge
     AssemblyName: Krem.DragMergeMatch
-    SerializedData: '{"Execute":{"_parentID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_portID":"e4740397-12ce-44eb-b279-29d2fd566ed2"},"OnExecuted":{"_parentID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_portID":"f3e5da78-4d7b-44da-a972-02bf4de4f10d","_connections":[]},"_nodeID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_nodePosition":{"x":1071.0,"y":396.0},"OnRevert":{"_parentID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_portID":"3a1df6e6-4012-4625-afe7-a31cb38802b3","_connections":[]}}'
+    SerializedData: '{"Execute":{"_parentID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_portID":"e4740397-12ce-44eb-b279-29d2fd566ed2"},"OnExecuted":{"_parentID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_portID":"f3e5da78-4d7b-44da-a972-02bf4de4f10d","_connections":[]},"_nodeID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_nodePosition":{"x":1071.0,"y":338.20013427734377},"OnRevert":{"_parentID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_portID":"3a1df6e6-4012-4625-afe7-a31cb38802b3","_connections":[{"_parentID":"b86dc420-80e3-4315-9662-e9b79a58e643","_portID":"3875df34-78f2-460e-85e0-c553e1a06028"}]}}'
   - NodeTypeName: Krem.DragMergeMatch.Actions.Drag.DestroyShadowClone
     AssemblyName: Krem.DragMergeMatch
     SerializedData: '{"Execute":{"_parentID":"a48187b0-d5d5-43d7-8b0c-48397186f735","_portID":"080eb2bc-eb9b-4d81-bbe0-e2d51bed1168"},"OnExecuted":{"_parentID":"a48187b0-d5d5-43d7-8b0c-48397186f735","_portID":"431b7d9d-1e51-4793-8d48-2e45400c7c11","_connections":[]},"_nodeID":"a48187b0-d5d5-43d7-8b0c-48397186f735","_nodePosition":{"x":809.0,"y":528.0}}'
-  - NodeTypeName: Krem.DragMergeMatch.Actions.Drag.PlaceOnPlaceholder
+  - NodeTypeName: Krem.DragMergeMatch.Actions.Drag.TryToPlace
     AssemblyName: Krem.DragMergeMatch
-    SerializedData: '{"Execute":{"_parentID":"42f198a8-bf09-4540-9a44-dc388b3c7712","_portID":"6cee16ac-f8bc-421b-af17-026395c62f93"},"OnExecuted":{"_parentID":"42f198a8-bf09-4540-9a44-dc388b3c7712","_portID":"8cd559fe-b830-44eb-8895-37c9a01454b0","_connections":[]},"_nodeID":"42f198a8-bf09-4540-9a44-dc388b3c7712","_nodePosition":{"x":809.0,"y":396.0},"OnRevert":{"_parentID":"42f198a8-bf09-4540-9a44-dc388b3c7712","_portID":"3acc94b5-664e-4922-a252-fb415d1f06fc","_connections":[{"_parentID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_portID":"e4740397-12ce-44eb-b279-29d2fd566ed2"}]}}'
+    SerializedData: '{"Execute":{"_parentID":"170aa78c-247f-45e4-9a9d-f7745c40393f","_portID":"cfab9b3d-6627-4f21-847e-174e67aa7507"},"OnExecuted":{"_parentID":"170aa78c-247f-45e4-9a9d-f7745c40393f","_portID":"d29d427b-7027-42ca-9f4d-c51547d02a8d","_connections":[{"_parentID":"b86dc420-80e3-4315-9662-e9b79a58e643","_portID":"3875df34-78f2-460e-85e0-c553e1a06028"}]},"_nodeID":"170aa78c-247f-45e4-9a9d-f7745c40393f","_nodePosition":{"x":809.0,"y":379.0},"OnRevert":{"_parentID":"170aa78c-247f-45e4-9a9d-f7745c40393f","_portID":"fc21dbad-97d1-49f2-bc4e-eda034efe37f","_connections":[{"_parentID":"3bf68d34-8ba7-42f6-94f0-b218286eff51","_portID":"e4740397-12ce-44eb-b279-29d2fd566ed2"}]}}'
+  - NodeTypeName: Krem.DragMergeMatch.Actions.Drag.ResetPosition
+    AssemblyName: Krem.DragMergeMatch
+    SerializedData: '{"Execute":{"_parentID":"b86dc420-80e3-4315-9662-e9b79a58e643","_portID":"3875df34-78f2-460e-85e0-c553e1a06028"},"OnExecuted":{"_parentID":"b86dc420-80e3-4315-9662-e9b79a58e643","_portID":"5c65c858-bb2f-4f22-969e-f231af7287bf","_connections":[]},"_nodeID":"b86dc420-80e3-4315-9662-e9b79a58e643","_nodePosition":{"x":1347.0,"y":403.0}}'
   _graphIsBroken: 0
 --- !u!114 &8071203402786385843
 MonoBehaviour:
@@ -222,9 +225,6 @@ MonoBehaviour:
     _connections: []
   placeholderComponent: {fileID: 0}
   guid: 
-  onPlaced:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &3532737350832529873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,10 +261,10 @@ MonoBehaviour:
     _parentID: d7ed13bc-da2c-42f0-99ad-74f5bdd554a7
     _portID: 057eb444-8b65-4e2e-982e-df5141ec38b3
     _connections:
-    - _parentID: 42f198a8-bf09-4540-9a44-dc388b3c7712
-      _portID: 6cee16ac-f8bc-421b-af17-026395c62f93
     - _parentID: a48187b0-d5d5-43d7-8b0c-48397186f735
       _portID: 080eb2bc-eb9b-4d81-bbe0-e2d51bed1168
+    - _parentID: 170aa78c-247f-45e4-9a9d-f7745c40393f
+      _portID: cfab9b3d-6627-4f21-847e-174e67aa7507
 --- !u!114 &8132935599450333407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,4 +335,4 @@ MonoBehaviour:
     _parentID: 79e0754d-e028-4cc1-9070-29748f2cc00a
     _portID: 659c9753-567b-438d-85aa-42448e74bcb1
     _connections: []
-  itemsRepository: {fileID: 11400000, guid: 2a4c459fc7074324fab966af630ed879, type: 2}
+  itemsRepository: {fileID: 11400000, guid: 7483040a8c04cfd4686084416f08b681, type: 2}

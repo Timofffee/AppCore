@@ -11,12 +11,11 @@ using UnityEngine.EventSystems;
 namespace Krem.DragMergeMatch.Actions.Drag
 {
     [NodeGraphGroupName("Drag Merge Match/Drag")] 
-    public class PlaceOnPlaceholder : CoreAction 
+    public class TryToPlace : CoreAction 
     {
         [Header("Data")]
         [InjectComponent] private DraggableComponent _draggableComponent;
         [InjectComponent] private PlaceableComponent _placeableComponent;
-        [InjectComponent] private DragMergeItemModelData _dragMergeItemModelData;
         
         [Header("Ports")]
         public OutputSignal OnRevert;
@@ -33,7 +32,6 @@ namespace Krem.DragMergeMatch.Actions.Drag
             }
             catch (Exception e)
             {
-                RevertOnPlaceholder();
                 OnRevert.Invoke();
                 
                 return false;
@@ -42,7 +40,6 @@ namespace Krem.DragMergeMatch.Actions.Drag
             // Check Placeholder is Active
             if (placeholderComponent.Active == false)
             {
-                RevertOnPlaceholder();
                 OnRevert.Invoke();
                 
                 return false; 
@@ -53,7 +50,6 @@ namespace Krem.DragMergeMatch.Actions.Drag
                 && _placeableComponent.Guid != placeholderComponent.AttachedPlaceable.Guid
             )
             {
-                RevertOnPlaceholder();
                 placeholderComponent.Overflow(_placeableComponent);
                 
                 OnRevert.Invoke();
@@ -61,25 +57,10 @@ namespace Krem.DragMergeMatch.Actions.Drag
                 return false;
             }
             
-            PlaceObjectOnPlaceholder(placeholderComponent, _placeableComponent);
+            _placeableComponent.placeholderComponent.Detach();
+            placeholderComponent.Attach(_placeableComponent);
             
             return true;
         }
-
-        private void PlaceObjectOnPlaceholder(PlaceholderComponent newPlaceholder, PlaceableComponent placeableComponent)
-        {
-            placeableComponent.placeholderComponent.Detach();
-            newPlaceholder.Attach(_placeableComponent);
-            placeableComponent.Transform.position = newPlaceholder.Transform.position;
-            placeableComponent.Transform.localPosition = _dragMergeItemModelData.dragMergeItemModel.placeOffset;
-        }
-
-        private void RevertOnPlaceholder()
-        {
-            _placeableComponent.Transform.position = 
-                _placeableComponent.placeholderComponent.Transform.position;
-            _placeableComponent.Transform.localPosition = _dragMergeItemModelData.dragMergeItemModel.placeOffset;
-        }
-        
     }
 }

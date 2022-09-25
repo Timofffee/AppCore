@@ -1,4 +1,4 @@
-using System;
+using System.Diagnostics.CodeAnalysis;
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
 using Krem.AppCore.Ports;
@@ -11,7 +11,7 @@ namespace Krem.DragMergeMatch.Components
     public sealed class MergeableComponent : CoreComponent
     {
         [Header("Dependencies")]
-        [SerializeField] private DragMergeItemModelData _dragMergeItemModelData; 
+        [SerializeField, NotNull] private DragMergeItemModelData _dragMergeItemModelData; 
 
         [Header("States")]
         [SerializeField] private bool _active = true;
@@ -19,7 +19,7 @@ namespace Krem.DragMergeMatch.Components
         [Header("Ports")]
         public OutputSignal OnMergeRequest;
 
-        private MergeableComponent _mergeWithItem;
+        protected MergeableComponent _mergeWithItem;
 
         public DragMergeItemModelData DragMergeItemModelData => _dragMergeItemModelData;
         public bool Active
@@ -34,17 +34,10 @@ namespace Krem.DragMergeMatch.Components
             set => _mergeWithItem = value;
         }
 
-        private void Awake()
-        {
-            if (_dragMergeItemModelData == null)
-            {
-                throw new ArgumentNullException(nameof(_dragMergeItemModelData));
-            }
-        }
-
         public void MergeRequest(MergeableComponent mergeWithItem)
         {
             _mergeWithItem = mergeWithItem;
+            
             OnMergeRequest.Invoke();
         }
     }

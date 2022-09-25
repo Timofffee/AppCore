@@ -9,6 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5365485788246187058}
+  - component: {fileID: 4645559034125337557}
+  - component: {fileID: 4130283698861462131}
+  - component: {fileID: 2750861012895611043}
   m_Layer: 0
   m_Name: Placeholder
   m_TagString: Untagged
@@ -32,6 +35,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4645559034125337557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5365485788246187059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions: []
+  _graphIsBroken: 0
+--- !u!65 &4130283698861462131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5365485788246187059}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6, y: 0.1, z: 1.6}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2750861012895611043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5365485788246187059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c0cd15693a65848aa31ef7e53e02fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: ca186d2c-c4b9-472d-87b6-7edf2bb3cc12
+  _nodePosition: {x: 401, y: 273}
+  This:
+    _parentID: ca186d2c-c4b9-472d-87b6-7edf2bb3cc12
+    _portID: 09b75555-4054-462e-9b7b-352404d78f15
+    _connections: []
+  _attachedPlaceable: {fileID: 0}
+  _guid: a9fb30fa-d1aa-4663-b224-4d74bb50c2ca
+  _active: 1
+  CallHighlightRequest:
+    _parentID: ca186d2c-c4b9-472d-87b6-7edf2bb3cc12
+    _portID: dc3835a8-afab-49fc-bce2-f3f49cb8423c
+  OnHighlightRequest:
+    _parentID: ca186d2c-c4b9-472d-87b6-7edf2bb3cc12
+    _portID: e9eedd58-6463-475e-a4f1-123c58a1b4e1
+    _connections: []
+  OnOverflow:
+    _parentID: ca186d2c-c4b9-472d-87b6-7edf2bb3cc12
+    _portID: 2e930c4a-cb0f-471d-947b-16f6f32cc062
+    _connections: []
+  OnItemPlaced:
+    _parentID: ca186d2c-c4b9-472d-87b6-7edf2bb3cc12
+    _portID: 7db792cc-f08c-4894-9503-42543817b121
+    _connections: []
+  OnPlaceholderUpdate:
+    _parentID: ca186d2c-c4b9-472d-87b6-7edf2bb3cc12
+    _portID: 3cb65e1c-ab84-4c5d-94a3-8c5949f55b41
+    _connections: []
 --- !u!1 &5365485788261712004
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +113,6 @@ GameObject:
   - component: {fileID: 5365485788261712003}
   - component: {fileID: 5365485788261712000}
   - component: {fileID: 5365485788261712001}
-  - component: {fileID: 5365485788261712002}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -116,17 +185,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5365485788261712002
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5365485788261712004}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}

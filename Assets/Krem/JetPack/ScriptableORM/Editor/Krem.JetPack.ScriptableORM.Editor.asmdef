@@ -2,7 +2,8 @@
     "name": "Krem.JetPack.ScriptableORM.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:c251003795012e24da9b3cfd259e0271"
+        "GUID:c251003795012e24da9b3cfd259e0271",
+        "GUID:4aac2e9178ef99c4a837b1b20e1fdf21"
     ],
     "includePlatforms": [
         "Editor"
