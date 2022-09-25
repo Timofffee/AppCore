@@ -17,7 +17,7 @@ namespace Krem.AppCore
     {
         private List<CoreAction> _actions = new List<CoreAction>();
         [SerializeField] private List<SerializedNodeData> _serializedActions = new List<SerializedNodeData>();
-        [SerializeField, InspectorReadOnly] private bool _graphIsBroken = false;
+        [SerializeField] private bool _graphIsBroken = false;
 
         public List<ICoreNode> Nodes
         {

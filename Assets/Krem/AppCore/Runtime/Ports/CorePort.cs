@@ -1,5 +1,4 @@
 using System;
-using Krem.AppCore.Attributes;
 using Krem.AppCore.Interfaces;
 using UnityEngine;
 
@@ -8,8 +7,8 @@ namespace Krem.AppCore.Ports
     [Serializable]
     public class CorePort : ICorePort
     {
-        [SerializeField][InspectorReadOnly] protected string _parentID;
-        [SerializeField][InspectorReadOnly] protected string _portID;
+        [SerializeField] protected string _parentID;
+        [SerializeField] protected string _portID;
         
         public string ParentID { get => _parentID; set => _parentID = value; }
         public string PortID { get => _portID; set => _portID = value; }

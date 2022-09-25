@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.ObjectsPool", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.MetaGame", "Krem.JetPack.MetaGame.csproj", "{e195b7a1-111c-8800-71e9-e56ec97c8051}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.DragMergeMatch", "Krem.DragMergeMatch.csproj", "{58be8f70-32f6-a6af-5b44-c2b37f7e18de}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSdk.Scripts.IntegrationManager.Editor", "MaxSdk.Scripts.IntegrationManager.Editor.csproj", "{ce18f137-e4b9-8f47-397e-a9f9288de389}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Editor", "ToonyColorsPro.Editor.csproj", "{a2f17435-c42c-02a9-baae-4cacff5d2dee}"
@@ -100,6 +102,8 @@ Global
 		{2d4e89de-66a7-f97f-d0c1-b1c2def74689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e195b7a1-111c-8800-71e9-e56ec97c8051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{e195b7a1-111c-8800-71e9-e56ec97c8051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58be8f70-32f6-a6af-5b44-c2b37f7e18de}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58be8f70-32f6-a6af-5b44-c2b37f7e18de}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ce18f137-e4b9-8f47-397e-a9f9288de389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ce18f137-e4b9-8f47-397e-a9f9288de389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a2f17435-c42c-02a9-baae-4cacff5d2dee}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

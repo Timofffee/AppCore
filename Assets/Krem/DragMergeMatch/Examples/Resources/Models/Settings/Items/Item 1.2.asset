@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d1ca350abb4f2478ccbd070fd307b8, type: 3}
+  m_Name: Item 1.2
+  m_EditorClassIdentifier: 
+  storable: 0
+  immutable: 1
+  dataProtected: 1
+  data:
+    _name: Item 1.2
+    _guid: b3c6aa34-4dc1-4acc-9672-33da15080e8e
+    _itemPrefab: {fileID: 481199138605069732, guid: d5bd5ac4023aa484db29e6e907477b07,
+      type: 3}
+    _itemShadowClone: {fileID: 2027414065585778855, guid: 1738ed1dad3c0fe1f9395791dd263352,
+      type: 3}
+    placeOffset: {x: 0, y: 0, z: -1}
+    useShadowCloneToDrag: 1
+    shadowCloneOffset: {x: 0, y: 0, z: -2}
