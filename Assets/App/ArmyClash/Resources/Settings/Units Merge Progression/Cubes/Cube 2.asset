@@ -16,12 +16,12 @@ MonoBehaviour:
   immutable: 1
   dataProtected: 1
   data:
-    _name: Item 1.2
+    _name: Cube 2
     _guid: b3c6aa34-4dc1-4acc-9672-33da15080e8e
-    _itemPrefab: {fileID: 481199138605069732, guid: d5bd5ac4023aa484db29e6e907477b07,
+    _itemPrefab: {fileID: 1559995246748670888, guid: 42b4a629666ff044eb016b6fed41fb15,
       type: 3}
     _itemShadowClone: {fileID: 2027414065585778855, guid: 1738ed1dad3c0fe1f9395791dd263352,
       type: 3}
     placeOffset: {x: 0, y: 0, z: 0}
-    useShadowCloneToDrag: 1
-    shadowCloneOffset: {x: 0, y: 0, z: 0}
+    useShadowCloneToDrag: 0
+    dragOffset: {x: 0, y: 1, z: 0}

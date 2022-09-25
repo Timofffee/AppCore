@@ -9,7 +9,9 @@ namespace Krem.DragMergeMatch.Components
     public enum DragPlaneOrientation
     {
         Camera,
-        Object
+        ObjectForward,
+        ObjectUp,
+        CustomPlane
     }
     
     [NodeGraphGroupName("Drag Merge Match")]
@@ -21,7 +23,7 @@ namespace Krem.DragMergeMatch.Components
 
         [Header("Settings")]
         public DragPlaneOrientation dragPlaneOrientation;
-        
+
         [Header("Ports")]
         public OutputSignal OnStartDrag;
         public OutputSignal OnDragging;

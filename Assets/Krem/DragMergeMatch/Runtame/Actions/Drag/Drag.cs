@@ -32,8 +32,12 @@ namespace Krem.DragMergeMatch.Actions.Drag
                     _planeNormal = _draggable.MainCamera.transform.forward;
                     break;
                 
-                case DragPlaneOrientation.Object:
+                case DragPlaneOrientation.ObjectForward:
                     _planeNormal = _draggable.Transform.forward;
+                    break;
+                
+                case DragPlaneOrientation.ObjectUp:
+                    _planeNormal = _draggable.Transform.up;
                     break;
                 
                 default:
@@ -48,7 +52,7 @@ namespace Krem.DragMergeMatch.Actions.Drag
                 return false;
 
             if (_dragMergeItemModelData.dragMergeItemModel.useShadowCloneToDrag)
-                _draggable.ShadowClone.transform.position = currentRay.origin + currentRay.direction * distance + _dragMergeItemModelData.dragMergeItemModel.shadowCloneOffset;
+                _draggable.ShadowClone.transform.position = currentRay.origin + currentRay.direction * distance + _dragMergeItemModelData.dragMergeItemModel.dragOffset;
             else
                 _draggable.Transform.position = currentRay.origin + currentRay.direction * distance;
 

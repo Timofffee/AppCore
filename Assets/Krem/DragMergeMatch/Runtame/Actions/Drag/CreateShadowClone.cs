@@ -27,7 +27,7 @@ namespace Krem.DragMergeMatch.Actions.Drag
                 _draggable.ShadowClone.gameObject.SetActive(true);
             }
 
-            _draggable.ShadowClone.Transform.position = _draggable.Transform.position + _dragMergeItemModelData.dragMergeItemModel.shadowCloneOffset;
+            _draggable.ShadowClone.Transform.position = _draggable.Transform.position + _dragMergeItemModelData.dragMergeItemModel.dragOffset;
         
             return true;
         }

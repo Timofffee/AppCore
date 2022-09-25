@@ -13,7 +13,7 @@ namespace Krem.DragMergeMatch.Models
         [Header("Settings")]
         public Vector3 placeOffset = new Vector3(0,0,0);
         public bool useShadowCloneToDrag = false;
-        public Vector3 shadowCloneOffset = new Vector3(0, 0,  -1);
+        public Vector3 dragOffset = new Vector3(0, 0,  -1);
         
         public GameObject ItemPrefab { get => _itemPrefab; }
         public GameObject ItemShadowClone { get => _itemShadowClone; }

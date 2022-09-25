@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44d1ca350abb4f2478ccbd070fd307b8, type: 3}
-  m_Name: Cube 1
+  m_Name: Cube 3
   m_EditorClassIdentifier: 
   storable: 0
   immutable: 1
   dataProtected: 1
   data:
-    _name: Item 1.1
-    _guid: bc359557-ed3b-43fe-86e5-0330b63764ab
-    _itemPrefab: {fileID: 481199138605069732, guid: fa19de6f4255c2841be4f3a060a6cc04,
+    _name: Cube 3
+    _guid: 08e67b55-ac0c-4aba-a3d2-70aa99550dae
+    _itemPrefab: {fileID: 1559995246748670888, guid: 54558a8abf83112409d8d6646da6dd88,
       type: 3}
     _itemShadowClone: {fileID: 2027414065585778855, guid: 1738ed1dad3c0fe1f9395791dd263352,
       type: 3}
     placeOffset: {x: 0, y: 0, z: 0}
-    useShadowCloneToDrag: 1
-    shadowCloneOffset: {x: 0, y: 1, z: 0}
+    useShadowCloneToDrag: 0
+    dragOffset: {x: 0, y: 1, z: 0}
