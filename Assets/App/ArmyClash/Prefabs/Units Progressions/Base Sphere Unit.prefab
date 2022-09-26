@@ -79,5 +79,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base Sphere Unit
       objectReference: {fileID: 0}
+    - target: {fileID: 5781682814863264502, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: _aiBehaviourType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daf6d3ac8d959a54cb268f0fe82589bc, type: 3}
