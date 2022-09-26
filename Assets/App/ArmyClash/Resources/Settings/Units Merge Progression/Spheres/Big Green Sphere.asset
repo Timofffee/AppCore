@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44d1ca350abb4f2478ccbd070fd307b8, type: 3}
-  m_Name: Small Blue
+  m_Name: Big Green Sphere
   m_EditorClassIdentifier: 
   storable: 0
   immutable: 1
   dataProtected: 1
   data:
-    _name: Small Blue Cube
-    _guid: 472b4577-19e7-4552-a514-c4f8c25cd52b
-    _itemPrefab: {fileID: 8436610532674997571, guid: 7e25fb89442bff44c97021d2977f1a2c,
+    _name: Big Green Sphere
+    _guid: 57f66f5f-442c-4f2a-84ad-ac8b20a89b8b
+    _itemPrefab: {fileID: 7005590982764009610, guid: f9a847f840207d34f89abe6928562a29,
       type: 3}
     _itemShadowClone: {fileID: 0}
     placeOffset: {x: 0, y: 0, z: 0}

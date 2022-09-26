@@ -3,6 +3,7 @@ using Krem.AppCore;
 using Krem.AppCore.Attributes;
 using Krem.AppCore.Ports;
 using Krem.DragMergeMatch.Components;
+using Krem.DragMergeMatch.Models;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -16,6 +17,7 @@ namespace Krem.DragMergeMatch.Actions.Merge
         [InjectComponent] private PlaceableComponent _placeableComponent;
         [InjectComponent] private MergeableComponent _mergeableComponent;
         [InjectComponent] private DragMergeItemModelData _dragMergeItemModelData;
+        [InjectComponent] private ItemsRepositoryProvider _itemsRepositoryProvider;
 
         public OutputSignal OnRevert;
 
@@ -50,6 +52,17 @@ namespace Krem.DragMergeMatch.Actions.Merge
             {
                 OnRevert.Invoke();
                 
+                return false;
+            }
+            
+            DragMergeScriptableModel nextItem =
+                _itemsRepositoryProvider.ItemsRepository.FindNextByGuid(_mergeableComponent.DragMergeItemModelData
+                    .dragMergeItemModel.Guid);
+
+            if (nextItem == null)
+            {
+                OnRevert.Invoke();
+
                 return false;
             }
             

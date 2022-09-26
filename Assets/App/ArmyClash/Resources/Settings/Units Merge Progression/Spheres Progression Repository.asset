@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e05edeff00f3a2499757f2592dd4b12, type: 3}
+  m_Name: Spheres Progression Repository
+  m_EditorClassIdentifier: 
+  Data:
+  - {fileID: 11400000, guid: f96482afdc8635d4baa088fb9df66f4a, type: 2}
+  - {fileID: 11400000, guid: ad980f7b9760e1840af653a0c1f7e944, type: 2}
+  - {fileID: 11400000, guid: 65db2134da4f61b43ba3d7046b478570, type: 2}
+  - {fileID: 11400000, guid: 8fba7a5521d903348b871dc9d75dfcb0, type: 2}
+  - {fileID: 11400000, guid: 526f5bbb5760149439a410fa3e0a351b, type: 2}
+  - {fileID: 11400000, guid: 940e941b29184de4f9aecf397e7c4852, type: 2}

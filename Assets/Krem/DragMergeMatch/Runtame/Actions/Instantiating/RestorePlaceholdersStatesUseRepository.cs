@@ -1,19 +1,20 @@
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
+using Krem.AppCore.Ports;
 using Krem.DragMergeMatch.Components;
 using Krem.DragMergeMatch.Models;
 using Krem.DragMergeMatch.Services;
-using UnityEngine;
 
 namespace Krem.DragMergeMatch.Actions.Instantiating
 {
     [NodeGraphGroupName("Drag Merge Match/Instantiating")] 
-    public class RestorePlaceholdersStates : CoreAction
+    public class RestorePlaceholdersStatesUseRepository : CoreAction
     {
-        [InjectComponent] private PlaceholdersList _placeholdersList;
-        [InjectComponent] private ItemsRepositoryProvider _itemsRepositoryProvider;
-        [InjectComponent] private PlaceholdersStatesProvider _placeholdersStatesProvider;
+        public InputComponent<ItemsRepositoryProvider> ItemsRepositoryProvider;
         
+        [InjectComponent] private PlaceholdersList _placeholdersList;
+        [InjectComponent] private PlaceholdersStatesProvider _placeholdersStatesProvider;
+
         protected override bool Action()
         {
             _placeholdersList.Clear();
@@ -22,9 +23,9 @@ namespace Krem.DragMergeMatch.Actions.Instantiating
             {
                 PlaceholderComponent placeholder = _placeholdersList.GetPlaceholderByGuid(state.PlaceholderGuid);
                 DragMergeItemModel itemModel =
-                    _itemsRepositoryProvider.ItemsRepository.FindByGuid(state.ItemGuid).Model;
+                    ItemsRepositoryProvider.Component.ItemsRepository.FindByGuid(state.ItemGuid).Model;
                 
-                GameObject itemInstance = InstantiatingItemService.InstantiateItemFromModelOnPlaceholder(itemModel, placeholder);
+                InstantiatingItemService.InstantiateItemFromModelOnPlaceholder(itemModel, placeholder);
             });
         
             return true;
