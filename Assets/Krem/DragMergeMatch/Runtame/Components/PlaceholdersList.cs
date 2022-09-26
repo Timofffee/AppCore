@@ -16,6 +16,7 @@ namespace Krem.DragMergeMatch.Components
 
         [Header("Ports")]
         [BindInputSignal(nameof(Refresh))] public InputSignal CallRefresh;
+        [BindInputSignal(nameof(SpawnItemRequest))] public InputSignal CallSpawnItemRequest;
         public OutputSignal OnSpawnItemRequest;
         public OutputSignal OnRefreshed;
         

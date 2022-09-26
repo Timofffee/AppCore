@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 2727502766924116625}
   - component: {fileID: 2970404655427734621}
   - component: {fileID: 8695920694344628753}
+  - component: {fileID: 273156023098281473}
   m_Layer: 5
   m_Name: Button With Price
   m_TagString: Untagged
@@ -462,8 +463,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Krem.Core.Components.AudioComponent, Assembly-CSharp
+      - m_Target: {fileID: 273156023098281473}
+        m_TargetAssemblyTypeName: Krem.JetPack.AudioElements.Components.Audio, Krem.JetPack.AudioElements
         m_MethodName: PlayRequest
         m_Mode: 1
         m_Arguments:
@@ -582,8 +583,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _serializedActions: []
+  _serializedActions:
+  - NodeTypeName: Krem.JetPack.AudioElements.Actions.PlayOneShotAudio
+    AssemblyName: Krem.JetPack.AudioElements
+    SerializedData: '{"Execute":{"_parentID":"bdd28062-e7fe-4a96-9325-4e7fe0b72d70","_portID":"2ac081ab-f910-45c1-9f84-48161f430977"},"OnExecuted":{"_parentID":"bdd28062-e7fe-4a96-9325-4e7fe0b72d70","_portID":"c38390a3-0ce3-4022-8766-b2bf376adefa","_connections":[]},"_nodeID":"bdd28062-e7fe-4a96-9325-4e7fe0b72d70","_nodePosition":{"x":933.0,"y":358.0},"AudioComponent":{"_parentID":"bdd28062-e7fe-4a96-9325-4e7fe0b72d70","_portID":"e0f4b2eb-8e1d-41ba-971e-b833772eff9f","Component":{"instanceID":0}}}'
   _graphIsBroken: 0
+--- !u!114 &273156023098281473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727502766924116639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9ead45e79ea01488a1b905792f9ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: e4b907a4-3df3-4c40-a30a-b9404b132fa2
+  _nodePosition: {x: 574, y: 382}
+  This:
+    _parentID: e4b907a4-3df3-4c40-a30a-b9404b132fa2
+    _portID: 08280ffd-4402-44ad-bb7c-531366daa9fe
+    _connections:
+    - _parentID: bdd28062-e7fe-4a96-9325-4e7fe0b72d70
+      _portID: e0f4b2eb-8e1d-41ba-971e-b833772eff9f
+  AudioSource: {fileID: 2970404655427734621}
+  AudioClip: {fileID: 8300000, guid: f2ecda0b708958941abe8086bd817817, type: 3}
+  RandomPitch: 0
+  CallPlayRequest:
+    _parentID: e4b907a4-3df3-4c40-a30a-b9404b132fa2
+    _portID: 4163849e-fa75-4491-8aec-54a30f3815ff
+  OnPlayRequest:
+    _parentID: e4b907a4-3df3-4c40-a30a-b9404b132fa2
+    _portID: ad3666db-27a4-4f93-9b82-fc729f13a337
+    _connections:
+    - _parentID: bdd28062-e7fe-4a96-9325-4e7fe0b72d70
+      _portID: 2ac081ab-f910-45c1-9f84-48161f430977
 --- !u!1 &2727502766925420360
 GameObject:
   m_ObjectHideFlags: 0

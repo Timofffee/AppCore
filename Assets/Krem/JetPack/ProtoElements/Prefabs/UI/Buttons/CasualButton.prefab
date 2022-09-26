@@ -219,7 +219,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _serializedActions: []
+  _serializedActions:
+  - NodeTypeName: Krem.JetPack.AudioElements.Actions.PlayOneShotAudio
+    AssemblyName: Krem.JetPack.AudioElements
+    SerializedData: '{"Execute":{"_parentID":"92bbb0f6-90a1-4b69-992d-c2497ef3ea8a","_portID":"750c8b4f-f42d-4df6-b8a7-380058ff9b88"},"OnExecuted":{"_parentID":"92bbb0f6-90a1-4b69-992d-c2497ef3ea8a","_portID":"f1ea99a3-fdd8-4105-9ced-47137d429d5c","_connections":[]},"_nodeID":"92bbb0f6-90a1-4b69-992d-c2497ef3ea8a","_nodePosition":{"x":801.0,"y":217.0},"AudioComponent":{"_parentID":"92bbb0f6-90a1-4b69-992d-c2497ef3ea8a","_portID":"4cb7b561-3602-46b1-b6eb-5e988dd2f458","Component":{"instanceID":0}}}'
+  _graphIsBroken: 0
 --- !u!114 &7822626417834599815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +241,9 @@ MonoBehaviour:
   This:
     _parentID: 6e3b6b68-0046-4a6e-8ea1-201c621c61c0
     _portID: 5b7705c8-4564-4fc7-bdc5-675e6f63b8a2
-    _connections: []
+    _connections:
+    - _parentID: 92bbb0f6-90a1-4b69-992d-c2497ef3ea8a
+      _portID: 4cb7b561-3602-46b1-b6eb-5e988dd2f458
   AudioSource: {fileID: 8466720795990573258}
   AudioClip: {fileID: 8300000, guid: f2ecda0b708958941abe8086bd817817, type: 3}
   RandomPitch: 0.05
@@ -247,7 +253,9 @@ MonoBehaviour:
   OnPlayRequest:
     _parentID: 6e3b6b68-0046-4a6e-8ea1-201c621c61c0
     _portID: 6d74e9bb-38f4-49c7-9486-bfce56ecb4d0
-    _connections: []
+    _connections:
+    - _parentID: 92bbb0f6-90a1-4b69-992d-c2497ef3ea8a
+      _portID: 750c8b4f-f42d-4df6-b8a7-380058ff9b88
 --- !u!1 &7721985797856780136
 GameObject:
   m_ObjectHideFlags: 0
