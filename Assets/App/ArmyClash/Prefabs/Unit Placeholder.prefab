@@ -12,8 +12,11 @@ GameObject:
   - component: {fileID: 4645559034125337557}
   - component: {fileID: 4130283698861462131}
   - component: {fileID: 2750861012895611043}
+  - component: {fileID: 6150238737512083321}
+  - component: {fileID: 6638704857096380397}
+  - component: {fileID: 8701914257573412236}
   m_Layer: 0
-  m_Name: Placeholder
+  m_Name: Unit Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +50,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _serializedActions: []
+  _serializedActions:
+  - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"b96146c8-f29f-460b-9eab-a538eefae27a","_portID":"310d5bb7-c003-4050-8cb9-fa0c477b9ccf"},"OnExecuted":{"_parentID":"b96146c8-f29f-460b-9eab-a538eefae27a","_portID":"f423d51d-1042-496c-b2f5-0f882c87cf7d","_connections":[{"_parentID":"9b138799-fc81-4be3-9b08-677c06961b85","_portID":"096cda59-2e6c-4d9e-b3e8-d6fdfd317026"}]},"_nodeID":"b96146c8-f29f-460b-9eab-a538eefae27a","_nodePosition":{"x":758.0,"y":439.0},"State":4,"StateMachine":{"_parentID":"b96146c8-f29f-460b-9eab-a538eefae27a","_portID":"54f088d6-60ef-4ccd-a856-93db24764256","Component":{"instanceID":0}}}'
+  - NodeTypeName: Krem.JetPack.Basis.Actions.Links.GameObjectLink.GameObjectSetActiveTo
+    AssemblyName: Krem.JetPack.Basis
+    SerializedData: '{"Execute":{"_parentID":"9b138799-fc81-4be3-9b08-677c06961b85","_portID":"096cda59-2e6c-4d9e-b3e8-d6fdfd317026"},"OnExecuted":{"_parentID":"9b138799-fc81-4be3-9b08-677c06961b85","_portID":"f7815c08-ecf5-4819-8624-53f4349dd214","_connections":[{"_parentID":"8596e29c-390d-4715-9c66-3b80f935045c","_portID":"3158e96e-724f-4f36-8223-0eff49ca3f7f"}]},"_nodeID":"9b138799-fc81-4be3-9b08-677c06961b85","_nodePosition":{"x":1049.0,"y":362.0},"GameObjectLink":{"_parentID":"9b138799-fc81-4be3-9b08-677c06961b85","_portID":"9b072018-4f2e-4f04-8ceb-47ff1ef45946","Component":{"instanceID":0}},"state":false}'
+  - NodeTypeName: Krem.JetPack.Basis.Actions.Links.Collider.SetColliderStateTo
+    AssemblyName: Krem.JetPack.Basis
+    SerializedData: '{"Execute":{"_parentID":"8596e29c-390d-4715-9c66-3b80f935045c","_portID":"3158e96e-724f-4f36-8223-0eff49ca3f7f"},"OnExecuted":{"_parentID":"8596e29c-390d-4715-9c66-3b80f935045c","_portID":"18c4073e-8360-48aa-846f-2376aba30912","_connections":[]},"_nodeID":"8596e29c-390d-4715-9c66-3b80f935045c","_nodePosition":{"x":1397.0,"y":284.0},"ColliderLink":{"_parentID":"8596e29c-390d-4715-9c66-3b80f935045c","_portID":"5df5fdf6-6762-4751-8a8a-4c7582c58aaf","Component":{"instanceID":0}},"state":false}'
   _graphIsBroken: 0
 --- !u!65 &4130283698861462131
 BoxCollider:
@@ -102,6 +114,75 @@ MonoBehaviour:
     _parentID: ca186d2c-c4b9-472d-87b6-7edf2bb3cc12
     _portID: 3cb65e1c-ab84-4c5d-94a3-8c5949f55b41
     _connections: []
+--- !u!114 &6150238737512083321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5365485788246187059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f270c38df7b31c4cafbf53f48f81a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 23a0ef8f-e62c-4737-b6a2-1f393c97d085
+  _nodePosition: {x: 463, y: 463}
+  This:
+    _parentID: 23a0ef8f-e62c-4737-b6a2-1f393c97d085
+    _portID: 64fd16c9-0308-43b4-87f7-5d8453bb0dc5
+    _connections:
+    - _parentID: b96146c8-f29f-460b-9eab-a538eefae27a
+      _portID: 54f088d6-60ef-4ccd-a856-93db24764256
+  _scriptableState: {fileID: 11400000, guid: 4d5f938c37c6475469883013f5889a6d, type: 2}
+  OnStateChanged:
+    _parentID: 23a0ef8f-e62c-4737-b6a2-1f393c97d085
+    _portID: 54469ef8-c38f-4a78-8638-906141d86183
+    _connections:
+    - _parentID: b96146c8-f29f-460b-9eab-a538eefae27a
+      _portID: 310d5bb7-c003-4050-8cb9-fa0c477b9ccf
+--- !u!114 &6638704857096380397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5365485788246187059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 553255bb37b7aa546b7ab357e8db9659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 9435dcaa-58fd-4c5a-9ca3-6768c1d9797c
+  _nodePosition: {x: 742, y: 349}
+  This:
+    _parentID: 9435dcaa-58fd-4c5a-9ca3-6768c1d9797c
+    _portID: a5e76e3c-fb95-4000-9348-071761e1e857
+    _connections:
+    - _parentID: 9b138799-fc81-4be3-9b08-677c06961b85
+      _portID: 9b072018-4f2e-4f04-8ceb-47ff1ef45946
+  _gameObject: {fileID: 5365485788261712004}
+--- !u!114 &8701914257573412236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5365485788246187059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a2a319232554e4b82939cecd9ea3df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: a6a529db-1e93-481d-b306-a428389006e0
+  _nodePosition: {x: 1093, y: 273}
+  This:
+    _parentID: a6a529db-1e93-481d-b306-a428389006e0
+    _portID: 4af7712e-169e-4697-ab18-5ad446476898
+    _connections:
+    - _parentID: 8596e29c-390d-4715-9c66-3b80f935045c
+      _portID: 5df5fdf6-6762-4751-8a8a-4c7582c58aaf
+  _collider: {fileID: 4130283698861462131}
 --- !u!1 &5365485788261712004
 GameObject:
   m_ObjectHideFlags: 0
