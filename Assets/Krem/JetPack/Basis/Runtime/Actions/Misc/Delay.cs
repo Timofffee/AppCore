@@ -24,7 +24,7 @@ namespace Krem.JetPack.Basis.Actions
 
         protected override bool Action()
         {
-            if (_triggered || !_coroutineComponent.gameObject.activeInHierarchy)
+            if (_triggered || _coroutineComponent.gameObject.activeInHierarchy == false)
                 return false;
             
             _triggered = true;

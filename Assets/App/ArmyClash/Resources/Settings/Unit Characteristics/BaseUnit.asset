@@ -22,4 +22,4 @@ MonoBehaviour:
     _moveSpeed: 10
     _attackDamage: 10
     _attackSpeed: 1
-    _attackRadius: 0.5
+    _attackRadius: 4

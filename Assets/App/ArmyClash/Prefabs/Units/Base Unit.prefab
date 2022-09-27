@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: -2652132505369105761}
   - component: {fileID: 6714460390776695181}
   - component: {fileID: 6575984346438849435}
+  - component: {fileID: 2643791410708755561}
+  - component: {fileID: 8829422938557901518}
   m_Layer: 0
   m_Name: Base Unit
   m_TagString: Untagged
@@ -131,19 +133,38 @@ MonoBehaviour:
     SerializedData: '{"Execute":{"_parentID":"a8eac643-f266-4cb9-9f14-7409dc7dd77b","_portID":"1c422f77-630b-4fbc-8d74-5a97f3a2a2ab"},"OnExecuted":{"_parentID":"a8eac643-f266-4cb9-9f14-7409dc7dd77b","_portID":"563b6bea-3b4c-4206-a3f9-3cda9dadaab6","_connections":[]},"_nodeID":"a8eac643-f266-4cb9-9f14-7409dc7dd77b","_nodePosition":{"x":1071.0001220703125,"y":221.99998474121095}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"50b082b2-66bf-43ab-81b4-6bc2cce9c546"},"OnExecuted":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"c1d015b2-8c7d-4e14-9f4c-0e08bd2ceb3b","_connections":[{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"1b3cc5ab-2f06-448d-b5a7-b448c6e44045"}]},"_nodeID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_nodePosition":{"x":496.0,"y":1564.5},"State":4,"StateMachine":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"e0298b49-ee7e-4551-aedf-5d9f78908e41","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"50b082b2-66bf-43ab-81b4-6bc2cce9c546"},"OnExecuted":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"c1d015b2-8c7d-4e14-9f4c-0e08bd2ceb3b","_connections":[{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"1b3cc5ab-2f06-448d-b5a7-b448c6e44045"}]},"_nodeID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_nodePosition":{"x":499.99993896484377,"y":1370.8603515625},"State":4,"StateMachine":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"e0298b49-ee7e-4551-aedf-5d9f78908e41","Component":{"instanceID":0}}}'
   - NodeTypeName: Krem.JetPack.Basis.Actions.Rigidbody.SetRigidbodyIsKinematicTo
     AssemblyName: Krem.JetPack.Basis
-    SerializedData: '{"Execute":{"_parentID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_portID":"8594c963-24e1-44ac-a598-6ef4b0c428ba"},"OnExecuted":{"_parentID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_portID":"465a1935-a27e-44da-8256-897377a345ea","_connections":[{"_parentID":"edecb48b-eba9-4238-bc25-9b6308d6538a","_portID":"d53a27a8-1b77-492a-9fbb-984f8b1b64f2"}]},"_nodeID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_nodePosition":{"x":986.0,"y":1514.0},"isKinematic":false}'
+    SerializedData: '{"Execute":{"_parentID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_portID":"8594c963-24e1-44ac-a598-6ef4b0c428ba"},"OnExecuted":{"_parentID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_portID":"465a1935-a27e-44da-8256-897377a345ea","_connections":[{"_parentID":"edecb48b-eba9-4238-bc25-9b6308d6538a","_portID":"d53a27a8-1b77-492a-9fbb-984f8b1b64f2"}]},"_nodeID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_nodePosition":{"x":989.9998779296875,"y":1319.8603515625},"isKinematic":false}'
   - NodeTypeName: Krem.JetPack.Basis.Actions.Links.Collider.SetColliderStateTo
     AssemblyName: Krem.JetPack.Basis
-    SerializedData: '{"Execute":{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"1b3cc5ab-2f06-448d-b5a7-b448c6e44045"},"OnExecuted":{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"5161d578-7b89-4357-bd56-72798db84207","_connections":[{"_parentID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_portID":"8594c963-24e1-44ac-a598-6ef4b0c428ba"}]},"_nodeID":"854647c1-2379-4dbf-8640-a5774fdff392","_nodePosition":{"x":749.0,"y":1514.0},"ColliderLink":{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"90da44bd-7928-47f2-af72-ce7a1761c7ac","Component":{"instanceID":0}},"state":false}'
+    SerializedData: '{"Execute":{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"1b3cc5ab-2f06-448d-b5a7-b448c6e44045"},"OnExecuted":{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"5161d578-7b89-4357-bd56-72798db84207","_connections":[{"_parentID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_portID":"8594c963-24e1-44ac-a598-6ef4b0c428ba"}]},"_nodeID":"854647c1-2379-4dbf-8640-a5774fdff392","_nodePosition":{"x":752.9999389648438,"y":1319.8603515625},"ColliderLink":{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"90da44bd-7928-47f2-af72-ce7a1761c7ac","Component":{"instanceID":0}},"state":false}'
   - NodeTypeName: Krem.DragMergeMatch.Actions.SetDraggableActiveState
     AssemblyName: Krem.DragMergeMatch
-    SerializedData: '{"Execute":{"_parentID":"edecb48b-eba9-4238-bc25-9b6308d6538a","_portID":"d53a27a8-1b77-492a-9fbb-984f8b1b64f2"},"OnExecuted":{"_parentID":"edecb48b-eba9-4238-bc25-9b6308d6538a","_portID":"8fc81ccf-1cc3-4c37-9abb-ba53f3b41f86","_connections":[{"_parentID":"f4209826-d868-4a78-97c4-93e0a0a0cb03","_portID":"99bd8b64-6b16-4e2a-8021-816ae23432a0"}]},"_nodeID":"edecb48b-eba9-4238-bc25-9b6308d6538a","_nodePosition":{"x":1282.0,"y":1514.0},"state":false}'
+    SerializedData: '{"Execute":{"_parentID":"edecb48b-eba9-4238-bc25-9b6308d6538a","_portID":"d53a27a8-1b77-492a-9fbb-984f8b1b64f2"},"OnExecuted":{"_parentID":"edecb48b-eba9-4238-bc25-9b6308d6538a","_portID":"8fc81ccf-1cc3-4c37-9abb-ba53f3b41f86","_connections":[{"_parentID":"f4209826-d868-4a78-97c4-93e0a0a0cb03","_portID":"99bd8b64-6b16-4e2a-8021-816ae23432a0"}]},"_nodeID":"edecb48b-eba9-4238-bc25-9b6308d6538a","_nodePosition":{"x":1286.0,"y":1319.8603515625},"state":false}'
   - NodeTypeName: Krem.DragMergeMatch.Actions.SetMergeableActiveState
     AssemblyName: Krem.DragMergeMatch
-    SerializedData: '{"Execute":{"_parentID":"f4209826-d868-4a78-97c4-93e0a0a0cb03","_portID":"99bd8b64-6b16-4e2a-8021-816ae23432a0"},"OnExecuted":{"_parentID":"f4209826-d868-4a78-97c4-93e0a0a0cb03","_portID":"72b0c067-6bb8-4d7b-a25c-0876955409e3","_connections":[]},"_nodeID":"f4209826-d868-4a78-97c4-93e0a0a0cb03","_nodePosition":{"x":1561.907470703125,"y":1514.0001220703125},"state":false}'
+    SerializedData: '{"Execute":{"_parentID":"f4209826-d868-4a78-97c4-93e0a0a0cb03","_portID":"99bd8b64-6b16-4e2a-8021-816ae23432a0"},"OnExecuted":{"_parentID":"f4209826-d868-4a78-97c4-93e0a0a0cb03","_portID":"72b0c067-6bb8-4d7b-a25c-0876955409e3","_connections":[]},"_nodeID":"f4209826-d868-4a78-97c4-93e0a0a0cb03","_nodePosition":{"x":1566.0,"y":1319.8603515625},"state":false}'
+  - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"8ae1259e-709c-443c-b403-befdbb8cabd4","_portID":"c3a48ec6-a75b-43bc-b42f-72ccb87058ad"},"OnExecuted":{"_parentID":"8ae1259e-709c-443c-b403-befdbb8cabd4","_portID":"97e0cd43-6a64-4703-bf0f-c400f81be897","_connections":[{"_parentID":"e06d6c68-f4f0-4f64-bd65-a6a65813e388","_portID":"d7a6f768-79c1-49b8-b9a9-5ea460180eda"}]},"_nodeID":"8ae1259e-709c-443c-b403-befdbb8cabd4","_nodePosition":{"x":500.0000305175781,"y":1701.0001220703125},"State":5,"StateMachine":{"_parentID":"8ae1259e-709c-443c-b403-befdbb8cabd4","_portID":"1679b7b2-d221-4532-ab0f-ff2a3a69d977","Component":{"instanceID":0}}}'
+  - NodeTypeName: App.ArmyClash.Actions.Battle.DealDamageToTarget
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"44250e0e-0e54-48e0-b4a0-04abc5b76a89","_portID":"003e7c72-64e1-429e-a80c-b883d80b0f20"},"OnExecuted":{"_parentID":"44250e0e-0e54-48e0-b4a0-04abc5b76a89","_portID":"917d12fe-4920-4d73-9c23-6567ec2b777f","_connections":[]},"_nodeID":"44250e0e-0e54-48e0-b4a0-04abc5b76a89","_nodePosition":{"x":807.6500854492188,"y":1869.500244140625},"DamageDealer":{"_parentID":"44250e0e-0e54-48e0-b4a0-04abc5b76a89","_portID":"01b73862-5575-490a-8d50-33b48a206107","Component":{"instanceID":0}},"AIBehaviour":{"_parentID":"44250e0e-0e54-48e0-b4a0-04abc5b76a89","_portID":"1d523e35-ab6e-4781-947a-329e75ebd5a8","Component":{"instanceID":0}},"OnDealDamage":{"_parentID":"44250e0e-0e54-48e0-b4a0-04abc5b76a89","_portID":"8b59f46f-7c0e-4261-b3a6-dc442910834f","_connections":[{"_parentID":"e06d6c68-f4f0-4f64-bd65-a6a65813e388","_portID":"d7a6f768-79c1-49b8-b9a9-5ea460180eda"}]}}'
+  - NodeTypeName: App.ArmyClash.Actions.Battle.SetDamageDealerStateTo
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"1d0206cf-6160-4b68-910e-afb61fd7f37a","_portID":"e755dfa3-e4f5-4db1-b379-63f438ee4c67"},"OnExecuted":{"_parentID":"1d0206cf-6160-4b68-910e-afb61fd7f37a","_portID":"9989ccfa-0f9d-49ed-8791-40cb96845a90","_connections":[{"_parentID":"2a846058-db26-4213-839d-10960042943e","_portID":"24764c91-637e-42e7-a8fd-455eab1b5b68"}]},"_nodeID":"1d0206cf-6160-4b68-910e-afb61fd7f37a","_nodePosition":{"x":1146.0,"y":2068.0},"State":false,"DamageDealer":{"_parentID":"1d0206cf-6160-4b68-910e-afb61fd7f37a","_portID":"b728bcfa-97d2-433b-85b7-637652e0a61c","Component":{"instanceID":0}}}'
+  - NodeTypeName: App.ArmyClash.Actions.AI.SetAIBehaviourStateTo
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"2a846058-db26-4213-839d-10960042943e","_portID":"24764c91-637e-42e7-a8fd-455eab1b5b68"},"OnExecuted":{"_parentID":"2a846058-db26-4213-839d-10960042943e","_portID":"4fd42e99-734b-4ad9-ac71-66790af70ef9","_connections":[{"_parentID":"e57375b3-aff0-4b03-8a04-594cf89d8202","_portID":"1b3da87e-00fe-485c-9ee2-e715e2e4e122"}]},"_nodeID":"2a846058-db26-4213-839d-10960042943e","_nodePosition":{"x":1454.5001220703125,"y":1980.322509765625},"State":false,"AIBehaviour":{"_parentID":"2a846058-db26-4213-839d-10960042943e","_portID":"3716a818-4392-43db-86b9-80759768a925","Component":{"instanceID":0}}}'
+  - NodeTypeName: Krem.JetPack.Basis.Actions.GameObject.GameObjectSetActiveTo
+    AssemblyName: Krem.JetPack.Basis
+    SerializedData: '{"Execute":{"_parentID":"e57375b3-aff0-4b03-8a04-594cf89d8202","_portID":"1b3da87e-00fe-485c-9ee2-e715e2e4e122"},"OnExecuted":{"_parentID":"e57375b3-aff0-4b03-8a04-594cf89d8202","_portID":"235c416c-06a6-4e06-b7ce-1539c039cbcf","_connections":[]},"_nodeID":"e57375b3-aff0-4b03-8a04-594cf89d8202","_nodePosition":{"x":1739.0,"y":1980.0},"state":false}'
+  - NodeTypeName: Krem.JetPack.Basis.Actions.ConsoleLog
+    AssemblyName: Krem.JetPack.Basis
+    SerializedData: '{"Execute":{"_parentID":"f1d9e704-09a6-420e-8b7c-bb3bbee5ecb2","_portID":"627d83bd-41a3-47ff-8bfd-e7705a123ab3"},"OnExecuted":{"_parentID":"f1d9e704-09a6-420e-8b7c-bb3bbee5ecb2","_portID":"63877e06-85ee-4cad-b624-8a8920862bb5","_connections":[]},"_nodeID":"f1d9e704-09a6-420e-8b7c-bb3bbee5ecb2","_nodePosition":{"x":1146.0,"y":1918.0},"ConsoleText":"Damage
+      Applied"}'
   _graphIsBroken: 0
 --- !u!114 &8071203402786385843
 MonoBehaviour:
@@ -466,11 +487,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: f9550e85-7643-4047-bff5-66338eb992e3
-  _nodePosition: {x: 514, y: 1358}
+  _nodePosition: {x: 518, y: 2015}
   This:
     _parentID: f9550e85-7643-4047-bff5-66338eb992e3
     _portID: ccae1c65-d19e-4a31-a42a-7ab1086bfec5
-    _connections: []
+    _connections:
+    - _parentID: 44250e0e-0e54-48e0-b4a0-04abc5b76a89
+      _portID: 1d523e35-ab6e-4781-947a-329e75ebd5a8
+    - _parentID: 2a846058-db26-4213-839d-10960042943e
+      _portID: 3716a818-4392-43db-86b9-80759768a925
   _unitModel: {fileID: 4495275825043507364}
   _aiTarget: {fileID: 0}
   _aiBehaviourType: 0
@@ -614,13 +639,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: c83b4c3b-e580-4cc5-b0ef-7a18532d2c60
-  _nodePosition: {x: 182, y: 1576.5}
+  _nodePosition: {x: -3.1999283, y: 1588.2}
   This:
     _parentID: c83b4c3b-e580-4cc5-b0ef-7a18532d2c60
     _portID: fd56b936-aeab-4c7b-acec-05ad7e30a84a
     _connections:
     - _parentID: 4edbbe62-f51e-4dcd-a9cb-1a0fefb82381
       _portID: e0298b49-ee7e-4551-aedf-5d9f78908e41
+    - _parentID: 8ae1259e-709c-443c-b403-befdbb8cabd4
+      _portID: 1679b7b2-d221-4532-ab0f-ff2a3a69d977
   _scriptableState: {fileID: 11400000, guid: 4d5f938c37c6475469883013f5889a6d, type: 2}
   OnStateChanged:
     _parentID: c83b4c3b-e580-4cc5-b0ef-7a18532d2c60
@@ -628,6 +655,8 @@ MonoBehaviour:
     _connections:
     - _parentID: 4edbbe62-f51e-4dcd-a9cb-1a0fefb82381
       _portID: 50b082b2-66bf-43ab-81b4-6bc2cce9c546
+    - _parentID: 8ae1259e-709c-443c-b403-befdbb8cabd4
+      _portID: c3a48ec6-a75b-43bc-b42f-72ccb87058ad
 --- !u!114 &6575984346438849435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,7 +670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: 5a6a0b81-620d-4ef0-8c3c-e56ae2c9f250
-  _nodePosition: {x: 514, y: 1485}
+  _nodePosition: {x: 517.99994, y: 1290.8604}
   This:
     _parentID: 5a6a0b81-620d-4ef0-8c3c-e56ae2c9f250
     _portID: 8d843cf1-2139-43bd-a181-9104250774ae
@@ -649,3 +678,70 @@ MonoBehaviour:
     - _parentID: 854647c1-2379-4dbf-8640-a5774fdff392
       _portID: 90da44bd-7928-47f2-af72-ce7a1761c7ac
   _collider: {fileID: 1348961315723756454}
+--- !u!114 &2643791410708755561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574539358874648831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2ebbdb60158c14ea5354fb387342ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: e06d6c68-f4f0-4f64-bd65-a6a65813e388
+  _nodePosition: {x: 769.40027, y: 1700.95}
+  This:
+    _parentID: e06d6c68-f4f0-4f64-bd65-a6a65813e388
+    _portID: f7eb7f9d-c8b0-4803-853f-da71b90e0627
+    _connections:
+    - _parentID: 44250e0e-0e54-48e0-b4a0-04abc5b76a89
+      _portID: 01b73862-5575-490a-8d50-33b48a206107
+    - _parentID: 1d0206cf-6160-4b68-910e-afb61fd7f37a
+      _portID: b728bcfa-97d2-433b-85b7-637652e0a61c
+  _unitModel: {fileID: 4495275825043507364}
+  CallDealDamageRequest:
+    _parentID: e06d6c68-f4f0-4f64-bd65-a6a65813e388
+    _portID: d7a6f768-79c1-49b8-b9a9-5ea460180eda
+  OnDealDamageRequest:
+    _parentID: e06d6c68-f4f0-4f64-bd65-a6a65813e388
+    _portID: d2fa90d0-003f-4a46-b737-9d26eaa38331
+    _connections:
+    - _parentID: 44250e0e-0e54-48e0-b4a0-04abc5b76a89
+      _portID: 003e7c72-64e1-429e-a80c-b883d80b0f20
+  OnDealDamage:
+    _parentID: e06d6c68-f4f0-4f64-bd65-a6a65813e388
+    _portID: 0e06999b-7bb9-4de9-b504-c71394b0758a
+    _connections: []
+--- !u!114 &8829422938557901518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574539358874648831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f5ebcbf24d4eb41a4d1529eae38a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: f5b1f723-3409-4399-a1d3-4e43ecd97142
+  _nodePosition: {x: 810, y: 2068}
+  This:
+    _parentID: f5b1f723-3409-4399-a1d3-4e43ecd97142
+    _portID: 055c4616-53eb-4022-969e-e3d28d527f49
+    _connections: []
+  _unitModel: {fileID: 4495275825043507364}
+  OnDamageApplied:
+    _parentID: f5b1f723-3409-4399-a1d3-4e43ecd97142
+    _portID: 93346a56-d35b-41d1-9e86-0d09442fa71a
+    _connections:
+    - _parentID: f1d9e704-09a6-420e-8b7c-bb3bbee5ecb2
+      _portID: 627d83bd-41a3-47ff-8bfd-e7705a123ab3
+  OnDie:
+    _parentID: f5b1f723-3409-4399-a1d3-4e43ecd97142
+    _portID: 38766543-b06d-4376-9ded-d6dec610e818
+    _connections:
+    - _parentID: 1d0206cf-6160-4b68-910e-afb61fd7f37a
+      _portID: e755dfa3-e4f5-4db1-b379-63f438ee4c67
