@@ -22,9 +22,9 @@ namespace App.ArmyClash.Actions.Placeholders
                     return;
                 }
 
-                if (placeholder.AttachedPlaceable.gameObject.TryGetComponent(out AITag aiTag))
+                if (placeholder.AttachedPlaceable.gameObject.TryGetComponent(out AIBehaviour aIBehaviour))
                 {
-                    aiTag.AITagType = AITagType;
+                    aIBehaviour.AITagType = AITagType;
                 }
             });
         
