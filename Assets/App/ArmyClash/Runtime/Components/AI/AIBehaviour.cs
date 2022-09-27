@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+using App.ArmyClash.Components.Unit;
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
 using UnityEngine;
@@ -21,6 +23,9 @@ namespace App.ArmyClash.Components.AI
     [DisallowMultipleComponent]
     public class AIBehaviour : CoreComponent
     {
+        [Header("Dependencies")] 
+        [SerializeField, NotNull] protected UnitModelProvider _unitModel;
+        
         [Header("Data")]
         [SerializeField] protected AIBehaviour _aiTarget;
         
@@ -34,10 +39,10 @@ namespace App.ArmyClash.Components.AI
         private Transform _transform;
         private Rigidbody _rigidbody;
 
-        public AIBehaviourType AiBehaviourType => _aiBehaviourType;
-
-        public AITagType AITagType { get => _aiTagType; set => _aiTagType = value; }
+        public UnitModelProvider UnitModel => _unitModel;
         public AIBehaviour AITarget { get => _aiTarget; set => _aiTarget = value; }
+        public AIBehaviourType AiBehaviourType => _aiBehaviourType;
+        public AITagType AITagType { get => _aiTagType; set => _aiTagType = value; }
         public bool Active
         {
             get => _active;
