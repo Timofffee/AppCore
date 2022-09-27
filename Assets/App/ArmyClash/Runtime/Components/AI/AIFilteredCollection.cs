@@ -21,6 +21,7 @@ namespace App.ArmyClash.Components.AI
         [Header("Ports")]
         [BindInputSignal(nameof(Filter))] public InputSignal CallFilter;
         public OutputSignal OnFiltered;
+        public OutputSignal OnRemovedAllItems;
 
         protected List<AIBehaviour> _filteredAIBehaviours = new List<AIBehaviour>();
 
@@ -59,6 +60,11 @@ namespace App.ArmyClash.Components.AI
             aiBehaviour.OnDisabled -= AIBehaviourDisableHandler;
 
             _filteredAIBehaviours.Remove(aiBehaviour);
+
+            if (_filteredAIBehaviours.Count == 0)
+            {
+                OnRemovedAllItems.Invoke();
+            }
         }
 
         protected void SubscribeHandlers()
