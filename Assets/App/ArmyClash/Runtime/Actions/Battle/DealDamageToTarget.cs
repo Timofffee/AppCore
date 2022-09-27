@@ -46,17 +46,19 @@ namespace App.ArmyClash.Actions.Battle
             
             _triggered = false;
 
-            DamageReceiver damageReceiver = AIBehaviour.Component.AITarget.Transform.GetComponent<DamageReceiver>();
+            DamageReceiver damageReceiver = AIBehaviour.Component.AITarget == null ? 
+                null :
+                AIBehaviour.Component.AITarget.Transform.GetComponent<DamageReceiver>();
 
-            float sqrDistance = (DamageDealer.Component.Transform.position - damageReceiver.Transform.position)
-                .sqrMagnitude;
-            
-            if (damageReceiver != null 
-                && DamageDealer.Component.Active
-                && sqrDistance <= Mathf.Pow(DamageDealer.Component.UnitModel.CurrentUnitModel.AttackRadius, 2)
-                )
+            if (DamageDealer.Component.Active && damageReceiver != null)
             {
-                damageReceiver.ApplyDamage(DamageDealer.Component);
+                float sqrDistance = (DamageDealer.Component.Transform.position - damageReceiver.Transform.position)
+                    .sqrMagnitude;
+
+                if (sqrDistance <= Mathf.Pow(DamageDealer.Component.UnitModel.CurrentUnitModel.AttackRadius, 2))
+                {
+                    damageReceiver.ApplyDamage(DamageDealer.Component);
+                }
             }
             
             OnDealDamage.Invoke();

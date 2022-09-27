@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics.CodeAnalysis;
 using App.ArmyClash.Components.Unit;
 using Krem.AppCore;
@@ -36,6 +37,8 @@ namespace App.ArmyClash.Components.AI
         [Header("States")]
         [SerializeField] protected bool _active = true;
 
+        public event Action<AIBehaviour> OnDisabled; 
+
         private Transform _transform;
         private Rigidbody _rigidbody;
 
@@ -46,7 +49,20 @@ namespace App.ArmyClash.Components.AI
         public bool Active
         {
             get => _active;
-            set => _active = value;
+            set
+            {
+                if (_active == value)
+                {
+                    return;
+                }
+
+                _active = value;
+
+                if (_active == false)
+                {
+                    OnDisabled?.Invoke(this);
+                }
+            }
         }
         public Transform Transform => _transform;
         public Rigidbody Rigidbody => _rigidbody;

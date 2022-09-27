@@ -14,6 +14,11 @@ namespace Krem.JetPack.StateMachine.Scriptables
             get => _state;
             set
             {
+                if (_state.Equals(value))
+                {
+                    return;
+                }
+                
                 _state = value;
                 
                 OnStateChanged?.Invoke();

@@ -72,8 +72,8 @@ Rigidbody:
   m_GameObject: {fileID: 4574539358874648831}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 0.1
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -701,6 +701,7 @@ MonoBehaviour:
     - _parentID: 1d0206cf-6160-4b68-910e-afb61fd7f37a
       _portID: b728bcfa-97d2-433b-85b7-637652e0a61c
   _unitModel: {fileID: 4495275825043507364}
+  _active: 1
   CallDealDamageRequest:
     _parentID: e06d6c68-f4f0-4f64-bd65-a6a65813e388
     _portID: d7a6f768-79c1-49b8-b9a9-5ea460180eda
@@ -733,12 +734,11 @@ MonoBehaviour:
     _portID: 055c4616-53eb-4022-969e-e3d28d527f49
     _connections: []
   _unitModel: {fileID: 4495275825043507364}
+  _active: 1
   OnDamageApplied:
     _parentID: f5b1f723-3409-4399-a1d3-4e43ecd97142
     _portID: 93346a56-d35b-41d1-9e86-0d09442fa71a
-    _connections:
-    - _parentID: f1d9e704-09a6-420e-8b7c-bb3bbee5ecb2
-      _portID: 627d83bd-41a3-47ff-8bfd-e7705a123ab3
+    _connections: []
   OnDie:
     _parentID: f5b1f723-3409-4399-a1d3-4e43ecd97142
     _portID: 38766543-b06d-4376-9ded-d6dec610e818

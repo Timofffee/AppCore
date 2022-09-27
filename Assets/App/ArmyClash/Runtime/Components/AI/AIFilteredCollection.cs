@@ -31,6 +31,8 @@ namespace App.ArmyClash.Components.AI
 
         public void Filter()
         {
+            UnsubscribeHandlers();
+            
             _filteredAIBehaviours.Clear();
             
             _levelUnitPlaceholders.PlaceablesCollection.ForEach(placeholder =>
@@ -46,8 +48,33 @@ namespace App.ArmyClash.Components.AI
                              && (_behaviourTypeFilter == AIBehaviourType.Any || behaviour.AiBehaviourType == _behaviourTypeFilter)
                              && (_aiTagTypeFilter == AITagType.Any || behaviour.AITagType == _aiTagTypeFilter)
             );
+
+            SubscribeHandlers();
             
             OnFiltered.Invoke();
+        }
+
+        public void AIBehaviourDisableHandler(AIBehaviour aiBehaviour)
+        {
+            aiBehaviour.OnDisabled -= AIBehaviourDisableHandler;
+
+            _filteredAIBehaviours.Remove(aiBehaviour);
+        }
+
+        protected void SubscribeHandlers()
+        {
+            _filteredAIBehaviours.ForEach(behaviour =>
+            {
+                behaviour.OnDisabled += AIBehaviourDisableHandler;
+            });
+        }
+        
+        protected void UnsubscribeHandlers()
+        {
+            _filteredAIBehaviours.ForEach(behaviour =>
+            {
+                behaviour.OnDisabled -= AIBehaviourDisableHandler;
+            });
         }
     }
 }

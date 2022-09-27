@@ -14,6 +14,12 @@ namespace App.ArmyClash.Actions.AI
         
         protected override bool Action()
         {
+            if (SourceAICollection.Component.FilteredAIBehaviours.Count == 0
+                || TargetsAICollection.Component.FilteredAIBehaviours.Count == 0)
+            {
+                return false;
+            }
+            
             SourceAICollection.Component.FilteredAIBehaviours.ForEach(ai =>
             {
                 ai.AITarget = TargetsAICollection.Component.FilteredAIBehaviours.Random();
