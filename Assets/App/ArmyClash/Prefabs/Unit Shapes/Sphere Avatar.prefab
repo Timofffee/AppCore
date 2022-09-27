@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 6919492926118947459}
   - component: {fileID: 9083466116094554722}
   - component: {fileID: 3166247656495065555}
+  - component: {fileID: 8051760990687232653}
   m_Layer: 0
   m_Name: Sphere Avatar
   m_TagString: Untagged
@@ -164,6 +165,25 @@ MonoBehaviour:
     _portID: 0e578b8c-cdf1-47c9-b3ac-9dc1c81d5210
     _connections: []
   _meshRenderer: {fileID: 8162197052428167341}
+--- !u!114 &8051760990687232653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2613290814877414992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5fa5bca815e724aa3e88469d091d21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 5a097b43-e555-4906-9166-6bdc30ba7ae6
+  _nodePosition: {x: 560, y: 313}
+  This:
+    _parentID: 5a097b43-e555-4906-9166-6bdc30ba7ae6
+    _portID: 7664b82b-e2aa-4c49-b0d1-63f55d5475ab
+    _connections: []
+  _outlineObject: {fileID: 2281583171257400357}
 --- !u!1 &8162197052428167339
 GameObject:
   m_ObjectHideFlags: 0

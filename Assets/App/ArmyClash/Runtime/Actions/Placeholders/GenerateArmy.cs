@@ -28,7 +28,6 @@ namespace App.ArmyClash.Actions.Placeholders
                 GenerateRequest.Invoke();
             }
             
-        
             return true;
         }
     }

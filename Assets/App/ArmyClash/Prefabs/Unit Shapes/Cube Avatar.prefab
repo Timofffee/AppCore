@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1203136559396985031}
   - component: {fileID: 678273962092064321}
   - component: {fileID: 6656586352464829324}
+  - component: {fileID: 255191685535654552}
   m_Layer: 0
   m_Name: Cube Avatar
   m_TagString: Untagged
@@ -67,6 +68,25 @@ MonoBehaviour:
     _portID: b2b645ec-97f0-4934-94b8-415cda3ff5c5
     _connections: []
   _meshRenderer: {fileID: 1203136561039932444}
+--- !u!114 &255191685535654552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203136559396985080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5fa5bca815e724aa3e88469d091d21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: d3331ed0-ad01-4cb5-8a55-3c6ad7198e35
+  _nodePosition: {x: 528, y: 306}
+  This:
+    _parentID: d3331ed0-ad01-4cb5-8a55-3c6ad7198e35
+    _portID: 7594b520-2bb0-4033-8f0d-baef6931bcaa
+    _connections: []
+  _outlineObject: {fileID: 6866037896088475055}
 --- !u!1 &1203136561039932446
 GameObject:
   m_ObjectHideFlags: 0

@@ -5123,6 +5123,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree _Type 6_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1577726544602479336, guid: 2c802bb59dba6284899cccf98dff6f3b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7114339618953636257, guid: 2c802bb59dba6284899cccf98dff6f3b,
         type: 3}
       propertyPath: m_CastShadows
@@ -6063,6 +6068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree _Type 3_03 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734295362971454298, guid: fb64d748af9c81a42b0223ea28b6068a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7081550338575443302, guid: fb64d748af9c81a42b0223ea28b6068a,
         type: 3}
@@ -8745,6 +8755,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree _Type 6_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1577726544602479336, guid: 2c802bb59dba6284899cccf98dff6f3b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7114339618953636257, guid: 2c802bb59dba6284899cccf98dff6f3b,
         type: 3}
       propertyPath: m_CastShadows
@@ -9664,6 +9679,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree _Type 3_03
       objectReference: {fileID: 0}
+    - target: {fileID: 2734295362971454298, guid: fb64d748af9c81a42b0223ea28b6068a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7081550338575443302, guid: fb64d748af9c81a42b0223ea28b6068a,
         type: 3}
       propertyPath: m_RootOrder
@@ -10116,7 +10136,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1795472743
 Transform:
@@ -10149,6 +10169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree _Type 3_03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734295362971454298, guid: fb64d748af9c81a42b0223ea28b6068a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7081550338575443302, guid: fb64d748af9c81a42b0223ea28b6068a,
         type: 3}
@@ -11646,6 +11671,7 @@ GameObject:
   - component: {fileID: 2028027036}
   - component: {fileID: 2028027035}
   - component: {fileID: 2028027040}
+  - component: {fileID: 2028027041}
   m_Layer: 0
   m_Name: Enemy Placeholders
   m_TagString: Untagged
@@ -11830,13 +11856,19 @@ MonoBehaviour:
     SerializedData: '{"Execute":{"_parentID":"56be8d57-3a7f-48d2-a0a5-cb88728a09ed","_portID":"2ac02952-2fed-4abb-8666-bca6b959f772"},"OnExecuted":{"_parentID":"56be8d57-3a7f-48d2-a0a5-cb88728a09ed","_portID":"77a0ad40-e51b-46b7-9f7a-30e805ce3331","_connections":[]},"_nodeID":"56be8d57-3a7f-48d2-a0a5-cb88728a09ed","_nodePosition":{"x":658.0,"y":458.0},"State":4,"StateMachine":{"_parentID":"56be8d57-3a7f-48d2-a0a5-cb88728a09ed","_portID":"e2e13867-ff9e-4f81-b56c-22c58558c731","Component":{"instanceID":0}}}'
   - NodeTypeName: App.ArmyClash.Actions.Placeholders.CollectionChangeAiTag
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"87d3e7ff-4e21-43ef-b128-61e39b22408b","_portID":"02ae1281-2bab-4932-a713-14c79585d172"},"OnExecuted":{"_parentID":"87d3e7ff-4e21-43ef-b128-61e39b22408b","_portID":"37a06949-92fa-4a3a-9323-86b1b9df5421","_connections":[]},"_nodeID":"87d3e7ff-4e21-43ef-b128-61e39b22408b","_nodePosition":{"x":1482.142822265625,"y":288.0},"Placeholders":{"_parentID":"87d3e7ff-4e21-43ef-b128-61e39b22408b","_portID":"2144e03a-db95-4a2d-b8c8-e7b251d31a59","Component":{"instanceID":0}},"AITagType":1}'
+    SerializedData: '{"Execute":{"_parentID":"87d3e7ff-4e21-43ef-b128-61e39b22408b","_portID":"02ae1281-2bab-4932-a713-14c79585d172"},"OnExecuted":{"_parentID":"87d3e7ff-4e21-43ef-b128-61e39b22408b","_portID":"37a06949-92fa-4a3a-9323-86b1b9df5421","_connections":[{"_parentID":"de0084e4-6734-4006-81b7-b6cab7e109be","_portID":"ee9d6848-21e9-4940-b865-43250990ea5b"}]},"_nodeID":"87d3e7ff-4e21-43ef-b128-61e39b22408b","_nodePosition":{"x":1482.142822265625,"y":288.0},"Placeholders":{"_parentID":"87d3e7ff-4e21-43ef-b128-61e39b22408b","_portID":"2144e03a-db95-4a2d-b8c8-e7b251d31a59","Component":{"instanceID":0}},"AITagType":1}'
   - NodeTypeName: Krem.DragMergeMatch.Actions.Instantiating.InstantiateRandomItemUseRandomRepository
     AssemblyName: Krem.DragMergeMatch
     SerializedData: '{"Execute":{"_parentID":"89263a43-bef5-41ce-8b59-0c1002c7566a","_portID":"05a33e4a-184b-42d6-80ce-600e84d7b74a"},"OnExecuted":{"_parentID":"89263a43-bef5-41ce-8b59-0c1002c7566a","_portID":"941fb3b9-5b1b-4a88-99c9-137710b91e58","_connections":[]},"_nodeID":"89263a43-bef5-41ce-8b59-0c1002c7566a","_nodePosition":{"x":1449.0,"y":-111.0},"ItemsRepositoriesProvider":{"_parentID":"89263a43-bef5-41ce-8b59-0c1002c7566a","_portID":"7ffe7332-bdfa-44c8-b0f1-528c556b9aee","Component":{"instanceID":0}}}'
   - NodeTypeName: App.ArmyClash.Actions.Placeholders.GenerateArmy
     AssemblyName: Assembly-CSharp
     SerializedData: '{"Execute":{"_parentID":"41435141-6e80-479c-93c6-fa44bdbf3775","_portID":"325769a0-500b-4d7e-b2be-e877d2b00f08"},"OnExecuted":{"_parentID":"41435141-6e80-479c-93c6-fa44bdbf3775","_portID":"1b6cb308-8519-40a5-858f-96e2632c19fa","_connections":[{"_parentID":"87d3e7ff-4e21-43ef-b128-61e39b22408b","_portID":"02ae1281-2bab-4932-a713-14c79585d172"}]},"_nodeID":"41435141-6e80-479c-93c6-fa44bdbf3775","_nodePosition":{"x":1020.0,"y":288.0},"ArmyGenerator":{"_parentID":"41435141-6e80-479c-93c6-fa44bdbf3775","_portID":"1b2219e5-320b-4116-8f55-1c35dadb845e","Component":{"instanceID":0}},"GenerateRequest":{"_parentID":"41435141-6e80-479c-93c6-fa44bdbf3775","_portID":"36fb59ea-7bb3-4475-9fe7-58494c402fe6","_connections":[{"_parentID":"cbc6be02-a542-434a-be00-33beaff67e86","_portID":"72993f94-b76a-476b-84b0-c989033d0d51"}]}}'
+  - NodeTypeName: App.ArmyClash.Actions.Design.HideOutlineInAllChildren
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"df7600f7-b34f-48ca-b42f-2f9cb2f4f1a4","_portID":"2991f7d6-e385-46dd-8252-33eba280d1e7"},"OnExecuted":{"_parentID":"df7600f7-b34f-48ca-b42f-2f9cb2f4f1a4","_portID":"f0e64d69-c1ff-41f6-a288-f98f688f7090","_connections":[]},"_nodeID":"df7600f7-b34f-48ca-b42f-2f9cb2f4f1a4","_nodePosition":{"x":2018.0,"y":288.0}}'
+  - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
+    AssemblyName: Krem.JetPack.Basis
+    SerializedData: '{"Execute":{"_parentID":"de0084e4-6734-4006-81b7-b6cab7e109be","_portID":"ee9d6848-21e9-4940-b865-43250990ea5b"},"OnExecuted":{"_parentID":"de0084e4-6734-4006-81b7-b6cab7e109be","_portID":"3dd9cd15-22ac-43e8-b3a8-22b53f777a39","_connections":[]},"_nodeID":"de0084e4-6734-4006-81b7-b6cab7e109be","_nodePosition":{"x":1756.0,"y":288.0},"DelayTime":0.10000000149011612,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"de0084e4-6734-4006-81b7-b6cab7e109be","_portID":"d793462a-a8f8-4acf-a0dc-823d683f6d30"},"OnTimeElapsed":{"_parentID":"de0084e4-6734-4006-81b7-b6cab7e109be","_portID":"6ac09c31-aaa0-4ece-9e58-f3686d1bf813","_connections":[{"_parentID":"df7600f7-b34f-48ca-b42f-2f9cb2f4f1a4","_portID":"2991f7d6-e385-46dd-8252-33eba280d1e7"}]}}'
   _graphIsBroken: 0
 --- !u!114 &2028027040
 MonoBehaviour:
@@ -11861,6 +11893,24 @@ MonoBehaviour:
   _referencedArmy: {fileID: 11400000, guid: b5d1b56375683b847b100b661516f775, type: 2}
   _placeholdersList: {fileID: 2028027038}
   _randomCountPercentage: 40
+--- !u!114 &2028027041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028027032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5659c728c2d96264482d6f8db70eadb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 506b4b74-5d15-462c-8e3b-a876e2422f93
+  _nodePosition: {x: 218.00003, y: 203.5}
+  This:
+    _parentID: 506b4b74-5d15-462c-8e3b-a876e2422f93
+    _portID: b42c0c56-421d-4afc-b794-22c60d2a0afd
+    _connections: []
 --- !u!1001 &2045866781
 PrefabInstance:
   m_ObjectHideFlags: 0
