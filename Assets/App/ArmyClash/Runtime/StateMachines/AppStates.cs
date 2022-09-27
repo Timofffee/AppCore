@@ -6,7 +6,9 @@ namespace App.ArmyClash.StateMachines
         Initialization,
         ModelsLoaded,
         Lobby,
-        FightStarted,
+        PrepareToBattle,
+        Battle,
+        BattleEnded,
         Win,
         Lose,
         SceneQuit

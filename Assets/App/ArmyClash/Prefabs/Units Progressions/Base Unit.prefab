@@ -75,7 +75,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &3805467235641898464
 MonoBehaviour:
@@ -131,7 +131,7 @@ MonoBehaviour:
     SerializedData: '{"Execute":{"_parentID":"a8eac643-f266-4cb9-9f14-7409dc7dd77b","_portID":"1c422f77-630b-4fbc-8d74-5a97f3a2a2ab"},"OnExecuted":{"_parentID":"a8eac643-f266-4cb9-9f14-7409dc7dd77b","_portID":"563b6bea-3b4c-4206-a3f9-3cda9dadaab6","_connections":[]},"_nodeID":"a8eac643-f266-4cb9-9f14-7409dc7dd77b","_nodePosition":{"x":1071.0001220703125,"y":221.99998474121095}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"50b082b2-66bf-43ab-81b4-6bc2cce9c546"},"OnExecuted":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"c1d015b2-8c7d-4e14-9f4c-0e08bd2ceb3b","_connections":[{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"1b3cc5ab-2f06-448d-b5a7-b448c6e44045"}]},"_nodeID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_nodePosition":{"x":496.0,"y":1559.0},"State":4,"StateMachine":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"e0298b49-ee7e-4551-aedf-5d9f78908e41","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"50b082b2-66bf-43ab-81b4-6bc2cce9c546"},"OnExecuted":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"c1d015b2-8c7d-4e14-9f4c-0e08bd2ceb3b","_connections":[{"_parentID":"854647c1-2379-4dbf-8640-a5774fdff392","_portID":"1b3cc5ab-2f06-448d-b5a7-b448c6e44045"}]},"_nodeID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_nodePosition":{"x":496.0,"y":1564.5},"State":4,"StateMachine":{"_parentID":"4edbbe62-f51e-4dcd-a9cb-1a0fefb82381","_portID":"e0298b49-ee7e-4551-aedf-5d9f78908e41","Component":{"instanceID":0}}}'
   - NodeTypeName: Krem.JetPack.Basis.Actions.Rigidbody.SetRigidbodyIsKinematicTo
     AssemblyName: Krem.JetPack.Basis
     SerializedData: '{"Execute":{"_parentID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_portID":"8594c963-24e1-44ac-a598-6ef4b0c428ba"},"OnExecuted":{"_parentID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_portID":"465a1935-a27e-44da-8256-897377a345ea","_connections":[{"_parentID":"edecb48b-eba9-4238-bc25-9b6308d6538a","_portID":"d53a27a8-1b77-492a-9fbb-984f8b1b64f2"}]},"_nodeID":"5cfde655-5ab6-45db-97da-074cbf798eb4","_nodePosition":{"x":986.0,"y":1514.0},"isKinematic":false}'
@@ -471,7 +471,10 @@ MonoBehaviour:
     _parentID: f9550e85-7643-4047-bff5-66338eb992e3
     _portID: ccae1c65-d19e-4a31-a42a-7ab1086bfec5
     _connections: []
+  _aiTarget: {fileID: 0}
   _aiBehaviourType: 0
+  _aiTagType: 0
+  _active: 1
 --- !u!114 &-2652132505369105761
 MonoBehaviour:
   m_ObjectHideFlags: 0

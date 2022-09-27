@@ -15,7 +15,7 @@ namespace App.ArmyClash.Components.Level
         [Header("Dependencies")]
         [SerializeField] protected List<PlaceholdersList> _placeholdersLists;
 
-        private List<PlaceableComponent> _placeablesCollection;
+        private List<PlaceableComponent> _placeablesCollection = new List<PlaceableComponent>();
 
         [Header("Ports")]
         [BindInputSignal(nameof(RefreshPlaceablesCollection))] public InputSignal CallRefreshPlaceablesCollection;
