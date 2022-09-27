@@ -21,9 +21,12 @@ namespace App.ArmyClash.Actions.AI
             
             AICollection.Component.FilteredAIBehaviours.ForEach(behaviour =>
             {
-
-                Vector3 movementForce = behaviour.AITarget.Transform.position - behaviour.Transform.position;
-                behaviour.Rigidbody.AddForce(movementForce * AIMovementSystem.Component.AccelerationSpeed);
+                Vector3 movementVelocity = behaviour.Rigidbody.velocity;
+                if (movementVelocity.sqrMagnitude > Mathf.Pow(behaviour.UnitModel.CurrentUnitModel.MoveSpeed, 2))
+                {
+                    movementVelocity = movementVelocity.normalized * behaviour.UnitModel.CurrentUnitModel.MoveSpeed;
+                }
+                behaviour.Rigidbody.velocity = movementVelocity;
             });
         
             return true;
