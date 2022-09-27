@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 6575984346438849435}
   - component: {fileID: 2643791410708755561}
   - component: {fileID: 8829422938557901518}
+  - component: {fileID: 997097524451175021}
   m_Layer: 0
   m_Name: Base Unit
   m_TagString: Untagged
@@ -745,3 +746,21 @@ MonoBehaviour:
     _connections:
     - _parentID: 1d0206cf-6160-4b68-910e-afb61fd7f37a
       _portID: e755dfa3-e4f5-4db1-b379-63f438ee4c67
+--- !u!114 &997097524451175021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574539358874648831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a0f78157d67ab419232cdd6b784270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 50b13cf8-7fe9-42cd-ab9b-7c756f5f6122
+  _nodePosition: {x: 518, y: 2310}
+  This:
+    _parentID: 50b13cf8-7fe9-42cd-ab9b-7c756f5f6122
+    _portID: 505c6127-f5ab-4ad6-b767-2ff107cd8242
+    _connections: []
