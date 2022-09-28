@@ -50,7 +50,7 @@ namespace App.ArmyClash.Actions.Battle
                 null :
                 AIBehaviour.Component.AITarget.Transform.GetComponent<DamageReceiver>();
 
-            if (DamageDealer.Component.Active && damageReceiver != null)
+            if (DamageDealer.Component.Active && damageReceiver != null && damageReceiver.Active)
             {
                 float sqrDistance = (DamageDealer.Component.Transform.position - damageReceiver.Transform.position)
                     .sqrMagnitude;

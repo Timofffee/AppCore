@@ -837,6 +837,7 @@ MonoBehaviour:
     _portID: bdb36f7c-f543-467d-bc9b-3f55fd4990cf
     _connections: []
   _eventBus: {fileID: 11400000, guid: b82dfbd0e8770db41b26c055d740027c, type: 2}
+  _value: {fileID: 5781682814863264502}
   CallInvoke:
     _parentID: 70701bc1-f4fe-4db5-8cd7-0b7b53793935
     _portID: 1f9a8942-926b-4c62-9c2e-af7753a554bf

@@ -37,4 +37,38 @@ namespace Krem.JetPack.EventBus.Components
             OnHandle.Invoke();
         }
     }
+    
+    public abstract class BaseEventBusProvider<T, V> : CoreComponent where T : BaseEventBus<V>
+    {
+        [Header("Dependencies")]
+        [SerializeField, NotNull] private T _eventBus;
+        [SerializeField, NotNull] private V _value;
+
+        [Header("Ports")]
+        [BindInputSignal(nameof(InvokeEvent))] public InputSignal CallInvoke;
+        public OutputSignal OnHandle;
+
+        public T EventBus => _eventBus;
+
+        private void OnEnable()
+        {
+            _eventBus.AddListener(Handler);
+        }
+
+        private void OnDisable()
+        {
+            _eventBus.RemoveListener(Handler);
+        }
+
+        public virtual void InvokeEvent()
+        {
+            _eventBus.value = _value;
+            _eventBus.Invoke();
+        }
+
+        protected virtual void Handler()
+        {
+            OnHandle.Invoke();
+        }
+    }
 }
