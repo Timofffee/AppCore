@@ -31,6 +31,8 @@ namespace Krem.JetPack.ObjectsPool.Components
             }
         }
 
+        public abstract void ClearPool();
+
         public void ExpandPool(int size)
         {
             for (int i = 0; i < size; i++)

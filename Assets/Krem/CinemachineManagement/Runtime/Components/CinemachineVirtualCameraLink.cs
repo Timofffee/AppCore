@@ -1,4 +1,4 @@
-using System;
+using System.Diagnostics.CodeAnalysis;
 using Cinemachine;
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
@@ -11,14 +11,8 @@ namespace Krem.CinemachineManagement.Components
     public class CinemachineVirtualCameraLink : CoreComponent
     {    
         [Header("Dependencies")]
-        public CinemachineVirtualCamera virtualCamera;
+        [SerializeField, NotNull] protected CinemachineVirtualCamera _virtualCamera;
 
-        private void Awake()
-        {
-            if (virtualCamera == null)
-            {
-                throw new ArgumentNullException(nameof(virtualCamera));
-            }
-        }
+        public CinemachineVirtualCamera VirtualCamera => _virtualCamera;
     }
 }

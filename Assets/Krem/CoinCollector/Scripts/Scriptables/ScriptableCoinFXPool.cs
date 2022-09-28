@@ -28,5 +28,10 @@ namespace Krem.CoinCollector.Scriptables
 
             return FXItemComponent;
         }
+
+        public override void ClearPool()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

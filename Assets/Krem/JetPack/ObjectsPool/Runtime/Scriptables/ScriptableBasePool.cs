@@ -14,12 +14,20 @@ namespace Krem.JetPack.ObjectsPool.Scriptables
         private List<T> _poolItems;
 
         public List<T> PoolItems => _poolItems;
+
         public Queue<T> PoolQueue { get; } = new Queue<T>();
+
+        protected bool _instantiated = false;
 
         public abstract T InstantiatePoolObject();
 
         public void InstantiatePool()
         {
+            if (_instantiated)
+            {
+                return;
+            }
+            
             _poolItems = new List<T>(_poolSize);
 
             for (int i = 0; i < _poolSize; i++)
@@ -27,7 +35,11 @@ namespace Krem.JetPack.ObjectsPool.Scriptables
                 T poolObject = InstantiatePoolObject();
                 AddObjectToPool(poolObject);
             }
+
+            _instantiated = true;
         }
+
+        public abstract void ClearPool();
 
         public void AddObjectToPool(T item)
         {
@@ -58,5 +70,6 @@ namespace Krem.JetPack.ObjectsPool.Scriptables
         {
             PoolQueue.Enqueue(item);
         }
+
     }
 }

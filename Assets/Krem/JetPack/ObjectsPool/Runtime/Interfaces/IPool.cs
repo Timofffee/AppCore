@@ -10,6 +10,7 @@ namespace Krem.JetPack.ObjectsPool.Interfaces
         public List<T> PoolItems { get; }
 
         public void InstantiatePool();
+        public abstract void ClearPool();
         
         public void ExpandPool(int size);
     }

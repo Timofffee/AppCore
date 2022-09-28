@@ -120,6 +120,11 @@ namespace Krem.DrawPad.Components
             return segment;
         }
 
+        public override void ClearPool()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public override DrawPadSegment GetFromPool()
         {
             DrawPadSegment segment =  base.GetFromPool();

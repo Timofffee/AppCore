@@ -6716,6 +6716,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1022798682}
   - component: {fileID: 1022798683}
+  - component: {fileID: 1022798685}
+  - component: {fileID: 1022798684}
+  - component: {fileID: 1022798686}
+  - component: {fileID: 1022798687}
   m_Layer: 0
   m_Name: Battle Camera
   m_TagString: Untagged
@@ -6777,6 +6781,98 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1065335194}
+--- !u!114 &1022798684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022798681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c0107fd31f32140825484792d7bfac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: dd3d961b-09b6-41db-90bf-7d6ce625e508
+  _nodePosition: {x: 432, y: 425}
+  This:
+    _parentID: dd3d961b-09b6-41db-90bf-7d6ce625e508
+    _portID: 02d7f636-071b-43b2-8e71-f91dd0ae8db2
+    _connections:
+    - _parentID: d6beb99d-177a-472a-b7bc-50c650a9c9c1
+      _portID: 2c8d7bc9-ab79-414f-9aaf-ea706793d8d0
+    - _parentID: b07de9de-7977-4be4-ac34-197771075af6
+      _portID: 248b8235-bc84-42b5-92a6-bfb8f8f872dd
+  _virtualCamera: {fileID: 1022798683}
+--- !u!114 &1022798685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022798681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions:
+  - NodeTypeName: Krem.CinemachineManagement.Actions.CameraShakeSetValueTo
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"d6beb99d-177a-472a-b7bc-50c650a9c9c1","_portID":"47533336-dc5d-4e72-bfd6-1373d0b99424"},"OnExecuted":{"_parentID":"d6beb99d-177a-472a-b7bc-50c650a9c9c1","_portID":"28be57cc-ae44-49dd-8785-0b46637c321e","_connections":[{"_parentID":"ab06a0c7-91b7-4125-8892-09f9a75e698f","_portID":"cb9f73c5-94f0-418d-98bd-c99972f7c461"}]},"_nodeID":"d6beb99d-177a-472a-b7bc-50c650a9c9c1","_nodePosition":{"x":874.0,"y":478.0},"ShakeValue":2.0,"CinemachineVirtualCameraShake":{"_parentID":"d6beb99d-177a-472a-b7bc-50c650a9c9c1","_portID":"2c8d7bc9-ab79-414f-9aaf-ea706793d8d0","Component":{"instanceID":0}}}'
+  - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
+    AssemblyName: Krem.JetPack.Basis
+    SerializedData: '{"Execute":{"_parentID":"ab06a0c7-91b7-4125-8892-09f9a75e698f","_portID":"cb9f73c5-94f0-418d-98bd-c99972f7c461"},"OnExecuted":{"_parentID":"ab06a0c7-91b7-4125-8892-09f9a75e698f","_portID":"206c8e95-eb9a-4559-b83a-c6b3f9c957d8","_connections":[]},"_nodeID":"ab06a0c7-91b7-4125-8892-09f9a75e698f","_nodePosition":{"x":1265.0,"y":478.0},"DelayTime":0.3499999940395355,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"ab06a0c7-91b7-4125-8892-09f9a75e698f","_portID":"7e70fd3c-3e5c-485e-85de-28196e32fd86"},"OnTimeElapsed":{"_parentID":"ab06a0c7-91b7-4125-8892-09f9a75e698f","_portID":"acae7d21-1d45-4bdb-8033-0d075a1b8345","_connections":[{"_parentID":"b07de9de-7977-4be4-ac34-197771075af6","_portID":"6d67adda-6a6a-47a7-8deb-9b9cbc4e0c5d"}]}}'
+  - NodeTypeName: Krem.CinemachineManagement.Actions.CameraShakeSetValueTo
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"b07de9de-7977-4be4-ac34-197771075af6","_portID":"6d67adda-6a6a-47a7-8deb-9b9cbc4e0c5d"},"OnExecuted":{"_parentID":"b07de9de-7977-4be4-ac34-197771075af6","_portID":"7c8adfb6-eed5-444f-8d83-5c02e6f09db3","_connections":[]},"_nodeID":"b07de9de-7977-4be4-ac34-197771075af6","_nodePosition":{"x":1535.0,"y":478.0},"ShakeValue":0.0,"CinemachineVirtualCameraShake":{"_parentID":"b07de9de-7977-4be4-ac34-197771075af6","_portID":"248b8235-bc84-42b5-92a6-bfb8f8f872dd","Component":{"instanceID":0}}}'
+  _graphIsBroken: 0
+--- !u!114 &1022798686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022798681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115e593382d6b0b4cb5f249a943fa558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 0c0a6aaa-8694-40a9-a988-06defe6570e4
+  _nodePosition: {x: 458, y: 496}
+  This:
+    _parentID: 0c0a6aaa-8694-40a9-a988-06defe6570e4
+    _portID: 70dcb9ca-295e-4a0f-9979-bce1415d2157
+    _connections: []
+  _eventBus: {fileID: 11400000, guid: b82dfbd0e8770db41b26c055d740027c, type: 2}
+  CallInvoke:
+    _parentID: 0c0a6aaa-8694-40a9-a988-06defe6570e4
+    _portID: bf63791b-7fc3-433e-8cdf-ba4435fe533a
+  OnHandle:
+    _parentID: 0c0a6aaa-8694-40a9-a988-06defe6570e4
+    _portID: 9243e1d9-5a71-442e-9eb4-166cf6c53db7
+    _connections:
+    - _parentID: d6beb99d-177a-472a-b7bc-50c650a9c9c1
+      _portID: 47533336-dc5d-4e72-bfd6-1373d0b99424
+--- !u!114 &1022798687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022798681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5659c728c2d96264482d6f8db70eadb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 67cf0b39-28be-4cb6-aaac-15ec60575a3e
+  _nodePosition: {x: 521, y: 594}
+  This:
+    _parentID: 67cf0b39-28be-4cb6-aaac-15ec60575a3e
+    _portID: 0d8df5e3-e9be-4603-a67b-569e943b4987
+    _connections: []
 --- !u!1001 &1025979249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7120,6 +7216,7 @@ GameObject:
   - component: {fileID: 1065335197}
   - component: {fileID: 1065335196}
   - component: {fileID: 1065335195}
+  - component: {fileID: 1065335198}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -7215,6 +7312,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1065335198
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065335193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 5
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1087147364
 GameObject:
   m_ObjectHideFlags: 0
@@ -8496,6 +8610,110 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213888866}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1229160308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 836293857260217446, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052845918758112616, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561942, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561943, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_Name
+      value: CFXR Hit A (Red)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4096995433319591838, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7934836172243473550, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622112092983863465, guid: 5c755f9bc5253ea418e919994537dcc7,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
 --- !u!1 &1233822017
 GameObject:
   m_ObjectHideFlags: 0
@@ -9195,6 +9413,85 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1284070189}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1298528736
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575272435538443157, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4075584798738414928, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748687995501502678, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_Name
+      value: CFXR Hit Sparks HDR
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748687995501502678, guid: 62334a566bbfe3945bc7bd0c02ca1c9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62334a566bbfe3945bc7bd0c02ca1c9e, type: 3}
 --- !u!1001 &1319754492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9373,6 +9670,9 @@ GameObject:
   - component: {fileID: 1361390468}
   - component: {fileID: 1361390469}
   - component: {fileID: 1361390470}
+  - component: {fileID: 1361390471}
+  - component: {fileID: 1361390472}
+  - component: {fileID: 1361390473}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -9413,7 +9713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: 432f0745-72ee-459d-b40b-39e8774c1093
-  _nodePosition: {x: 261.45007, y: 594.3001}
+  _nodePosition: {x: 316.00003, y: 665}
   This:
     _parentID: 432f0745-72ee-459d-b40b-39e8774c1093
     _portID: 4e572f73-8712-4884-9f75-7c9e87f774dc
@@ -9442,6 +9742,8 @@ MonoBehaviour:
       _portID: a1e972bf-680d-40b3-a0cb-e69465e71653
     - _parentID: ce34c19f-91e7-482b-82c2-3ecf07b8a627
       _portID: a2a1bed0-33e8-48e0-a639-4ed7817e37cc
+    - _parentID: e3a02cae-5c63-4549-8cd9-642e958332c9
+      _portID: 8b118730-99ec-4de4-982e-8ae052fb7e48
   _scriptableState: {fileID: 11400000, guid: 4d5f938c37c6475469883013f5889a6d, type: 2}
   OnStateChanged:
     _parentID: 432f0745-72ee-459d-b40b-39e8774c1093
@@ -9453,6 +9755,8 @@ MonoBehaviour:
       _portID: 531b0118-c31f-408b-95d2-d8839915751e
     - _parentID: a278e4db-a6a3-43bf-b464-ac3c9dd586a2
       _portID: 1e0e94b5-3391-4efb-a76b-4e09c8e85f9a
+    - _parentID: e3a02cae-5c63-4549-8cd9-642e958332c9
+      _portID: e71a0ee9-0d79-48e3-9112-0843de7e4185
 --- !u!114 &1361390463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9468,55 +9772,58 @@ MonoBehaviour:
   _serializedActions:
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppSetStateTo
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"7e9c68f6-3c50-4581-a470-6240c511c120","_portID":"e50f1e2a-ec8b-4e3f-8146-0665b886516b"},"OnExecuted":{"_parentID":"7e9c68f6-3c50-4581-a470-6240c511c120","_portID":"272b0c2a-f784-42ee-9136-3ab23f04695f","_connections":[{"_parentID":"120da459-bab6-49f5-b16b-6b5ca070b092","_portID":"b663a63b-ae27-41a8-905d-ac35ac024308"}]},"_nodeID":"7e9c68f6-3c50-4581-a470-6240c511c120","_nodePosition":{"x":785.0,"y":192.0},"State":0,"StateMachine":{"_parentID":"7e9c68f6-3c50-4581-a470-6240c511c120","_portID":"3ce61e49-e474-4d43-9433-a28a44d7bc5b","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"7e9c68f6-3c50-4581-a470-6240c511c120","_portID":"e50f1e2a-ec8b-4e3f-8146-0665b886516b"},"OnExecuted":{"_parentID":"7e9c68f6-3c50-4581-a470-6240c511c120","_portID":"272b0c2a-f784-42ee-9136-3ab23f04695f","_connections":[{"_parentID":"120da459-bab6-49f5-b16b-6b5ca070b092","_portID":"b663a63b-ae27-41a8-905d-ac35ac024308"}]},"_nodeID":"7e9c68f6-3c50-4581-a470-6240c511c120","_nodePosition":{"x":784.9999389648438,"y":165.50001525878907},"State":0,"StateMachine":{"_parentID":"7e9c68f6-3c50-4581-a470-6240c511c120","_portID":"3ce61e49-e474-4d43-9433-a28a44d7bc5b","Component":{"instanceID":0}}}'
   - NodeTypeName: Krem.JetPack.Basis.Actions.ChangeTimescaleTo
     AssemblyName: Krem.JetPack.Basis
-    SerializedData: '{"Execute":{"_parentID":"120da459-bab6-49f5-b16b-6b5ca070b092","_portID":"b663a63b-ae27-41a8-905d-ac35ac024308"},"OnExecuted":{"_parentID":"120da459-bab6-49f5-b16b-6b5ca070b092","_portID":"6a4f41f7-fd89-4c2e-82e6-ede2d9c4b8e9","_connections":[{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"0f75f3b7-1afe-43cd-9624-60de20243f0c"}]},"_nodeID":"120da459-bab6-49f5-b16b-6b5ca070b092","_nodePosition":{"x":1108.0,"y":192.0},"timeScale":1.0}'
+    SerializedData: '{"Execute":{"_parentID":"120da459-bab6-49f5-b16b-6b5ca070b092","_portID":"b663a63b-ae27-41a8-905d-ac35ac024308"},"OnExecuted":{"_parentID":"120da459-bab6-49f5-b16b-6b5ca070b092","_portID":"6a4f41f7-fd89-4c2e-82e6-ede2d9c4b8e9","_connections":[{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"0f75f3b7-1afe-43cd-9624-60de20243f0c"}]},"_nodeID":"120da459-bab6-49f5-b16b-6b5ca070b092","_nodePosition":{"x":1108.0,"y":165.50001525878907},"timeScale":1.0}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppSetStateTo
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_portID":"a6878430-63fe-4210-b28b-c89b85fb17f6"},"OnExecuted":{"_parentID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_portID":"cec4af24-2a0c-4726-bb60-32c2b5fd06c1","_connections":[]},"_nodeID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_nodePosition":{"x":1674.0,"y":165.49998474121095},"State":1,"StateMachine":{"_parentID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_portID":"18a2cf8a-c82e-458d-8be9-0445c56d24b7","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_portID":"a6878430-63fe-4210-b28b-c89b85fb17f6"},"OnExecuted":{"_parentID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_portID":"cec4af24-2a0c-4726-bb60-32c2b5fd06c1","_connections":[]},"_nodeID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_nodePosition":{"x":1674.0,"y":139.5000457763672},"State":1,"StateMachine":{"_parentID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_portID":"18a2cf8a-c82e-458d-8be9-0445c56d24b7","Component":{"instanceID":0}}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"9567b899-5abb-40a5-a33c-5a6925da2c20","_portID":"039ae42b-a376-432c-966e-abda1cf3c670"},"OnExecuted":{"_parentID":"9567b899-5abb-40a5-a33c-5a6925da2c20","_portID":"a3a08f61-5b7e-4be5-b7ca-c668e62f87a6","_connections":[{"_parentID":"1be965d9-2743-459e-83c5-d02ab088adad","_portID":"8eeae639-c84f-435d-8e52-d93c1491ca02"}]},"_nodeID":"9567b899-5abb-40a5-a33c-5a6925da2c20","_nodePosition":{"x":785.0000610351563,"y":338.0},"State":1,"StateMachine":{"_parentID":"9567b899-5abb-40a5-a33c-5a6925da2c20","_portID":"11b8b188-e960-4352-af18-3d309681eeb6","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"9567b899-5abb-40a5-a33c-5a6925da2c20","_portID":"039ae42b-a376-432c-966e-abda1cf3c670"},"OnExecuted":{"_parentID":"9567b899-5abb-40a5-a33c-5a6925da2c20","_portID":"a3a08f61-5b7e-4be5-b7ca-c668e62f87a6","_connections":[{"_parentID":"1be965d9-2743-459e-83c5-d02ab088adad","_portID":"8eeae639-c84f-435d-8e52-d93c1491ca02"}]},"_nodeID":"9567b899-5abb-40a5-a33c-5a6925da2c20","_nodePosition":{"x":784.9999389648438,"y":311.5000305175781},"State":1,"StateMachine":{"_parentID":"9567b899-5abb-40a5-a33c-5a6925da2c20","_portID":"11b8b188-e960-4352-af18-3d309681eeb6","Component":{"instanceID":0}}}'
   - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
     AssemblyName: Krem.JetPack.Basis
-    SerializedData: '{"Execute":{"_parentID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_portID":"7e100d3f-316d-45d3-a8f1-7928c439978e"},"OnExecuted":{"_parentID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_portID":"2c4c3910-f185-4b08-abab-ed67eaea37d5","_connections":[]},"_nodeID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_nodePosition":{"x":1404.0,"y":338.0001220703125},"DelayTime":0.009999999776482582,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_portID":"8fd9a8e9-19be-4486-9f66-d7969b5c342d"},"OnTimeElapsed":{"_parentID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_portID":"1a902142-54fe-4828-afc1-28e45c1f50e0","_connections":[{"_parentID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_portID":"999a2a23-faa6-429a-98a0-f12975f5d6de"}]}}'
+    SerializedData: '{"Execute":{"_parentID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_portID":"7e100d3f-316d-45d3-a8f1-7928c439978e"},"OnExecuted":{"_parentID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_portID":"2c4c3910-f185-4b08-abab-ed67eaea37d5","_connections":[]},"_nodeID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_nodePosition":{"x":1415.9998779296875,"y":311.5000305175781},"DelayTime":0.009999999776482582,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_portID":"8fd9a8e9-19be-4486-9f66-d7969b5c342d"},"OnTimeElapsed":{"_parentID":"6428cf09-77ba-4ee3-a275-650c9f2349d4","_portID":"1a902142-54fe-4828-afc1-28e45c1f50e0","_connections":[{"_parentID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_portID":"999a2a23-faa6-429a-98a0-f12975f5d6de"}]}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppSetStateTo
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_portID":"999a2a23-faa6-429a-98a0-f12975f5d6de"},"OnExecuted":{"_parentID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_portID":"14050f9f-93e7-4872-b962-6449ebf1522e","_connections":[]},"_nodeID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_nodePosition":{"x":1674.434326171875,"y":338.0},"State":2,"StateMachine":{"_parentID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_portID":"baf188c9-ec63-4ea0-ac10-d52bfdd7893a","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_portID":"999a2a23-faa6-429a-98a0-f12975f5d6de"},"OnExecuted":{"_parentID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_portID":"14050f9f-93e7-4872-b962-6449ebf1522e","_connections":[]},"_nodeID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_nodePosition":{"x":1685.9998779296875,"y":311.5000305175781},"State":2,"StateMachine":{"_parentID":"b06ef55e-19cf-4fd7-bbb8-a9e7399f2612","_portID":"baf188c9-ec63-4ea0-ac10-d52bfdd7893a","Component":{"instanceID":0}}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
     AssemblyName: Assembly-CSharp
     SerializedData: '{"Execute":{"_parentID":"d82ef4b5-0efb-441b-8080-5647e3e14e2a","_portID":"531b0118-c31f-408b-95d2-d8839915751e"},"OnExecuted":{"_parentID":"d82ef4b5-0efb-441b-8080-5647e3e14e2a","_portID":"f547e4b3-df4b-485f-be2f-f2cccdbc6a64","_connections":[{"_parentID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_portID":"c5eb5088-bd53-4e14-ac40-b15e8a74d850"}]},"_nodeID":"d82ef4b5-0efb-441b-8080-5647e3e14e2a","_nodePosition":{"x":785.0001220703125,"y":570.0},"State":2,"StateMachine":{"_parentID":"d82ef4b5-0efb-441b-8080-5647e3e14e2a","_portID":"c06449d8-b290-4191-adb7-51985c10a78b","Component":{"instanceID":0}}}'
   - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
     AssemblyName: Krem.JetPack.Basis
-    SerializedData: '{"Execute":{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"0f75f3b7-1afe-43cd-9624-60de20243f0c"},"OnExecuted":{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"9fe1fc3d-d14d-4735-871d-6d3f687330d1","_connections":[]},"_nodeID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_nodePosition":{"x":1404.0,"y":168.0},"DelayTime":0.009999999776482582,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"d12b3219-4bdb-4cf0-a041-c0ef8470e017"},"OnTimeElapsed":{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"e44ff0df-dd03-41e3-a19e-2fe7460b9761","_connections":[{"_parentID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_portID":"a6878430-63fe-4210-b28b-c89b85fb17f6"}]}}'
+    SerializedData: '{"Execute":{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"0f75f3b7-1afe-43cd-9624-60de20243f0c"},"OnExecuted":{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"9fe1fc3d-d14d-4735-871d-6d3f687330d1","_connections":[]},"_nodeID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_nodePosition":{"x":1404.0,"y":141.50003051757813},"DelayTime":0.009999999776482582,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"d12b3219-4bdb-4cf0-a041-c0ef8470e017"},"OnTimeElapsed":{"_parentID":"9578f473-eab0-41d2-86c6-a0bdf887d662","_portID":"e44ff0df-dd03-41e3-a19e-2fe7460b9761","_connections":[{"_parentID":"2fa8b5d1-4d5b-4168-b7ec-1ceb31c743dc","_portID":"a6878430-63fe-4210-b28b-c89b85fb17f6"}]}}'
   - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
     AssemblyName: Krem.JetPack.Basis
-    SerializedData: '{"Execute":{"_parentID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_portID":"c5eb5088-bd53-4e14-ac40-b15e8a74d850"},"OnExecuted":{"_parentID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_portID":"2a9a7ff4-a8b1-4b06-9048-6e3ea4c6b0ff","_connections":[]},"_nodeID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_nodePosition":{"x":1108.0,"y":544.0},"DelayTime":0.009999999776482582,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_portID":"e833a4e4-8b27-45eb-864e-000a359faa3b"},"OnTimeElapsed":{"_parentID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_portID":"5b2c6a94-70a2-4d4b-a498-4c4b352a50a4","_connections":[{"_parentID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_portID":"79e57855-a410-4197-a2bd-7a39812287b6"}]}}'
+    SerializedData: '{"Execute":{"_parentID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_portID":"c5eb5088-bd53-4e14-ac40-b15e8a74d850"},"OnExecuted":{"_parentID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_portID":"2a9a7ff4-a8b1-4b06-9048-6e3ea4c6b0ff","_connections":[]},"_nodeID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_nodePosition":{"x":1108.0,"y":569.9999389648438},"DelayTime":0.009999999776482582,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_portID":"e833a4e4-8b27-45eb-864e-000a359faa3b"},"OnTimeElapsed":{"_parentID":"85272f6c-a0f4-42e0-b3d2-6569180339f1","_portID":"5b2c6a94-70a2-4d4b-a498-4c4b352a50a4","_connections":[{"_parentID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_portID":"79e57855-a410-4197-a2bd-7a39812287b6"}]}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppSetStateTo
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_portID":"79e57855-a410-4197-a2bd-7a39812287b6"},"OnExecuted":{"_parentID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_portID":"983c22a6-19a6-4d86-8dc9-837b7a0fd33a","_connections":[]},"_nodeID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_nodePosition":{"x":1404.0,"y":519.5},"State":3,"StateMachine":{"_parentID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_portID":"4558cf95-c58e-4b17-a4e4-c0a35f5747c7","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_portID":"79e57855-a410-4197-a2bd-7a39812287b6"},"OnExecuted":{"_parentID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_portID":"983c22a6-19a6-4d86-8dc9-837b7a0fd33a","_connections":[]},"_nodeID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_nodePosition":{"x":1404.0,"y":569.9999389648438},"State":3,"StateMachine":{"_parentID":"ce5f45ba-7254-4c3b-b149-9f63b640e925","_portID":"4558cf95-c58e-4b17-a4e4-c0a35f5747c7","Component":{"instanceID":0}}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
     AssemblyName: Assembly-CSharp
     SerializedData: '{"Execute":{"_parentID":"a278e4db-a6a3-43bf-b464-ac3c9dd586a2","_portID":"1e0e94b5-3391-4efb-a76b-4e09c8e85f9a"},"OnExecuted":{"_parentID":"a278e4db-a6a3-43bf-b464-ac3c9dd586a2","_portID":"5b23a60a-3968-4e5b-9312-d1128e4865b4","_connections":[{"_parentID":"565fdea0-d590-4684-9fed-90008dc79190","_portID":"4f8f90c0-2206-44f0-b28d-4fca8b3c3b96"}]},"_nodeID":"a278e4db-a6a3-43bf-b464-ac3c9dd586a2","_nodePosition":{"x":785.0,"y":742.0},"State":4,"StateMachine":{"_parentID":"a278e4db-a6a3-43bf-b464-ac3c9dd586a2","_portID":"5a618dee-3cdc-4d3f-a9bb-b61d941682cb","Component":{"instanceID":0}}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"ef9f8dfe-4bae-4045-ad77-2951433ee7b5","_portID":"6442fc1f-e2a3-46c3-a204-3f05fde176e0"},"OnExecuted":{"_parentID":"ef9f8dfe-4bae-4045-ad77-2951433ee7b5","_portID":"e73e8cde-007a-4c11-a88d-a1fa58067964","_connections":[{"_parentID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_portID":"f777ec54-9696-468a-9b9c-d2ed5202e7fb"}]},"_nodeID":"ef9f8dfe-4bae-4045-ad77-2951433ee7b5","_nodePosition":{"x":785.0,"y":1073.0},"State":5,"StateMachine":{"_parentID":"ef9f8dfe-4bae-4045-ad77-2951433ee7b5","_portID":"52e21af4-4c09-450b-82cd-88f621a9dbfa","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"ef9f8dfe-4bae-4045-ad77-2951433ee7b5","_portID":"6442fc1f-e2a3-46c3-a204-3f05fde176e0"},"OnExecuted":{"_parentID":"ef9f8dfe-4bae-4045-ad77-2951433ee7b5","_portID":"e73e8cde-007a-4c11-a88d-a1fa58067964","_connections":[{"_parentID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_portID":"f777ec54-9696-468a-9b9c-d2ed5202e7fb"}]},"_nodeID":"ef9f8dfe-4bae-4045-ad77-2951433ee7b5","_nodePosition":{"x":785.0,"y":946.2844848632813},"State":5,"StateMachine":{"_parentID":"ef9f8dfe-4bae-4045-ad77-2951433ee7b5","_portID":"52e21af4-4c09-450b-82cd-88f621a9dbfa","Component":{"instanceID":0}}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppSetStateTo
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_portID":"f777ec54-9696-468a-9b9c-d2ed5202e7fb"},"OnExecuted":{"_parentID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_portID":"5419c8c2-b947-4b99-97d6-e16bf76ee42b","_connections":[]},"_nodeID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_nodePosition":{"x":1050.0,"y":1073.0},"State":7,"StateMachine":{"_parentID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_portID":"246e9ace-8753-4eae-ad15-2450520ed18b","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_portID":"f777ec54-9696-468a-9b9c-d2ed5202e7fb"},"OnExecuted":{"_parentID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_portID":"5419c8c2-b947-4b99-97d6-e16bf76ee42b","_connections":[]},"_nodeID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_nodePosition":{"x":1050.0,"y":946.2844848632813},"State":7,"StateMachine":{"_parentID":"b17df0d9-4d8d-45b4-be5b-bffd4466e6e9","_portID":"246e9ace-8753-4eae-ad15-2450520ed18b","Component":{"instanceID":0}}}'
   - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
     AssemblyName: Krem.JetPack.Basis
     SerializedData: '{"Execute":{"_parentID":"565fdea0-d590-4684-9fed-90008dc79190","_portID":"4f8f90c0-2206-44f0-b28d-4fca8b3c3b96"},"OnExecuted":{"_parentID":"565fdea0-d590-4684-9fed-90008dc79190","_portID":"9df6d572-a9cb-4741-980b-a2f4ba96efcd","_connections":[]},"_nodeID":"565fdea0-d590-4684-9fed-90008dc79190","_nodePosition":{"x":1108.0003662109375,"y":742.0001220703125},"DelayTime":0.10000000149011612,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"565fdea0-d590-4684-9fed-90008dc79190","_portID":"29e885f2-77b5-4f61-9a62-8f0b9907b8e0"},"OnTimeElapsed":{"_parentID":"565fdea0-d590-4684-9fed-90008dc79190","_portID":"90a70c1c-c1d4-4b9b-9be7-83b60005177a","_connections":[{"_parentID":"5ab8f310-13af-4009-bed0-2a95c9eae61e","_portID":"8e1a26c3-70ff-4680-9f6c-8571d7e8b82b"}]}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppSetStateTo
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"5ab8f310-13af-4009-bed0-2a95c9eae61e","_portID":"8e1a26c3-70ff-4680-9f6c-8571d7e8b82b"},"OnExecuted":{"_parentID":"5ab8f310-13af-4009-bed0-2a95c9eae61e","_portID":"b71a38cc-92ff-40e9-8da7-45984c4f319a","_connections":[]},"_nodeID":"5ab8f310-13af-4009-bed0-2a95c9eae61e","_nodePosition":{"x":1404.0,"y":742.0001220703125},"State":5,"StateMachine":{"_parentID":"5ab8f310-13af-4009-bed0-2a95c9eae61e","_portID":"eb951da3-f343-46fa-9d7c-8ea674a2f1db","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"5ab8f310-13af-4009-bed0-2a95c9eae61e","_portID":"8e1a26c3-70ff-4680-9f6c-8571d7e8b82b"},"OnExecuted":{"_parentID":"5ab8f310-13af-4009-bed0-2a95c9eae61e","_portID":"b71a38cc-92ff-40e9-8da7-45984c4f319a","_connections":[]},"_nodeID":"5ab8f310-13af-4009-bed0-2a95c9eae61e","_nodePosition":{"x":1403.9998779296875,"y":741.9999389648438},"State":5,"StateMachine":{"_parentID":"5ab8f310-13af-4009-bed0-2a95c9eae61e","_portID":"eb951da3-f343-46fa-9d7c-8ea674a2f1db","Component":{"instanceID":0}}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppSetStateTo
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_portID":"efe63d0c-0472-4f56-a756-a8c7c446fc5f"},"OnExecuted":{"_parentID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_portID":"87cad8fa-4fda-4285-bf85-c2009172f08a","_connections":[]},"_nodeID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_nodePosition":{"x":1050.0,"y":1194.0},"State":8,"StateMachine":{"_parentID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_portID":"a1e972bf-680d-40b3-a0cb-e69465e71653","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_portID":"efe63d0c-0472-4f56-a756-a8c7c446fc5f"},"OnExecuted":{"_parentID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_portID":"87cad8fa-4fda-4285-bf85-c2009172f08a","_connections":[]},"_nodeID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_nodePosition":{"x":1050.0,"y":1067.284423828125},"State":8,"StateMachine":{"_parentID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_portID":"a1e972bf-680d-40b3-a0cb-e69465e71653","Component":{"instanceID":0}}}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
     AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"ce34c19f-91e7-482b-82c2-3ecf07b8a627","_portID":"f7b6105a-e4aa-4de9-a111-f0cd9f25e602"},"OnExecuted":{"_parentID":"ce34c19f-91e7-482b-82c2-3ecf07b8a627","_portID":"2b9dced8-a945-4480-9e6a-764b992dde07","_connections":[{"_parentID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_portID":"efe63d0c-0472-4f56-a756-a8c7c446fc5f"}]},"_nodeID":"ce34c19f-91e7-482b-82c2-3ecf07b8a627","_nodePosition":{"x":785.0,"y":1194.0},"State":5,"StateMachine":{"_parentID":"ce34c19f-91e7-482b-82c2-3ecf07b8a627","_portID":"a2a1bed0-33e8-48e0-a639-4ed7817e37cc","Component":{"instanceID":0}}}'
+    SerializedData: '{"Execute":{"_parentID":"ce34c19f-91e7-482b-82c2-3ecf07b8a627","_portID":"f7b6105a-e4aa-4de9-a111-f0cd9f25e602"},"OnExecuted":{"_parentID":"ce34c19f-91e7-482b-82c2-3ecf07b8a627","_portID":"2b9dced8-a945-4480-9e6a-764b992dde07","_connections":[{"_parentID":"3baf8332-8c42-49d3-82ec-7aaf139c64d7","_portID":"efe63d0c-0472-4f56-a756-a8c7c446fc5f"}]},"_nodeID":"ce34c19f-91e7-482b-82c2-3ecf07b8a627","_nodePosition":{"x":785.0,"y":1067.284423828125},"State":5,"StateMachine":{"_parentID":"ce34c19f-91e7-482b-82c2-3ecf07b8a627","_portID":"a2a1bed0-33e8-48e0-a639-4ed7817e37cc","Component":{"instanceID":0}}}'
+  - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"e3a02cae-5c63-4549-8cd9-642e958332c9","_portID":"e71a0ee9-0d79-48e3-9112-0843de7e4185"},"OnExecuted":{"_parentID":"e3a02cae-5c63-4549-8cd9-642e958332c9","_portID":"6877605a-af8c-457d-8937-b8fba34ffc04","_connections":[{"_parentID":"3300e6ab-c962-4bc7-b77d-2f071cd36c67","_portID":"67d56e85-aa3e-4173-8a27-1fc125a2b22c"}]},"_nodeID":"e3a02cae-5c63-4549-8cd9-642e958332c9","_nodePosition":{"x":785.0,"y":1260.284423828125},"State":9,"StateMachine":{"_parentID":"e3a02cae-5c63-4549-8cd9-642e958332c9","_portID":"8b118730-99ec-4de4-982e-8ae052fb7e48","Component":{"instanceID":0}}}'
   _graphIsBroken: 0
 --- !u!114 &1361390464
 MonoBehaviour:
@@ -9531,7 +9838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: 59cb9aef-49e5-4e11-83da-dc9a47837298
-  _nodePosition: {x: 446, y: 216}
+  _nodePosition: {x: 452.49994, y: 190.00003}
   This:
     _parentID: 59cb9aef-49e5-4e11-83da-dc9a47837298
     _portID: cd402bfa-d5c8-4f66-9d86-eb13320a4ba1
@@ -9555,7 +9862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: 1be965d9-2743-459e-83c5-d02ab088adad
-  _nodePosition: {x: 1108, y: 338.00003}
+  _nodePosition: {x: 1108, y: 311.50003}
   This:
     _parentID: 1be965d9-2743-459e-83c5-d02ab088adad
     _portID: 5e276a06-9904-4ce9-9882-c56d05654304
@@ -9576,6 +9883,8 @@ MonoBehaviour:
     _parentID: 1be965d9-2743-459e-83c5-d02ab088adad
     _portID: 8bb72dd5-6ba5-4357-b7f4-89cb2699e158
     _connections:
+    - _parentID: da96d9cc-cf44-4d9b-b26c-64a7968e0b5f
+      _portID: d13ad666-f087-49a3-8606-e475f2839920
     - _parentID: 6428cf09-77ba-4ee3-a275-650c9f2349d4
       _portID: 7e100d3f-316d-45d3-a8f1-7928c439978e
 --- !u!114 &1361390467
@@ -9591,7 +9900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: 73f64fbf-b738-48a6-947f-bae999e3db3b
-  _nodePosition: {x: 232.99995, y: 517.00006}
+  _nodePosition: {x: 288, y: 591.99994}
   This:
     _parentID: 73f64fbf-b738-48a6-947f-bae999e3db3b
     _portID: b5055d92-0ebc-437b-a5d3-2b065f6cb504
@@ -9609,7 +9918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: 85fa211c-6e63-46e7-bf36-11a65bb641ce
-  _nodePosition: {x: 303, y: 1073}
+  _nodePosition: {x: 302.99994, y: 946.2845}
   This:
     _parentID: 85fa211c-6e63-46e7-bf36-11a65bb641ce
     _portID: e425c813-c2ec-4043-8818-cc54d3dfe189
@@ -9645,7 +9954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: cc40eaa2-0a98-492e-a625-6d27c95a4bf2
-  _nodePosition: {x: 303, y: 1194}
+  _nodePosition: {x: 302.99994, y: 1067.2844}
   This:
     _parentID: cc40eaa2-0a98-492e-a625-6d27c95a4bf2
     _portID: e48758ac-200d-4248-8455-2900f52989a7
@@ -9679,7 +9988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _nodeID: 4f1dbdf5-dd4b-49a7-ad8b-38c1d7ef0895
-  _nodePosition: {x: 29, y: 1073}
+  _nodePosition: {x: 29, y: 946.2845}
   This:
     _parentID: 4f1dbdf5-dd4b-49a7-ad8b-38c1d7ef0895
     _portID: 6628426f-f5da-43bf-a4e0-5b79d61417ba
@@ -9694,6 +10003,82 @@ MonoBehaviour:
     _connections:
     - _parentID: 85fa211c-6e63-46e7-bf36-11a65bb641ce
       _portID: 48c57481-e014-4a93-b8d3-21ce5bd65a02
+--- !u!114 &1361390471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361390460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c55262a8d283b04c80d01c55256d03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 3300e6ab-c962-4bc7-b77d-2f071cd36c67
+  _nodePosition: {x: 1050, y: 1260.2844}
+  This:
+    _parentID: 3300e6ab-c962-4bc7-b77d-2f071cd36c67
+    _portID: 7cfe418e-8aeb-4bc9-bf4e-0d21029173d5
+    _connections: []
+  _scriptableParticlesPool: {fileID: 11400000, guid: 4c3677f3336d707468bf218412db9474,
+    type: 2}
+  CallInstantiatePool:
+    _parentID: 3300e6ab-c962-4bc7-b77d-2f071cd36c67
+    _portID: 492ab803-40dc-4177-b96e-6dc4ff1ef794
+  CallClearPool:
+    _parentID: 3300e6ab-c962-4bc7-b77d-2f071cd36c67
+    _portID: 67d56e85-aa3e-4173-8a27-1fc125a2b22c
+--- !u!114 &1361390472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361390460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c55262a8d283b04c80d01c55256d03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: da96d9cc-cf44-4d9b-b26c-64a7968e0b5f
+  _nodePosition: {x: 1415.9999, y: 442.50003}
+  This:
+    _parentID: da96d9cc-cf44-4d9b-b26c-64a7968e0b5f
+    _portID: 76b61d22-3068-4da7-9878-81f74f3d5630
+    _connections: []
+  _scriptableParticlesPool: {fileID: 11400000, guid: 4c3677f3336d707468bf218412db9474,
+    type: 2}
+  CallInstantiatePool:
+    _parentID: da96d9cc-cf44-4d9b-b26c-64a7968e0b5f
+    _portID: d13ad666-f087-49a3-8606-e475f2839920
+  CallClearPool:
+    _parentID: da96d9cc-cf44-4d9b-b26c-64a7968e0b5f
+    _portID: 85d0d950-6238-4bc8-a1da-fed0d1afbfba
+--- !u!114 &1361390473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361390460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe7b04e815820c498e61d74e7270b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: e0249ae4-b072-4ffb-957a-26c296d38096
+  _nodePosition: {x: 769, y: 1388}
+  This:
+    _parentID: e0249ae4-b072-4ffb-957a-26c296d38096
+    _portID: 5a2418db-a33c-4be1-a9c9-aaec082ee698
+    _connections: []
+  OnDisabled:
+    _parentID: e0249ae4-b072-4ffb-957a-26c296d38096
+    _portID: 13950d0f-65a9-43c7-9797-f90df5b6ffea
+    _connections:
+    - _parentID: 3300e6ab-c962-4bc7-b77d-2f071cd36c67
+      _portID: 67d56e85-aa3e-4173-8a27-1fc125a2b22c
 --- !u!1 &1375962060
 GameObject:
   m_ObjectHideFlags: 0
@@ -15533,8 +15918,6 @@ MonoBehaviour:
     _connections:
     - _parentID: 446e3918-e809-466c-b4b2-8e65513ebe03
       _portID: c0c5761a-92a3-4b70-9be3-81d048f5c425
-    - _parentID: 5f978962-d5ae-485b-9aff-5fbb2087f76e
-      _portID: ce97a733-c346-48b4-8e6a-80822d798789
 --- !u!114 &4767313142771185673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15581,10 +15964,6 @@ MonoBehaviour:
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppCheckStateIs
     AssemblyName: Assembly-CSharp
     SerializedData: '{"Execute":{"_parentID":"11869139-2848-49bc-af13-73fc01c2fde6","_portID":"8ea633bc-37d2-4a2f-9c56-39abbaf1f324"},"OnExecuted":{"_parentID":"11869139-2848-49bc-af13-73fc01c2fde6","_portID":"11673e93-e4fc-4835-87a4-b8b941bb88f1","_connections":[{"_parentID":"5eb08f72-de2e-431b-99e2-d3007af2579a","_portID":"f6d14d36-bfe0-491e-8427-ae45ba61347b"}]},"_nodeID":"11869139-2848-49bc-af13-73fc01c2fde6","_nodePosition":{"x":168.0,"y":186.0},"State":9,"StateMachine":{"_parentID":"11869139-2848-49bc-af13-73fc01c2fde6","_portID":"8f2a4d97-87cf-4056-a00b-1217e9031841","Component":{"instanceID":0}}}'
-  - NodeTypeName: Krem.JetPack.Basis.Actions.ConsoleLog
-    AssemblyName: Krem.JetPack.Basis
-    SerializedData: '{"Execute":{"_parentID":"5f978962-d5ae-485b-9aff-5fbb2087f76e","_portID":"ce97a733-c346-48b4-8e6a-80822d798789"},"OnExecuted":{"_parentID":"5f978962-d5ae-485b-9aff-5fbb2087f76e","_portID":"f8f2bbbb-abef-4b2d-9256-fa0a3054f2a7","_connections":[]},"_nodeID":"5f978962-d5ae-485b-9aff-5fbb2087f76e","_nodePosition":{"x":1278.6043701171875,"y":-29.4998779296875},"ConsoleText":"Request
-      Loading"}'
   - NodeTypeName: App.ArmyClash.Actions.StateMachine.AppSetStateTo
     AssemblyName: Assembly-CSharp
     SerializedData: '{"Execute":{"_parentID":"22c51e01-8352-4a3e-8300-d4692fb296dd","_portID":"ada0b585-5fb9-45d7-b37c-491d674ca253"},"OnExecuted":{"_parentID":"22c51e01-8352-4a3e-8300-d4692fb296dd","_portID":"2b2fe754-3975-410e-ae78-bf9257ec6584","_connections":[{"_parentID":"d620852d-c8c9-4ed7-bf86-41bd8c67cffa","_portID":"ff0c14da-278f-47df-a297-be3eb3c38f83"}]},"_nodeID":"22c51e01-8352-4a3e-8300-d4692fb296dd","_nodePosition":{"x":682.6044311523438,"y":159.5001220703125},"State":0,"StateMachine":{"_parentID":"22c51e01-8352-4a3e-8300-d4692fb296dd","_portID":"5d3b1baf-c2bf-45a9-9b6f-e6aaee49390b","Component":{"instanceID":0}}}'

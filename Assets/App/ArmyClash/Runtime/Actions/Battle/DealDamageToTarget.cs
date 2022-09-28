@@ -57,7 +57,7 @@ namespace App.ArmyClash.Actions.Battle
 
                 if (sqrDistance <= Mathf.Pow(DamageDealer.Component.UnitModel.CurrentUnitModel.AttackRadius, 2))
                 {
-                    damageReceiver.ApplyDamage(DamageDealer.Component);
+                    DamageDealer.Component.DealDamage(damageReceiver);
                 }
             }
             

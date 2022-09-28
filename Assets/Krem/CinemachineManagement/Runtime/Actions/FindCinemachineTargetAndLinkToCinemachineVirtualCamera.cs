@@ -1,5 +1,6 @@
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
+using Krem.AppCore.Ports;
 using Krem.CinemachineManagement.Components;
 using UnityEngine;
 
@@ -8,16 +9,16 @@ namespace Krem.CinemachineManagement.Actions
     [NodeGraphGroupName("Cinemachine Management")] 
     public class FindCinemachineTargetAndLinkToCinemachineVirtualCamera : CoreAction
     {
-        [InjectComponent] private CinemachineVirtualCameraLink _cinemachineVirtualCamera;
+        public InputComponent<CinemachineVirtualCameraLink> CinemachineVirtualCamera;
         
         protected override bool Action()
         {
             GameObject target = GameObject.FindObjectOfType<CinemachineTarget>().gameObject;
 
-            _cinemachineVirtualCamera.virtualCamera.Follow = target.transform;
-            _cinemachineVirtualCamera.virtualCamera.m_LookAt = target.transform;
+            CinemachineVirtualCamera.Component.VirtualCamera.Follow = target.transform;
+            CinemachineVirtualCamera.Component.VirtualCamera.m_LookAt = target.transform;
             
-            _cinemachineVirtualCamera.virtualCamera.gameObject.SetActive(true);
+            CinemachineVirtualCamera.Component.VirtualCamera.gameObject.SetActive(true);
         
             return true;
         }
