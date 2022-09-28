@@ -30,7 +30,6 @@ namespace Krem.JetPack.ProtoElements.Actions
 
         private IEnumerator Load()
         {
-
             Scene currentScene = SceneManager.GetActiveScene();
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(
                 _asyncSceneLoader.SceneComponent.reloadCurrentScene ? 

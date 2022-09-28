@@ -11,6 +11,7 @@ namespace App.ArmyClash.StateMachines
         BattleEnded,
         Win,
         Lose,
-        SceneQuit
+        SceneQuit,
+        None
     }
 }

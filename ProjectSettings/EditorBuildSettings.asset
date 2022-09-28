@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/App/ArmyClash/Scenes/Init Scene.unity
+    guid: fa6d70ff8bb81ad4f9ca1b326544adee
+  - enabled: 1
     path: Assets/App/ArmyClash/Scenes/Main Scene.unity
     guid: 5a4cd49c1319b7442a89768d17603cbb
   m_configObjects: {}

@@ -94,11 +94,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _serializedActions:
   - NodeTypeName: Krem.JetPack.ProtoElements.Actions.ProgressBar.RefreshHorizontalProgressAmount
-    AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"65b62ff9-2aba-40e3-92d9-1ad3a6e857fa","_portID":"781c9399-f54d-43fe-8360-92899c668759"},"OnExecuted":{"_parentID":"65b62ff9-2aba-40e3-92d9-1ad3a6e857fa","_portID":"0bde2031-7c2a-4cd4-97a2-e4b1f8bc59c7","_connections":[{"_parentID":"9fa15fe5-5b32-4d18-a50f-41d95810b4fa","_portID":"eb33c137-4d36-409f-bdd1-690adb393712"}]},"_nodeID":"65b62ff9-2aba-40e3-92d9-1ad3a6e857fa","_nodePosition":{"x":899.0,"y":206.0},"Reset":{"_parentID":"65b62ff9-2aba-40e3-92d9-1ad3a6e857fa","_portID":"eb3decd8-2cfc-4119-bbfe-da60b089b35f"}}'
+    AssemblyName: Krem.JetPack.ProtoElements
+    SerializedData: '{"Execute":{"_parentID":"d8c74aa0-d185-424a-8856-012ceaa69c77","_portID":"fb9f29ea-921d-4675-8ca6-484e3aae41c1"},"OnExecuted":{"_parentID":"d8c74aa0-d185-424a-8856-012ceaa69c77","_portID":"95d73eee-cc01-4e01-823a-8a18043a5bce","_connections":[{"_parentID":"f8c72c2a-1852-4289-ad2e-775da10485de","_portID":"5ac8f073-8114-4cc6-b324-164049f5936a"}]},"_nodeID":"d8c74aa0-d185-424a-8856-012ceaa69c77","_nodePosition":{"x":883.0,"y":206.0},"Reset":{"_parentID":"d8c74aa0-d185-424a-8856-012ceaa69c77","_portID":"69f823d1-532f-49fb-bc54-2abbfa7070d9"}}'
   - NodeTypeName: Krem.JetPack.ProtoElements.Actions.ProgressBar.UpdateHorizontalProgressText
-    AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"9fa15fe5-5b32-4d18-a50f-41d95810b4fa","_portID":"eb33c137-4d36-409f-bdd1-690adb393712"},"OnExecuted":{"_parentID":"9fa15fe5-5b32-4d18-a50f-41d95810b4fa","_portID":"359b9343-347d-498b-ad3b-ba7d9fc06b4b","_connections":[]},"_nodeID":"9fa15fe5-5b32-4d18-a50f-41d95810b4fa","_nodePosition":{"x":1297.0,"y":206.0}}'
+    AssemblyName: Krem.JetPack.ProtoElements
+    SerializedData: '{"Execute":{"_parentID":"f8c72c2a-1852-4289-ad2e-775da10485de","_portID":"5ac8f073-8114-4cc6-b324-164049f5936a"},"OnExecuted":{"_parentID":"f8c72c2a-1852-4289-ad2e-775da10485de","_portID":"b4e9c8dd-4541-4e74-9e7c-b100e5953199","_connections":[]},"_nodeID":"f8c72c2a-1852-4289-ad2e-775da10485de","_nodePosition":{"x":1235.0,"y":206.0}}'
+  _graphIsBroken: 0
 --- !u!114 &3398778440703844864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,9 +121,6 @@ MonoBehaviour:
   progressValue: 0
   animateProgress: 0
   animationTime: 0.5
-  onChangeValue:
-    m_PersistentCalls:
-      m_Calls: []
   CallResetRequest:
     _parentID: 6ae8383d-9ea8-47ca-85d6-764de433a9d0
     _portID: 4ff70281-3d79-457b-85be-6c919ea5a7fd
@@ -130,14 +128,14 @@ MonoBehaviour:
     _parentID: 6ae8383d-9ea8-47ca-85d6-764de433a9d0
     _portID: c9018199-53e1-4c30-9d81-92e20f3611e3
     _connections:
-    - _parentID: 65b62ff9-2aba-40e3-92d9-1ad3a6e857fa
-      _portID: 781c9399-f54d-43fe-8360-92899c668759
+    - _parentID: d8c74aa0-d185-424a-8856-012ceaa69c77
+      _portID: fb9f29ea-921d-4675-8ca6-484e3aae41c1
   OnResetRequest:
     _parentID: 6ae8383d-9ea8-47ca-85d6-764de433a9d0
     _portID: d2fee840-8b97-4d66-9c98-1141366e9066
     _connections:
-    - _parentID: 65b62ff9-2aba-40e3-92d9-1ad3a6e857fa
-      _portID: eb3decd8-2cfc-4119-bbfe-da60b089b35f
+    - _parentID: d8c74aa0-d185-424a-8856-012ceaa69c77
+      _portID: 69f823d1-532f-49fb-bc54-2abbfa7070d9
   _progressBarAmountTransform: {fileID: 4695137679441025913}
   progressValueText: {fileID: 2349418816109858708}
   progressTextMultiplier: 100

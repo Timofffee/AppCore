@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 4767313144010911819}
   - component: {fileID: 4767313144010911818}
   - component: {fileID: 4767313144010911817}
+  - component: {fileID: 5860464720266330592}
   m_Layer: 5
   m_Name: Scene Loader Async
   m_TagString: Untagged
@@ -268,8 +269,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _serializedActions:
   - NodeTypeName: Krem.JetPack.ProtoElements.Actions.LoadSceneAsync
-    AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"c8b2223d-2a3c-4ae5-831e-2c3deb2addb8","_portID":"154de9f3-0326-48e1-992a-379a1e39b6cf"},"OnExecuted":{"_parentID":"c8b2223d-2a3c-4ae5-831e-2c3deb2addb8","_portID":"e13ea43c-3e62-4aaf-b703-bc24b3b274f8","_connections":[]},"_nodeID":"c8b2223d-2a3c-4ae5-831e-2c3deb2addb8","_nodePosition":{"x":796.0,"y":115.0}}'
+    AssemblyName: Krem.JetPack.ProtoElements
+    SerializedData: '{"Execute":{"_parentID":"6d5d4ac9-1e54-491d-bcd3-e969be4246e1","_portID":"c23ca0bc-a359-4f3a-85cd-d1ba71810966"},"OnExecuted":{"_parentID":"6d5d4ac9-1e54-491d-bcd3-e969be4246e1","_portID":"e9d0374d-1217-4608-8fcf-ff602bbeb75b","_connections":[]},"_nodeID":"6d5d4ac9-1e54-491d-bcd3-e969be4246e1","_nodePosition":{"x":1010.0,"y":210.0}}'
+  - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
+    AssemblyName: Krem.JetPack.Basis
+    SerializedData: '{"Execute":{"_parentID":"446e3918-e809-466c-b4b2-8e65513ebe03","_portID":"c0c5761a-92a3-4b70-9be3-81d048f5c425"},"OnExecuted":{"_parentID":"446e3918-e809-466c-b4b2-8e65513ebe03","_portID":"bbfff3f8-e3f7-448a-8efd-fefdee1caaf2","_connections":[]},"_nodeID":"446e3918-e809-466c-b4b2-8e65513ebe03","_nodePosition":{"x":737.0,"y":210.0},"DelayTime":0.5,"RandomRange":0.0,"UseUnscaledTime":false,"Reset":{"_parentID":"446e3918-e809-466c-b4b2-8e65513ebe03","_portID":"31d98ce1-456d-4c1f-8c0e-433c7f86367a"},"OnTimeElapsed":{"_parentID":"446e3918-e809-466c-b4b2-8e65513ebe03","_portID":"592f9c1a-682a-4f0c-bebb-8de73533ccaf","_connections":[{"_parentID":"6d5d4ac9-1e54-491d-bcd3-e969be4246e1","_portID":"c23ca0bc-a359-4f3a-85cd-d1ba71810966"}]}}'
+  _graphIsBroken: 0
 --- !u!114 &4767313144010911819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,8 +302,8 @@ MonoBehaviour:
     _parentID: d620852d-c8c9-4ed7-bf86-41bd8c67cffa
     _portID: 30fe2b2b-e9d5-47b1-995f-0676754c816a
     _connections:
-    - _parentID: c8b2223d-2a3c-4ae5-831e-2c3deb2addb8
-      _portID: 154de9f3-0326-48e1-992a-379a1e39b6cf
+    - _parentID: 446e3918-e809-466c-b4b2-8e65513ebe03
+      _portID: c0c5761a-92a3-4b70-9be3-81d048f5c425
 --- !u!114 &4767313144010911818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,6 +352,24 @@ MonoBehaviour:
     _connections:
     - _parentID: d620852d-c8c9-4ed7-bf86-41bd8c67cffa
       _portID: ff0c14da-278f-47df-a297-be3eb3c38f83
+--- !u!114 &5860464720266330592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4767313144010911822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5659c728c2d96264482d6f8db70eadb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 8aa80a97-86aa-4772-89e4-53e96934da1c
+  _nodePosition: {x: 412, y: 396}
+  This:
+    _parentID: 8aa80a97-86aa-4772-89e4-53e96934da1c
+    _portID: 61b8bcb8-8fc6-433e-b0bf-fba0df32f4dc
+    _connections: []
 --- !u!1001 &4767313144338692683
 PrefabInstance:
   m_ObjectHideFlags: 0
