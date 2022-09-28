@@ -1,13 +1,13 @@
+using System.Linq;
 using App.ArmyClash.Components.AI;
 using Krem.AppCore;
 using Krem.AppCore.Attributes;
-using Krem.AppCore.Extensions;
 using Krem.AppCore.Ports;
 
 namespace App.ArmyClash.Actions.AI
 {
     [NodeGraphGroupName("ArmyClash/AI")] 
-    public class SearchRandomTarget : CoreAction
+    public class SearchMinimumHealthTarget : CoreAction
     {
         public InputComponent<AIFilteredCollection> SourceAICollection;
         public InputComponent<AIFilteredCollection> TargetsAICollection;
@@ -22,12 +22,13 @@ namespace App.ArmyClash.Actions.AI
             
             SourceAICollection.Component.FilteredAIBehaviours.ForEach(ai =>
             {
-                if (ai.AITarget.Active)
+                if (ai.AITarget != null && ai.AITarget.Active)
                 {
                     return;
                 }
                 
-                ai.AITarget = TargetsAICollection.Component.FilteredAIBehaviours.Random();
+                ai.AITarget = TargetsAICollection.Component.FilteredAIBehaviours
+                    .OrderByDescending(target => target.UnitModel.CurrentUnitModel.Health).ToList().Last();
             });
         
             return true;

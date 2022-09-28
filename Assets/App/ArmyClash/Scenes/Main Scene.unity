@@ -2820,10 +2820,10 @@ MonoBehaviour:
     _parentID: 83022f07-a04a-45aa-a56b-6e6575bb9aff
     _portID: 05b23171-7cd6-4847-8a5d-77b70adc85cf
     _connections:
-    - _parentID: d9e7b844-0e43-44ae-a4f5-e7b2c2d24f5d
-      _portID: 1e9807b6-ec90-4743-a50d-4165668fa4b7
+    - _parentID: d46c429d-e955-4694-b8ea-5f1e16caa8af
+      _portID: c8c2aa4d-dbc4-44a3-bd8a-5b43bdb877d8
   _levelUnitPlaceholders: {fileID: 250650991}
-  _behaviourTypeFilter: 2
+  _behaviourTypeFilter: 1
   _aiTagTypeFilter: 0
   CallFilter:
     _parentID: 83022f07-a04a-45aa-a56b-6e6575bb9aff
@@ -2851,12 +2851,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedActions:
-  - NodeTypeName: App.ArmyClash.Actions.AI.SearchRandomTarget
-    AssemblyName: Assembly-CSharp
-    SerializedData: '{"Execute":{"_parentID":"d9e7b844-0e43-44ae-a4f5-e7b2c2d24f5d","_portID":"c8ee2628-e3db-4add-9403-3ff2e0f5df18"},"OnExecuted":{"_parentID":"d9e7b844-0e43-44ae-a4f5-e7b2c2d24f5d","_portID":"2ae45201-c034-41fc-b668-840db31f3219","_connections":[{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"47edaa51-a6a2-465a-9fa9-73717a0162e7"}]},"_nodeID":"d9e7b844-0e43-44ae-a4f5-e7b2c2d24f5d","_nodePosition":{"x":806.0,"y":293.0},"SourceAICollection":{"_parentID":"d9e7b844-0e43-44ae-a4f5-e7b2c2d24f5d","_portID":"1e9807b6-ec90-4743-a50d-4165668fa4b7","Component":{"instanceID":0}},"TargetsAICollection":{"_parentID":"d9e7b844-0e43-44ae-a4f5-e7b2c2d24f5d","_portID":"9426f3a4-ff6f-4570-b2e5-543b425456c2","Component":{"instanceID":0}}}'
   - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
     AssemblyName: Krem.JetPack.Basis
-    SerializedData: '{"Execute":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"47edaa51-a6a2-465a-9fa9-73717a0162e7"},"OnExecuted":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"3e5e67c4-e2f9-4bb0-9979-d041d5c8ce69","_connections":[]},"_nodeID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_nodePosition":{"x":806.0,"y":473.0},"DelayTime":3.0,"RandomRange":1.0,"UseUnscaledTime":false,"Reset":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"5184a36f-a038-494f-a113-59f17725e262"},"OnTimeElapsed":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"9ab4e084-1087-4acf-9ded-5bbe07d5da81","_connections":[{"_parentID":"d9e7b844-0e43-44ae-a4f5-e7b2c2d24f5d","_portID":"c8ee2628-e3db-4add-9403-3ff2e0f5df18"}]}}'
+    SerializedData: '{"Execute":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"47edaa51-a6a2-465a-9fa9-73717a0162e7"},"OnExecuted":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"3e5e67c4-e2f9-4bb0-9979-d041d5c8ce69","_connections":[]},"_nodeID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_nodePosition":{"x":818.0,"y":473.0},"DelayTime":2.0,"RandomRange":1.0,"UseUnscaledTime":false,"Reset":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"5184a36f-a038-494f-a113-59f17725e262"},"OnTimeElapsed":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"9ab4e084-1087-4acf-9ded-5bbe07d5da81","_connections":[{"_parentID":"d46c429d-e955-4694-b8ea-5f1e16caa8af","_portID":"85fb94a9-1e02-4f16-a111-c6985ff87a06"}]}}'
+  - NodeTypeName: App.ArmyClash.Actions.AI.SearchMinimumHealthTarget
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"d46c429d-e955-4694-b8ea-5f1e16caa8af","_portID":"85fb94a9-1e02-4f16-a111-c6985ff87a06"},"OnExecuted":{"_parentID":"d46c429d-e955-4694-b8ea-5f1e16caa8af","_portID":"015f828c-c941-40fd-94a4-0f8c96ef4322","_connections":[{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"47edaa51-a6a2-465a-9fa9-73717a0162e7"}]},"_nodeID":"d46c429d-e955-4694-b8ea-5f1e16caa8af","_nodePosition":{"x":787.0,"y":307.5},"SourceAICollection":{"_parentID":"d46c429d-e955-4694-b8ea-5f1e16caa8af","_portID":"c8c2aa4d-dbc4-44a3-bd8a-5b43bdb877d8","Component":{"instanceID":0}},"TargetsAICollection":{"_parentID":"d46c429d-e955-4694-b8ea-5f1e16caa8af","_portID":"033010e1-b292-42fe-ae67-ef41860cd67b","Component":{"instanceID":0}}}'
   _graphIsBroken: 0
 --- !u!114 &427285808
 MonoBehaviour:
@@ -2876,8 +2876,8 @@ MonoBehaviour:
     _parentID: d8c73094-63b1-4fd5-a27f-c8877bda4d95
     _portID: e78992c3-95c5-4af9-ad74-d0cde755cb8b
     _connections:
-    - _parentID: d9e7b844-0e43-44ae-a4f5-e7b2c2d24f5d
-      _portID: 9426f3a4-ff6f-4570-b2e5-543b425456c2
+    - _parentID: d46c429d-e955-4694-b8ea-5f1e16caa8af
+      _portID: 033010e1-b292-42fe-ae67-ef41860cd67b
   _levelUnitPlaceholders: {fileID: 250650991}
   _behaviourTypeFilter: 2
   _aiTagTypeFilter: 1
@@ -2888,8 +2888,8 @@ MonoBehaviour:
     _parentID: d8c73094-63b1-4fd5-a27f-c8877bda4d95
     _portID: 551264cb-9ec6-40ff-9b17-be39c096f72f
     _connections:
-    - _parentID: d9e7b844-0e43-44ae-a4f5-e7b2c2d24f5d
-      _portID: c8ee2628-e3db-4add-9403-3ff2e0f5df18
+    - _parentID: d46c429d-e955-4694-b8ea-5f1e16caa8af
+      _portID: 85fb94a9-1e02-4f16-a111-c6985ff87a06
   OnRemovedAllItems:
     _parentID: d8c73094-63b1-4fd5-a27f-c8877bda4d95
     _portID: 1f14ee4b-5e77-49bf-a806-d9c497356e8b
@@ -6380,7 +6380,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022798681}
-  m_LocalRotation: {x: 0.33149597, y: -0.41710538, z: 0.16665418, w: 0.82967466}
+  m_LocalRotation: {x: 0.33149597, y: -0.41710535, z: 0.16665418, w: 0.8296746}
   m_LocalPosition: {x: 17.07, y: 20.22, z: 16.280018}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8579,6 +8579,7 @@ Transform:
   - {fileID: 1373315567}
   - {fileID: 1252894292}
   - {fileID: 427285804}
+  - {fileID: 1298318872}
   m_Father: {fileID: 1361390461}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9061,6 +9062,180 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1284070189}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1298318871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1298318872}
+  - component: {fileID: 1298318877}
+  - component: {fileID: 1298318876}
+  - component: {fileID: 1298318875}
+  - component: {fileID: 1298318874}
+  - component: {fileID: 1298318873}
+  m_Layer: 0
+  m_Name: AI User Cube Target System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1298318872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298318871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1244564172}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1298318873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298318871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5659c728c2d96264482d6f8db70eadb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 9d532f17-8275-4e10-b497-71c5379b7179
+  _nodePosition: {x: 444, y: 218}
+  This:
+    _parentID: 9d532f17-8275-4e10-b497-71c5379b7179
+    _portID: 1a25f521-1974-4c1c-806d-4f6e516484d3
+    _connections: []
+--- !u!114 &1298318874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298318871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 379aabe3651960243915013183a90c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: d8c73094-63b1-4fd5-a27f-c8877bda4d95
+  _nodePosition: {x: 459, y: 407}
+  This:
+    _parentID: d8c73094-63b1-4fd5-a27f-c8877bda4d95
+    _portID: e78992c3-95c5-4af9-ad74-d0cde755cb8b
+    _connections:
+    - _parentID: cb74cf14-7c7a-4a05-8fd7-eae74d794b70
+      _portID: 0a45d5c5-21b7-4979-9b0b-22d6830ef9e1
+  _levelUnitPlaceholders: {fileID: 250650991}
+  _behaviourTypeFilter: 2
+  _aiTagTypeFilter: 1
+  CallFilter:
+    _parentID: d8c73094-63b1-4fd5-a27f-c8877bda4d95
+    _portID: 9605a477-25ec-4707-b377-9c86d3535103
+  OnFiltered:
+    _parentID: d8c73094-63b1-4fd5-a27f-c8877bda4d95
+    _portID: 551264cb-9ec6-40ff-9b17-be39c096f72f
+    _connections:
+    - _parentID: cb74cf14-7c7a-4a05-8fd7-eae74d794b70
+      _portID: 3d81e996-a5f5-4006-8f1e-fc37b37e1f67
+  OnRemovedAllItems:
+    _parentID: d8c73094-63b1-4fd5-a27f-c8877bda4d95
+    _portID: 1f14ee4b-5e77-49bf-a806-d9c497356e8b
+    _connections: []
+--- !u!114 &1298318875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298318871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79e1debd92df9b428e2344775f0458e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: a83d902d-9994-4e1b-b24d-80933206d893
+  _nodePosition: {x: 167, y: 293}
+  This:
+    _parentID: a83d902d-9994-4e1b-b24d-80933206d893
+    _portID: 20175105-fef1-4a5a-84ca-6410cf7d33eb
+    _connections: []
+  _eventBus: {fileID: 11400000, guid: 6c25bc264623dbf40a96cd1bfaf55e96, type: 2}
+  CallInvoke:
+    _parentID: a83d902d-9994-4e1b-b24d-80933206d893
+    _portID: 24fa7d61-bcfb-46d4-8c38-fd03ec54bd6d
+  OnHandle:
+    _parentID: a83d902d-9994-4e1b-b24d-80933206d893
+    _portID: 2b94a573-6291-4568-8ef5-4b6048d0ab5f
+    _connections:
+    - _parentID: 83022f07-a04a-45aa-a56b-6e6575bb9aff
+      _portID: 812169c8-59c9-4a05-b2eb-81870c2acac4
+--- !u!114 &1298318876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298318871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 379aabe3651960243915013183a90c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nodeID: 83022f07-a04a-45aa-a56b-6e6575bb9aff
+  _nodePosition: {x: 459, y: 293}
+  This:
+    _parentID: 83022f07-a04a-45aa-a56b-6e6575bb9aff
+    _portID: 05b23171-7cd6-4847-8a5d-77b70adc85cf
+    _connections:
+    - _parentID: cb74cf14-7c7a-4a05-8fd7-eae74d794b70
+      _portID: fd0157aa-6d83-4e0b-9e11-2a35ecde5748
+  _levelUnitPlaceholders: {fileID: 250650991}
+  _behaviourTypeFilter: 0
+  _aiTagTypeFilter: 0
+  CallFilter:
+    _parentID: 83022f07-a04a-45aa-a56b-6e6575bb9aff
+    _portID: 812169c8-59c9-4a05-b2eb-81870c2acac4
+  OnFiltered:
+    _parentID: 83022f07-a04a-45aa-a56b-6e6575bb9aff
+    _portID: a737bc83-1d02-41fc-93f0-2c8b29751b08
+    _connections:
+    - _parentID: d8c73094-63b1-4fd5-a27f-c8877bda4d95
+      _portID: 9605a477-25ec-4707-b377-9c86d3535103
+  OnRemovedAllItems:
+    _parentID: 83022f07-a04a-45aa-a56b-6e6575bb9aff
+    _portID: 8571157b-7ac8-41b3-876a-6ff03a0b23f4
+    _connections: []
+--- !u!114 &1298318877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298318871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79bbfb473fa9c5d4b83ac47bb5b6def2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedActions:
+  - NodeTypeName: Krem.JetPack.Basis.Actions.Delay
+    AssemblyName: Krem.JetPack.Basis
+    SerializedData: '{"Execute":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"47edaa51-a6a2-465a-9fa9-73717a0162e7"},"OnExecuted":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"3e5e67c4-e2f9-4bb0-9979-d041d5c8ce69","_connections":[]},"_nodeID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_nodePosition":{"x":818.0,"y":473.0},"DelayTime":2.0,"RandomRange":1.0,"UseUnscaledTime":false,"Reset":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"5184a36f-a038-494f-a113-59f17725e262"},"OnTimeElapsed":{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"9ab4e084-1087-4acf-9ded-5bbe07d5da81","_connections":[{"_parentID":"cb74cf14-7c7a-4a05-8fd7-eae74d794b70","_portID":"3d81e996-a5f5-4006-8f1e-fc37b37e1f67"}]}}'
+  - NodeTypeName: App.ArmyClash.Actions.AI.SearchClosestTarget
+    AssemblyName: Assembly-CSharp
+    SerializedData: '{"Execute":{"_parentID":"cb74cf14-7c7a-4a05-8fd7-eae74d794b70","_portID":"3d81e996-a5f5-4006-8f1e-fc37b37e1f67"},"OnExecuted":{"_parentID":"cb74cf14-7c7a-4a05-8fd7-eae74d794b70","_portID":"ddd77a4b-d1da-4b45-b023-1a156f77042f","_connections":[{"_parentID":"f0e3e6a6-2d01-4571-9cc0-b193a3c8850d","_portID":"47edaa51-a6a2-465a-9fa9-73717a0162e7"}]},"_nodeID":"cb74cf14-7c7a-4a05-8fd7-eae74d794b70","_nodePosition":{"x":797.0,"y":307.5},"SourceAICollection":{"_parentID":"cb74cf14-7c7a-4a05-8fd7-eae74d794b70","_portID":"fd0157aa-6d83-4e0b-9e11-2a35ecde5748","Component":{"instanceID":0}},"TargetsAICollection":{"_parentID":"cb74cf14-7c7a-4a05-8fd7-eae74d794b70","_portID":"0a45d5c5-21b7-4979-9b0b-22d6830ef9e1","Component":{"instanceID":0}}}'
+  _graphIsBroken: 0
 --- !u!1001 &1298528736
 PrefabInstance:
   m_ObjectHideFlags: 0
