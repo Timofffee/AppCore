@@ -8,7 +8,7 @@ namespace Krem.DragMergeMatch.Components
 {
     [NodeGraphGroupName("Drag Merge Match")]
     [DisallowMultipleComponent]
-    public sealed class MergeableComponent : CoreComponent
+    public class MergeableComponent : CoreComponent
     {
         [Header("Dependencies")]
         [SerializeField, NotNull] private DragMergeItemModelData _dragMergeItemModelData; 

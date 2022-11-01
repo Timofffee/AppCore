@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTweenPro.Scripts", "DOTwe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.AppCore", "Krem.AppCore.csproj", "{cf62cfcc-d9bd-9b88-d15e-d109b005c8a1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{ef9462ce-5956-1b0f-6a4d-3426d7973903}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.ProtoElements", "Krem.JetPack.ProtoElements.csproj", "{f7fbd17b-859d-f7b8-1291-fc7e47013752}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.StateMachine", "Krem.JetPack.StateMachine.csproj", "{2f609527-fd0e-eaff-c788-f05abc363b71}"
@@ -14,8 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.EventBus", "Krem.JetPack.EventBus.csproj", "{41dbabab-8913-5492-8c59-22ab46866c93}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krem.JetPack.ScriptableORM", "Krem.JetPack.ScriptableORM.csproj", "{82800fcd-7ada-6254-56be-9be4b1642637}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{ef9462ce-5956-1b0f-6a4d-3426d7973903}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXRDemo", "CFXRDemo.csproj", "{638160b5-7e2e-6c12-dd9e-df4adffb7ef1}"
 EndProject
@@ -70,6 +70,8 @@ Global
 		{4f080047-dabc-7b10-4f4c-31e4258e664e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{cf62cfcc-d9bd-9b88-d15e-d109b005c8a1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{cf62cfcc-d9bd-9b88-d15e-d109b005c8a1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ef9462ce-5956-1b0f-6a4d-3426d7973903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ef9462ce-5956-1b0f-6a4d-3426d7973903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f7fbd17b-859d-f7b8-1291-fc7e47013752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f7fbd17b-859d-f7b8-1291-fc7e47013752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2f609527-fd0e-eaff-c788-f05abc363b71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -78,8 +80,6 @@ Global
 		{41dbabab-8913-5492-8c59-22ab46866c93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82800fcd-7ada-6254-56be-9be4b1642637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{82800fcd-7ada-6254-56be-9be4b1642637}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ef9462ce-5956-1b0f-6a4d-3426d7973903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ef9462ce-5956-1b0f-6a4d-3426d7973903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{638160b5-7e2e-6c12-dd9e-df4adffb7ef1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{638160b5-7e2e-6c12-dd9e-df4adffb7ef1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58be8f70-32f6-a6af-5b44-c2b37f7e18de}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

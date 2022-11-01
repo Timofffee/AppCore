@@ -229,7 +229,6 @@ namespace Krem.AppCore.Extensions
                     {
                         isError = true;
                     }
-                    
                 });
             });
 
@@ -290,73 +289,68 @@ namespace Krem.AppCore.Extensions
                         outputPort.ParentID = node.NodeID;
                         isFixed = true;
                     }
-                    
                 });
             });
             if (isFixed)
             {
                 Debug.Log("Ports Parents Is Fixed");
                 EditorUtility.SetDirty(coreEntity.gameObject);
-                //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
-            }
 
-
-            // Fix Actions List
-            isFixed = false;
-            List<CoreAction> fixedActionsList = new List<CoreAction>();
-            coreEntity.Actions.ForEach(node =>
-            {
-                if (node == null)
+                // Fix Actions List
+                isFixed = false;
+                List<CoreAction> fixedActionsList = new List<CoreAction>();
+                coreEntity.Actions.ForEach(node =>
                 {
-                    isFixed = true;
-                }
-                else
-                {
-                    fixedActionsList.Add(node);
-                }
-            });
-
-            if (isFixed)
-            {
-                coreEntity.Actions = fixedActionsList;
-                Debug.Log("Action Graph Is Fixed");
-                EditorUtility.SetDirty(coreEntity.gameObject);
-                //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
-            }
-
-            // Fix Connections
-            coreEntity.Nodes.ForEach(node =>
-            {
-                node.GetPortsSubclassOf<CoreOutputPort>().ForEach(outputPort =>
-                {
-                    isFixed = false;
-                    List<CorePort> newConnections = new List<CorePort>();
-
-                    ((CoreOutputPort) outputPort).Connections.ForEach(inputPort =>
+                    if (node == null)
                     {
-                        ICoreNode parentNode = coreEntity.FindNodeByID(inputPort.ParentID);
-                        ICorePort port = parentNode?.GetPortByID(inputPort.PortID);
-                        if (parentNode == null || port == null)
-                        {
-                            isFixed = true;
-                        }
-                        else
-                        {
-                            newConnections.Add(inputPort);
-                        }
-                    });
-
-                    if (isFixed)
+                        isFixed = true;
+                    }
+                    else
                     {
-                        ((CoreOutputPort) outputPort).Connections = newConnections;
-                        Debug.Log("Connection Graph Is Fixed");
-                        EditorUtility.SetDirty(coreEntity.gameObject);
-                        //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+                        fixedActionsList.Add(node);
                     }
                 });
-            });
 
-            coreEntity.GraphIsBrokenState = false;
+                if (isFixed)
+                {
+                    coreEntity.Actions = fixedActionsList;
+                    Debug.Log("Action Graph Is Fixed");
+                    EditorUtility.SetDirty(coreEntity.gameObject);
+                }
+
+                // Fix Connections
+                coreEntity.Nodes.ForEach(node =>
+                {
+                    node.GetPortsSubclassOf<CoreOutputPort>().ForEach(outputPort =>
+                    {
+                        isFixed = false;
+                        List<CorePort> newConnections = new List<CorePort>();
+
+                        ((CoreOutputPort) outputPort).Connections.ForEach(inputPort =>
+                        {
+                            ICoreNode parentNode = coreEntity.FindNodeByID(inputPort.ParentID);
+                            ICorePort port = parentNode?.GetPortByID(inputPort.PortID);
+                            if (parentNode == null || port == null)
+                            {
+                                isFixed = true;
+                            }
+                            else
+                            {
+                                newConnections.Add(inputPort);
+                            }
+                        });
+
+                        if (isFixed)
+                        {
+                            ((CoreOutputPort) outputPort).Connections = newConnections;
+                            Debug.Log("Connection Graph Is Fixed");
+                            EditorUtility.SetDirty(coreEntity.gameObject);
+                        }
+                    });
+                });
+
+                coreEntity.GraphIsBrokenState = false;
+            }
         }
         
         #endif

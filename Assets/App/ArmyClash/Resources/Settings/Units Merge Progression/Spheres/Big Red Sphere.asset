@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d1ca350abb4f2478ccbd070fd307b8, type: 3}
+  m_Name: Big Red Sphere
+  m_EditorClassIdentifier: 
+  storable: 0
+  immutable: 1
+  dataProtected: 1
+  data:
+    _name: Big Red Sphere
+    _guid: 156e303e-54ba-493a-bbc8-378b8aa10acd
+    _itemPrefab: {fileID: 7005590982764009610, guid: e74e8b99b832a5c478ec041f3f00224a,
+      type: 3}
+    _itemShadowClone: {fileID: 0}
+    placeOffset: {x: 0, y: 0, z: 0}
+    useShadowCloneToDrag: 0
+    dragOffset: {x: 0, y: 1, z: 0}

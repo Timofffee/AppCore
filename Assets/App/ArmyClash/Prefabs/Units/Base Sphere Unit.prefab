@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8329286907046818421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1409246368839625841, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: _itemsRepository
+      value: 
+      objectReference: {fileID: 11400000, guid: f3367672a1e817840b07eaef8cfd96d4,
+        type: 2}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941974964497256300, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577552850454760882, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: _unitShapeModifierScriptableModel
+      value: 
+      objectReference: {fileID: 11400000, guid: f00a45e0b1417004ab354e156ef5c39c,
+        type: 2}
+    - target: {fileID: 4574539358874648831, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: m_Name
+      value: Base Sphere Unit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5781682814863264502, guid: daf6d3ac8d959a54cb268f0fe82589bc,
+        type: 3}
+      propertyPath: _aiBehaviourType
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: daf6d3ac8d959a54cb268f0fe82589bc, type: 3}

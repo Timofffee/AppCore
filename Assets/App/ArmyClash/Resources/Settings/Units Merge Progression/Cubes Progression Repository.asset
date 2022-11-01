@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e05edeff00f3a2499757f2592dd4b12, type: 3}
+  m_Name: Cubes Progression Repository
+  m_EditorClassIdentifier: 
+  Data:
+  - {fileID: 11400000, guid: 369be392bf173f848b279b70e343ef61, type: 2}
+  - {fileID: 11400000, guid: c4715172e13be89428d0a048f6a0149d, type: 2}
+  - {fileID: 11400000, guid: 39c4830cdabab0943a52c1da41c06f01, type: 2}
+  - {fileID: 11400000, guid: 401dc848579aac74b830e57bc8607323, type: 2}
+  - {fileID: 11400000, guid: 9e92d10775d98a843a3cbc8a2543658a, type: 2}
+  - {fileID: 11400000, guid: ffa247943a19f2644a65e860392da91a, type: 2}
